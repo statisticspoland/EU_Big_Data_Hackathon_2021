@@ -1,0 +1,223 @@
+---
+layout: frontpage
+---
+
+{% assign id = page.indicator | slugify %}
+{% assign ktore = site.data.globalne %}
+{% assign sdg_goals = ktore.sdg_goals %}
+
+{% assign slug = page.indicator | replace: '.', '-' %}
+{% assign dataset_name = 'indicator_' | append: slug %}
+
+{% assign array = "" | split: ""  %}
+{% assign precyzja = array %}
+{% assign header_csv = array %}
+{% assign filtry = array %}
+{% assign wszystkie = array %}
+{% assign jednostka = array %}
+{% assign tytul = array %}
+{% assign metadane = array %}
+
+{% assign precyzja = page.pre %}
+{% assign metadane =page %}
+{% assign tytul = page.graph_title %}
+{% assign jednostka = page.jednostka %}
+{% assign wszystkie = page.zmienne | split: ";" %}
+{% assign filtry = page.kategorie | split: "," %}
+{% assign header_csv = page.indicator_variable_1 | split: "," %}
+{% assign sdg_indicator = ktore[dataset_name] %}
+{% assign sdg_indicators = ktore.sdg_indicator_metadata %}
+
+{% assign foo = array %}
+{% for wszy in wszystkie %}
+{% assign ha = wszy | split: "," | jsonify | append:','%}
+{% assign foo = foo | push: ha %}
+{% endfor %}
+
+{% for indicators in sdg_indicators %}
+{% if indicators.indicator_id == page.indicator %}
+  {% assign this_sdg_indicator_metadata = indicators %}
+{% endif %}
+{% endfor %}
+
+{% assign indicator_title = this_sdg_indicator_metadata.indicator %}
+{% assign licznik = header_csv | size %}
+{% assign row = array %}
+{% assign labels = array %}
+
+{% assign row1 = array %}
+{%for i in (0..licznik) %}
+  {% for indicator in sdg_indicator %}
+    {% assign a = header_csv[i] %}
+    {% assign row1 = row1 | push: indicator[a] %}
+  {%endfor%}
+{%endfor%}
+
+{% for indicator in sdg_indicator %}
+  {% assign labels = labels | push: indicator.year %}
+{% endfor %}
+
+<h3 style="margin: 2em 0;">{{ page.indicator}} - {{ indicator_title }} </h3>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item"><a class="nav-link active" href="#data" aria-controls="data" role="tab" data-toggle="tab">Data</a></li>
+  <li class="nav-item"><a class="nav-link" href="#metadata" aria-controls="metadata" role="tab" data-toggle="tab">Metadata</a></li>
+</ul>
+
+<div style="float: left;width: 100%;">
+  {% assign table_template = 'components/table.html' %}
+
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="data">
+      <div style="display: flow-root;">
+        {% if page.graph == 'bar' or page.graph == 'longitudinal' or page.graph == 'scatter'%}
+          {% assign graph_type = page.graph %}
+          {% if page.graph == 'longitudinal' %}
+            {% assign graph_type = 'line' %}
+          {% endif %}
+          {% assign graph_template = 'components/' | append: graph_type | append: '.html' %}
+          {% if licznik>1 %}
+            <div id="filtry">.</div>
+            <div id="przycisk" style="width: 25%;float: right;"><button type="button" onclick="Zaznacz()" style="min-width: 178px;width: 80%;height: 50px;margin-bottom: 5px;float: right;">Select All</button><button type="button" onclick="Usun()" style="min-width: 178px;width: 80%;height: 50%;margin-top: 0px;float: right;">Clear All</button></div>
+            <div>{% include {{graph_template}} row1=row1 licznik=licznik legenda=header_csv labels=labels%}</div>
+            <div id="Legenda" align="center" style="pointer-events: none;"></div>
+            <div>{% include components/filters.html content=filtry content1=foo%}</div>
+          {%else%}
+            <div>{% include {{graph_template}} row1=row1 licznik=licznik legenda=header_csv labels=labels%}</div>
+            <div id="Legenda" align="center" style="pointer-events: none;"></div>
+          {% endif %}
+          <button type="button" id="calosc" onclick="Calosc()" style="padding: 10px;">Download All</button><button type="button" id="wybrane" onclick="Wybrane()" style="padding: 10px;">Download Selected</button>
+          {% include {{table_template}} content=header_csv content1=sdg_indicator%}
+        {% else %}
+                <p style="text-align: center;">The table will appear here</p>
+        {% endif %}
+      </div>
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="metadata">
+      <div class="metadata-table">
+          <h2>Information about indicator</h2>
+          <a class="usa-button" href="{{ site.baseurl }}/assets/pdf/en/{{page.indicator | replace: ".", "-"}}.pdf">Download metadata for {{ page.indicator | remove: ".0" }}</a>
+          <table>
+            {% for indicator_metadata in site.prose.metadata._indicators %}
+              {% if indicator_metadata.field.scope == "global" %}
+                <tr>
+                  <th style="padding: 5px; height: 45px;">  {{ indicator_metadata.field.label2 }} </th>
+                  <td style="padding: 10px; text-align: justify; height: 45px;">  {{ metadane[indicator_metadata.name] }} </td>
+                </tr>
+              {% endif %}
+            {% endfor %}
+          </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+$(window).on("load", function() {
+
+  $('body').click(function( e ){
+      try{
+        var name = e.target.className;
+        if (!(e.target.className.includes('ct-series') || e.target.classList.contains('list-group-item') || e.target.id.includes('infoToggler'))){
+          if(!(e.target.src)){
+            $('.collapse').collapse('hide');
+          }
+        }
+      }catch(e){
+        $('.collapse').collapse('hide');
+      }
+  });
+
+  $(function () {
+    $('.list-group.checked-list-box .list-group-item').each(function () {
+          var zmienna={{licznik}}
+          var $widget = $(this),
+          $checkbox = $('<input type="checkbox"/>')
+          $widget.css('cursor', 'pointer')
+          $widget.append($checkbox);
+
+          $widget.on('click', function (e) {
+              $checkbox.prop('checked', !$checkbox.is(':checked'));
+              $checkbox.triggerHandler('change');
+
+              var isChecked = $checkbox.is(':checked');
+          });
+
+          $checkbox.on('change', function () {
+              var isChecked = $checkbox.is(':checked');
+
+              for (ola=0;ola<zmienna;ola++){
+                if($widget.val()===ola){
+                  $('li.ct-series-'+ola).click();
+                  if(document.querySelector('li.ct-series-'+ola).style.display=='none'){
+                    document.querySelector('li.ct-series-'+ola).style.display='inline-block'
+                  }else{
+                    if ($('.ct-legend > li:visible').length >1){
+                      document.querySelector('li.ct-series-'+ola).style.display='none'
+                    }
+                  }
+                }
+              }
+            });
+          if ($widget.data('checked') == true) {
+                  $checkbox.prop('checked', !$checkbox.is(':checked'));
+          }
+
+              var isChecked = $checkbox.is(':checked');
+    });
+  });
+});
+
+$( document ).ready(function() {
+  if ('{{metadane["jednostka_prezentacji"]}}'==''){
+      $('.usa-button').css('display','none');
+  }
+});
+
+function Wybrane(){
+  var filename='{{ page.indicator }}'
+  var html = document.querySelector(".gridtable").outerHTML;
+  var csv = [];
+	var rows = document.querySelectorAll(".gridtable tr");
+  for (var i = 0; i < rows.length; i++) {
+    var row = [], cols = rows[i].querySelectorAll("td, th");
+    for (var j = 0; j < cols.length; j++)
+        if(rows[i].style.display != 'none'){
+            row.push(cols[j].innerText);
+        }
+    if(rows[i].style.display != 'none'){
+      csv.push(row.join(","));
+    }
+  }
+  var reszta='selected';
+  download_csv(csv.join("\n"), filename+'_'+reszta+'.csv');
+}
+
+function Calosc(){
+  var filename='{{ page.indicator }}'
+  var html = document.querySelector(".gridtable").outerHTML;
+  var csv = [];
+	var rows = document.querySelectorAll(".gridtable tr");
+  for (var i = 0; i < rows.length; i++) {
+    var row = [], cols = rows[i].querySelectorAll("td, th");
+      for (var j = 0; j < cols.length; j++)
+          row.push(cols[j].innerText);
+          csv.push(row.join(","));
+  }
+  download_csv(csv.join("\n"), filename+'.csv');
+}
+
+function download_csv(csv, filename) {
+    var csvFile;
+    var downloadLink;
+    csvFile = new Blob(["\ufeff",csv], {type: "text/csv;"});
+    downloadLink = document.createElement("a");
+    downloadLink.download = filename;
+    downloadLink.href = window.URL.createObjectURL(csvFile);
+    downloadLink.style.display = "none";
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+}
+</script>

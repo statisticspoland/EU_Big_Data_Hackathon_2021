@@ -1,0 +1,566 @@
+---
+layout: frontpage
+---
+
+{% assign id = page.indicator | slugify %}
+{% assign ktore = site.data.globalne %}
+{% assign sdg_goals = ktore.sdg_goals %}
+
+{% assign slug = page.indicator | replace: '.', '-' %}
+{% assign dataset_name = 'indicator_' | append: slug %}
+
+{% assign array = "" | split: ""  %}
+{% assign precyzja = array %}
+{% assign header_csv = array %}
+{% assign filtry = array %}
+{% assign wszystkie = array %}
+{% assign jednostka = array %}
+{% assign tytul = array %}
+{% assign metadane = array %}
+
+{% assign precyzja = page.pre %}
+{% assign metadane =page %}
+{% assign tytul = page.graph_title %}
+{% assign jednostka = page.jednostka %}
+{% assign wszystkie = page.zmienne | split: ";" %}
+{% assign filtry = page.kategorie | split: "," %}
+{% assign header_csv = page.indicator_variable_1 | split: "," %}
+{% assign sdg_indicator = ktore[dataset_name] %}
+{% assign sdg_indicators = ktore.sdg_indicator_metadata %}
+
+{% assign foo = array %}
+{% for wszy in wszystkie %}
+{% assign ha = wszy | split: "," | jsonify | append:','%}
+{% assign foo = foo | push: ha %}
+{% endfor %}
+
+{% for indicators in sdg_indicators %}
+{% if indicators.indicator_id == page.indicator %}
+  {% assign this_sdg_indicator_metadata = indicators %}
+{% endif %}
+{% endfor %}
+
+{% assign indicator_title = this_sdg_indicator_metadata.indicator %}
+{% assign licznik = header_csv | size %}
+{% assign row = array %}
+{% assign labels = array %}
+
+{% assign row1 = array %}
+{%for i in (0..licznik) %}
+  {% for indicator in sdg_indicator %}
+    {% assign a = header_csv[i] %}
+    {% assign row1 = row1 | push: indicator[a] %}
+  {%endfor%}
+{%endfor%}
+
+{% for indicator in sdg_indicator %}
+  {% assign labels = labels | push: indicator.year %}
+{% endfor %}
+
+<h3 style="margin: 2em 0;">{{ page.indicator}} - {{ indicator_title }} </h3>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item"><a class="nav-link active" href="#data" aria-controls="data" role="tab" data-toggle="tab">Data</a></li>
+  <li class="nav-item"><a class="nav-link" href="#metadata" aria-controls="metadata" role="tab" data-toggle="tab">Metadata</a></li>
+  <li class="nav-item"><a class="nav-link" href="#abbrev" aria-controls="abbrev" role="tab" data-toggle="tab">Abbreviations</a></li>
+
+</ul>
+
+<div style="float: left;width: 100%;">
+  {% assign table_template = 'components/table.html' %}
+
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="data">
+
+          <div style="display: flow-root;margin-top: 15px;">
+                <div id="title" style="text-align: center"></div>
+                  <div class="filterInputs" style="width: 100%;"">
+                    <label><input type="radio" onclick="myFunction(this)" name="type" value="01" checked><i></i>01</label>
+                    <label><input type="radio" onclick="myFunction(this)" name="type" value="02"><i></i>02</label>
+                    <label> <input type="radio" onclick="myFunction(this)"name="type" value="03"><i></i>03</label>
+                    <label> <input type="radio" onclick="myFunction(this)"name="type" value="04"><i></i>04</label>
+                    <label> <input type="radio" onclick="myFunction(this)"name="type" value="05"><i></i>05</label>
+                    <label> <input type="radio" onclick="myFunction(this)"name="type" value="06"><i></i>06</label>
+                    <label> <input type="radio" onclick="myFunction(this)"name="type" value="07"><i></i>07</label>
+                    <label> <input type="radio" onclick="myFunction(this)"name="type" value="08"><i></i>08</label>
+                    <label> <input type="radio" onclick="myFunction(this)"name="type" value="09"><i></i>09</label>
+                    <label> <input type="radio" onclick="myFunction(this)"name="type" value="10"><i></i>10</label>
+                    <label> <input type="radio" onclick="myFunction(this)"name="type" value="11"><i></i>11</label>
+                    <label><input type="radio" onclick="myFunction(this)" name="type" value="12"><i></i>12</label>
+                    <label> <input type="radio" onclick="myFunction(this)"name="type" value="13"><i></i>13</label>
+                    <label> <input type="radio" onclick="myFunction(this)"name="type" value="14"><i></i>14</label>
+                    <label> <input type="radio" onclick="myFunction(this)"name="type" value="15"><i></i>15</label>
+                    <label> <input type="radio" onclick="myFunction(this)"name="type" value="16"><i></i>16</label>
+                    <label> <input type="radio" onclick="myFunction(this)"name="type" value="17"><i></i>17</label>
+                    <label> <input type="radio" onclick="myFunction(this)"name="type" value="18"><i></i>18</label>
+                    <label> <input type="radio" onclick="myFunction(this)"name="type" value="19"><i></i>19</label>
+                    <label> <input type="radio" onclick="myFunction(this)"name="type" value="20"><i></i>20</label>
+                    <label> <input type="radio" onclick="myFunction(this)"name="type" value="21"><i></i>21</label>
+                  </div>
+                  <div id="chartdiv"></div>
+                  <div id="chartdiv2">
+                </div>
+                <table id="dataTable"></table>
+          </div>
+
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="metadata">
+      <div class="metadata-table">
+          <h2>Information about indicator</h2>
+          <table>
+            {% for indicator_metadata in site.prose.metadata._indicators %}
+              {% if indicator_metadata.field.scope == "global" %}
+                <tr>
+                  <th style="padding: 5px; height: 45px;">  {{ indicator_metadata.field.label2 }} </th>
+                  <td style="padding: 10px; text-align: justify; height: 45px;">  {{ metadane[indicator_metadata.name] }} </td>
+                </tr>
+              {% endif %}
+            {% endfor %}
+          </table>
+      </div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="abbrev">
+      <div class="metadata-table">
+          <table>
+                <tr>
+                  <th style="padding: 5px; height: 45px;">Sections by CN</th>
+                  <td style="padding: 10px; text-align: justify; height: 45px;">
+                    01 - Live animals, animal products</br>
+                    02 - Vegetable products</br>
+                    03 - Fats and oils</br>
+                    04 - Prepared foodstuffs</br>
+                    05 - Mineral products</br>
+                    06 - Products of the chemical industry</br>
+                    07 - Plastics and rubber and articles thereof</br>
+                    08 - Raw hides and skins, articles thereof</br>
+                    09 - Wood and articles of wood</br>
+                    10 - Pulp of wood, paper, paperboard and articles thereof</br>
+                    11 - Textiles and textile articles</br>
+                    12 - Footwear, headgear, etc.</br>
+                    13 - Articles of stone, ceramic products, glass</br>
+                    14 - Pearls, precious stones and metals, articles thereof</br>
+                    15 - Base metals and articles thereof</br>
+                    16 - Machinery and mechanical appliances, electrical and electrotechnical equipment</br>
+                    17 - Transport equipment</br>
+                    18 - Optical, photographic, measuring, checking instruments, etc.</br>
+                    19 - Arms and ammunition</br>
+                    20 - Miscellaneous manufactured articles</br>
+                    21 - Works of art, collectors pieces and antiques</br>
+                  </td>
+                </tr>
+          </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  #chartdiv {
+
+  font-size: 0.875rem;
+  width: 100%;
+  height: 600px;
+
+  }
+  </style>
+<script>
+
+function chord(section) {
+  var stateData =(function() {
+        var json = null;
+        $.ajax({
+            'async': false,
+            'url': "{{site.baseurl}}/json/{{page.indicator}}.json",
+            'dataType': "json",
+            'success': function (data) {
+                json = data;
+            }
+        });
+        return json;
+  })();
+
+  am4core.useTheme(am4themes_animated);
+
+  var mainContainer = am4core.create("chartdiv", am4core.Container);
+  mainContainer.width = am4core.percent(100);
+  mainContainer.height = am4core.percent(100);
+
+
+  var chart = mainContainer.createChild(am4charts.XYChart);
+
+  chart.data = stateData[section];
+
+
+  // Add data
+
+  // Create category axis
+  var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+  categoryAxis.dataFields.category = "year";
+  categoryAxis.renderer.opposite = true;
+
+  // Create value axis
+  var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+  valueAxis.renderer.inversed = false;
+  valueAxis.title.text = "Place taken";
+  valueAxis.renderer.minLabelPosition = 0.01;
+
+  // Create series
+  var series1 = chart.series.push(new am4charts.LineSeries());
+  series1.dataFields.valueY = "AT";
+  series1.dataFields.categoryX = "year";
+  series1.name = "AT";
+  series1.bullets.push(new am4charts.CircleBullet());
+  //series1.tooltipText = "AT";
+  series1.legendSettings.valueText = "{valueY}";
+  series1.visible  = false;
+
+  var series2 = chart.series.push(new am4charts.LineSeries());
+  series2.dataFields.valueY = "BE";
+  series2.dataFields.categoryX = "year";
+  series2.name = 'BE';
+  series2.bullets.push(new am4charts.CircleBullet());
+  //series2.tooltipText = "BE";
+  series2.legendSettings.valueText = "{valueY}";
+
+  var series3 = chart.series.push(new am4charts.LineSeries());
+  series3.dataFields.valueY = "BG";
+  series3.dataFields.categoryX = "year";
+  series3.name = 'BG';
+  series3.bullets.push(new am4charts.CircleBullet());
+  //series3.tooltipText = "BG";
+  series3.legendSettings.valueText = "{valueY}";
+
+  var series4 = chart.series.push(new am4charts.LineSeries());
+  series4.dataFields.valueY = "CY";
+  series4.dataFields.categoryX = "year";
+  series4.name = 'CY';
+  series4.bullets.push(new am4charts.CircleBullet());
+  //series4.tooltipText = "CY";
+  series4.legendSettings.valueText = "{valueY}";
+
+  var series5 = chart.series.push(new am4charts.LineSeries());
+  series5.dataFields.valueY = "CZ";
+  series5.dataFields.categoryX = "year";
+  series5.name = 'CZ';
+  series5.bullets.push(new am4charts.CircleBullet());
+  //series5.tooltipText = "CZ";
+  series5.legendSettings.valueText = "{valueY}";
+
+  var series6 = chart.series.push(new am4charts.LineSeries());
+  series6.dataFields.valueY = "DE";
+  series6.dataFields.categoryX = "year";
+  series6.name = 'DE';
+  series6.bullets.push(new am4charts.CircleBullet());
+  //series6.tooltipText = "DE";
+  series6.legendSettings.valueText = "{valueY}";
+
+  var series7 = chart.series.push(new am4charts.LineSeries());
+  series7.dataFields.valueY = "DK";
+  series7.dataFields.categoryX = "year";
+  series7.name = 'DK';
+  series7.bullets.push(new am4charts.CircleBullet());
+  //series7.tooltipText = "DK";
+  series7.legendSettings.valueText = "{valueY}";
+
+  var series8 = chart.series.push(new am4charts.LineSeries());
+  series8.dataFields.valueY = "EE";
+  series8.dataFields.categoryX = "year";
+  series8.name = 'EE';
+  series8.bullets.push(new am4charts.CircleBullet());
+  //series8.tooltipText = "EE";
+  series8.legendSettings.valueText = "{valueY}";
+
+  var series9 = chart.series.push(new am4charts.LineSeries());
+  series9.dataFields.valueY = "ES";
+  series9.dataFields.categoryX = "year";
+  series9.name = 'ES';
+  series9.bullets.push(new am4charts.CircleBullet());
+  //series9.tooltipText = "ES";
+  series9.legendSettings.valueText = "{valueY}";
+
+  var series10 = chart.series.push(new am4charts.LineSeries());
+  series10.dataFields.valueY = "FI";
+  series10.dataFields.categoryX = "year";
+  series10.name = 'FI';
+  series10.bullets.push(new am4charts.CircleBullet());
+  //series10.tooltipText = "FI";
+  series10.legendSettings.valueText = "{valueY}";
+
+  var series11 = chart.series.push(new am4charts.LineSeries());
+  series11.dataFields.valueY = "FR";
+  series11.dataFields.categoryX = "year";
+  series11.name = 'FR';
+  series11.bullets.push(new am4charts.CircleBullet());
+  //series11.tooltipText = "FR";
+  series11.legendSettings.valueText = "{valueY}";
+
+  var series12 = chart.series.push(new am4charts.LineSeries());
+  series12.dataFields.valueY = "GR";
+  series12.dataFields.categoryX = "year";
+  series12.name = 'GR';
+  series12.bullets.push(new am4charts.CircleBullet());
+  //series12.tooltipText = "GR";
+  series12.legendSettings.valueText = "{valueY}";
+
+  var series13 = chart.series.push(new am4charts.LineSeries());
+  series13.dataFields.valueY = "HR";
+  series13.dataFields.categoryX = "year";
+  series13.name = 'HR';
+  series13.bullets.push(new am4charts.CircleBullet());
+  //series13.tooltipText = "HR";
+  series13.legendSettings.valueText = "{valueY}";
+
+  var series14 = chart.series.push(new am4charts.LineSeries());
+  series14.dataFields.valueY = "HU";
+  series14.dataFields.categoryX = "year";
+  series14.name = 'HU';
+  series14.bullets.push(new am4charts.CircleBullet());
+  //series14.tooltipText = "HU";
+  series14.legendSettings.valueText = "{valueY}";
+
+  var series15 = chart.series.push(new am4charts.LineSeries());
+  series15.dataFields.valueY = "IE";
+  series15.dataFields.categoryX = "year";
+  series15.name = 'IE';
+  series15.bullets.push(new am4charts.CircleBullet());
+  //series15.tooltipText = "IE";
+  series15.legendSettings.valueText = "{valueY}";
+
+  var series16 = chart.series.push(new am4charts.LineSeries());
+  series16.dataFields.valueY = "IT";
+  series16.dataFields.categoryX = "year";
+  series16.name = 'IT';
+  series16.bullets.push(new am4charts.CircleBullet());
+  //series16.tooltipText = "IT";
+  series16.legendSettings.valueText = "{valueY}";
+
+  var series17 = chart.series.push(new am4charts.LineSeries());
+  series17.dataFields.valueY = "LT";
+  series17.dataFields.categoryX = "year";
+  series17.name = 'LT';
+  series17.bullets.push(new am4charts.CircleBullet());
+  //series17.tooltipText = "LT";
+  series17.legendSettings.valueText = "{valueY}";
+
+  var series18 = chart.series.push(new am4charts.LineSeries());
+  series18.dataFields.valueY = "LU";
+  series18.dataFields.categoryX = "year";
+  series18.name = 'LU';
+  series18.bullets.push(new am4charts.CircleBullet());
+  //series18.tooltipText = "LU";
+  series18.legendSettings.valueText = "{valueY}";
+
+  var series19 = chart.series.push(new am4charts.LineSeries());
+  series19.dataFields.valueY = "LV";
+  series19.dataFields.categoryX = "year";
+  series19.name = 'LV';
+  series19.bullets.push(new am4charts.CircleBullet());
+  //series19.tooltipText = "LV";
+  series19.legendSettings.valueText = "{valueY}";
+
+  var series20 = chart.series.push(new am4charts.LineSeries());
+  series20.dataFields.valueY = "MT";
+  series20.dataFields.categoryX = "year";
+  series20.name = 'MT';
+  series20.bullets.push(new am4charts.CircleBullet());
+  //series20.tooltipText = "MT";
+  series20.legendSettings.valueText = "{valueY}";
+
+  var series21 = chart.series.push(new am4charts.LineSeries());
+  series21.dataFields.valueY = "NL";
+  series21.dataFields.categoryX = "year";
+  series21.name = 'NL';
+  series21.bullets.push(new am4charts.CircleBullet());
+  //series21.tooltipText = "NL";
+  series21.legendSettings.valueText = "{valueY}";
+
+  var series22 = chart.series.push(new am4charts.LineSeries());
+  series22.dataFields.valueY = "PL";
+  series22.dataFields.categoryX = "year";
+  series22.name = 'PL';
+  series22.bullets.push(new am4charts.CircleBullet());
+  //series22.tooltipText = "PL";
+  series22.legendSettings.valueText = "{valueY}";
+
+  var series23 = chart.series.push(new am4charts.LineSeries());
+  series23.dataFields.valueY = "PT";
+  series23.dataFields.categoryX = "year";
+  series23.name = 'PT';
+  series23.bullets.push(new am4charts.CircleBullet());
+  //series23.tooltipText = "PT";
+  series23.legendSettings.valueText = "{valueY}";
+
+  var series24 = chart.series.push(new am4charts.LineSeries());
+  series24.dataFields.valueY = "RO";
+  series24.dataFields.categoryX = "year";
+  series24.name = 'RO';
+  series24.bullets.push(new am4charts.CircleBullet());
+  //series24.tooltipText = "RO";
+  series24.legendSettings.valueText = "{valueY}";
+
+  var series25 = chart.series.push(new am4charts.LineSeries());
+  series25.dataFields.valueY = "SE";
+  series25.dataFields.categoryX = "year";
+  series25.name = 'SE';
+  series25.bullets.push(new am4charts.CircleBullet());
+  //series25.tooltipText = "SE";
+  series25.legendSettings.valueText = "{valueY}";
+
+  var series26 = chart.series.push(new am4charts.LineSeries());
+  series26.dataFields.valueY = "SI";
+  series26.dataFields.categoryX = "year";
+  series26.name = 'SI';
+  series26.bullets.push(new am4charts.CircleBullet());
+  //series26.tooltipText = "SI";
+  series26.legendSettings.valueText = "{valueY}";
+
+  var series27 = chart.series.push(new am4charts.LineSeries());
+  series27.dataFields.valueY = "SK";
+  series27.dataFields.categoryX = "year";
+  series27.name = 'SK';
+  series27.bullets.push(new am4charts.CircleBullet());
+  //series27.tooltipText = "SK";
+  series27.legendSettings.valueText = "{valueY}";
+
+
+  // Add chart cursor
+  chart.cursor = new am4charts.XYCursor();
+  chart.cursor.behavior = "zoomY";
+
+
+  let hs1 = series1.segments.template.states.create("hover")
+  hs1.properties.strokeWidth = 5;
+  series1.segments.template.strokeWidth = 1;
+
+  let hs2 = series2.segments.template.states.create("hover")
+  hs2.properties.strokeWidth = 5;
+  series2.segments.template.strokeWidth = 1;
+
+  let hs3 = series3.segments.template.states.create("hover")
+  hs3.properties.strokeWidth = 5;
+  series3.segments.template.strokeWidth = 1;
+
+  let hs4 = series4.segments.template.states.create("hover")
+  hs4.properties.strokeWidth = 5;
+  series4.segments.template.strokeWidth = 1;
+
+  let hs5 = series5.segments.template.states.create("hover")
+  hs5.properties.strokeWidth = 5;
+  series5.segments.template.strokeWidth = 1;
+
+  let hs6 = series6.segments.template.states.create("hover")
+  hs6.properties.strokeWidth = 5;
+  series6.segments.template.strokeWidth = 1;
+
+  let hs7 = series7.segments.template.states.create("hover")
+  hs7.properties.strokeWidth = 5;
+  series7.segments.template.strokeWidth = 1;
+
+  let hs8 = series8.segments.template.states.create("hover")
+  hs8.properties.strokeWidth = 5;
+  series8.segments.template.strokeWidth = 1;
+
+  let hs9 = series9.segments.template.states.create("hover")
+  hs9.properties.strokeWidth = 5;
+  series9.segments.template.strokeWidth = 1;
+
+  let hs10 = series10.segments.template.states.create("hover")
+  hs10.properties.strokeWidth = 5;
+  series10.segments.template.strokeWidth = 1;
+
+  let hs11 = series11.segments.template.states.create("hover")
+  hs11.properties.strokeWidth = 5;
+  series11.segments.template.strokeWidth = 1;
+
+  let hs12 = series12.segments.template.states.create("hover")
+  hs12.properties.strokeWidth = 5;
+  series12.segments.template.strokeWidth = 1;
+
+  let hs13 = series13.segments.template.states.create("hover")
+  hs13.properties.strokeWidth = 5;
+  series13.segments.template.strokeWidth = 1;
+
+  let hs14 = series14.segments.template.states.create("hover")
+  hs14.properties.strokeWidth = 5;
+  series14.segments.template.strokeWidth = 1;
+
+  let hs15 = series15.segments.template.states.create("hover")
+  hs15.properties.strokeWidth = 5;
+  series15.segments.template.strokeWidth = 1;
+
+  let hs16 = series16.segments.template.states.create("hover")
+  hs16.properties.strokeWidth = 5;
+  series16.segments.template.strokeWidth = 1;
+
+  let hs17 = series17.segments.template.states.create("hover")
+  hs17.properties.strokeWidth = 5;
+  series17.segments.template.strokeWidth = 1;
+
+  let hs18 = series18.segments.template.states.create("hover")
+  hs18.properties.strokeWidth = 5;
+  series18.segments.template.strokeWidth = 1;
+
+  let hs19 = series19.segments.template.states.create("hover")
+  hs19.properties.strokeWidth = 5;
+  series19.segments.template.strokeWidth = 1;
+
+  let hs20 = series20.segments.template.states.create("hover")
+  hs20.properties.strokeWidth = 5;
+  series20.segments.template.strokeWidth = 1;
+
+  let hs21 = series21.segments.template.states.create("hover")
+  hs21.properties.strokeWidth = 5;
+  series21.segments.template.strokeWidth = 1;
+
+  let hs22 = series22.segments.template.states.create("hover")
+  hs22.properties.strokeWidth = 5;
+  series22.segments.template.strokeWidth = 1;
+
+  let hs23 = series23.segments.template.states.create("hover")
+  hs23.properties.strokeWidth = 5;
+  series23.segments.template.strokeWidth = 1;
+
+  let hs24 = series24.segments.template.states.create("hover")
+  hs24.properties.strokeWidth = 5;
+  series24.segments.template.strokeWidth = 1;
+
+  let hs25 = series25.segments.template.states.create("hover")
+  hs25.properties.strokeWidth = 5;
+  series25.segments.template.strokeWidth = 1;
+
+  let hs26 = series26.segments.template.states.create("hover")
+  hs26.properties.strokeWidth = 5;
+  series6.segments.template.strokeWidth = 1;
+
+  let hs27 = series27.segments.template.states.create("hover")
+  hs27.properties.strokeWidth = 5;
+  series27.segments.template.strokeWidth = 1;
+
+
+  // Add legend
+  chart.legend = new am4charts.Legend();
+  chart.legend.itemContainers.template.events.on("over", function(event){
+    var segments = event.target.dataItem.dataContext.segments;
+    segments.each(function(segment){
+      segment.isHover = true;
+    })
+  })
+
+  chart.legend.itemContainers.template.events.on("out", function(event){
+    var segments = event.target.dataItem.dataContext.segments;
+    segments.each(function(segment){
+      segment.isHover = false;
+    })
+  })
+}
+
+chord('01');
+
+  function myFunction(obj) {
+    var t = $(obj).val();
+    chord(t.toString())
+ }
+
+
+</script>

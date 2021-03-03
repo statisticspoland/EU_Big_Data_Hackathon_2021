@@ -1,0 +1,57 @@
+<head>
+	<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<meta charset="utf-8">
+
+				<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+				<link rel="icon" type="image/png" href="{{site.baseurl}}/assets/img/favicon.png" />
+
+        {%
+            assign cache_bust = site.time | replace: ' ', '-' | replace: ':', '-'
+        %}
+
+				<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+				<script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+				<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/chartist.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/chartist-plugin-tooltip.css">
+				<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/custom.css?v={{ cache_bust }}">
+				<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/custom_panel.css?v={{ cache_bust }}">
+				<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/custom_contrast.css?v={{ cache_bust }}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+				<script src="{{ site.baseurl }}/assets/js/vendor/chartist.min.js"></script>
+        <script src="{{ site.baseurl }}/assets/js/vendor/chartist-plugin-accessibility.min.js"></script>
+        <script src="{{ site.baseurl }}/assets/js/vendor/chartist-plugin-legend.js"></script>
+        <script src="{{ site.baseurl }}/assets/js/vendor/chartist-plugin-axistitle.js"></script>
+        <script src="{{ site.baseurl }}/assets/js/vendor/chartist-plugin-tooltip.min.js"></script>
+
+				<script src="{{ site.baseurl }}/assets/js/accessibility.js"></script>
+
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+				<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
+				<script src="{{site.baseurl}}/assets/amcharts4/core.js"></script>
+				<script src="{{site.baseurl}}/assets/amcharts4/maps.js"></script>
+				<script src="{{site.baseurl}}/assets/amcharts4/charts.js"></script>
+				<script src="{{site.baseurl}}/assets/amcharts4/themes/animated.js"></script>
+				<script src="{{site.baseurl}}/assets/amcharts4/themes/dataviz.js"></script>
+				<script src="{{site.baseurl}}/assets/amcharts4/geodata/worldLow.js"></script>
+
+				<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js"></script>
+				<script src="https://cdn.rawgit.com/jasondavies/d3-cloud/v1.2.1/build/d3.layout.cloud.js"></script>
+
+				<!-- vanta js assets -->
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r119/three.min.js"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.rings.min.js"></script>
+
+</head>

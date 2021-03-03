@@ -1,0 +1,565 @@
+---
+layout: frontpage
+---
+
+
+<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/dashboard.css?v={{ cache_bust }}">
+
+<h2 style="margin-top: 30px;">Dashboard for European Trade Statistics</h2>
+
+<table>
+                <tr class="noborders_small">
+                  <td width="49%">This  dashboard presents indicators for  European Trade by sources:
+                  </td>
+
+                <td width="16%">
+                  <div id="shell_small">
+                  <div id="blue"></div>
+                  <div id="titles">ITGS_Reference</div>
+                  </div>
+                </td>
+
+                  <td width="16%">
+                    <div id="shell_small">
+                      <div id="green"></div>
+                      <div id="titles">COMEXT</div>
+                      </div>
+                    </td>
+
+                <td width="16%">
+                  <div id="shell_small">
+                  <div id="blue2"></div>
+                  <div id="titles">UN COMTRADE</div>
+                </td>
+
+
+            </tr>
+
+</table>
+<p></p>
+
+<script>
+  /**
+   * ---------------------------------------
+   * This demo was created using amCharts 4.
+   *
+   * For more information visit:
+   * https://www.amcharts.com/
+   *
+   * Documentation is available at:
+   * https://www.amcharts.com/docs/v4/
+   * ---------------------------------------
+   */
+
+  // Create chart instance
+  var chart = am4core.create("chartdiv1", am4charts.ChordDiagram);
+
+  var chart3 = am4core.create("chartdiv3", am4charts.XYChart);
+  var chart10 = am4core.create("chartdiv10", am4charts.XYChart);
+  var chart4 = am4core.create("chartdiv4", am4charts.XYChart);
+  var chart7 = am4core.create("chartdiv7", am4charts.XYChart);
+
+  var chart5 = am4core.create("chartdiv5", am4charts.PieChart);
+  chart5.width = am4core.percent(100);
+  chart5.height = am4core.percent(100);
+  var chart6 = am4core.create("chartdiv6", am4charts.PieChart);
+  chart6.width = am4core.percent(100);
+  chart6.height = am4core.percent(100);
+
+  var chart8 = am4core.create("chartdiv8", am4charts.PieChart);
+  chart8.width = am4core.percent(100);
+  chart8.height = am4core.percent(100);
+  var chart9 = am4core.create("chartdiv9", am4charts.PieChart);
+  chart9.width = am4core.percent(100);
+  chart9.height = am4core.percent(100);
+
+
+
+
+  // Add data
+  var stateData =(function() {
+        var json = null;
+        $.ajax({
+            'async': false,
+            'url': "{{site.baseurl}}/json/2-1-1a.json",
+            'dataType': "json",
+            'success': function (data) {
+                json = data;
+            }
+        });
+        return json;
+  })();
+
+  var stateData5 =(function() {
+        var json = null;
+        $.ajax({
+            'async': false,
+            'url': "{{site.baseurl}}/json/9-1-1a.json",
+            'dataType': "json",
+            'success': function (data) {
+                json = data;
+            }
+        });
+        return json;
+  })();
+  var stateData6 =(function() {
+        var json = null;
+        $.ajax({
+            'async': false,
+            'url': "{{site.baseurl}}/json/9-2-1a.json",
+            'dataType': "json",
+            'success': function (data) {
+                json = data;
+            }
+        });
+        return json;
+  })();
+
+  var stateData8 =(function() {
+        var json = null;
+        $.ajax({
+            'async': false,
+            'url': "{{site.baseurl}}/json/8-2-1a.json",
+            'dataType': "json",
+            'success': function (data) {
+                json = data;
+            }
+        });
+        return json;
+  })();
+
+  var stateData3 =(function() {
+        var json = null;
+        $.ajax({
+            'async': false,
+            'url': "{{site.baseurl}}/json/6-1-1a.json",
+            'dataType': "json",
+            'success': function (data) {
+                json = data;
+            }
+        });
+        return json;
+  })();
+
+  var stateData9 =(function() {
+        var json = null;
+        $.ajax({
+            'async': false,
+            'url': "{{site.baseurl}}/json/8-2-2a.json",
+            'dataType': "json",
+            'success': function (data) {
+                json = data;
+            }
+        });
+        return json;
+  })();
+
+
+
+  chart.data = stateData['01'];
+  chart.dataFields.fromName = "from";
+  chart.dataFields.toName = "to";
+  chart.dataFields.value = "value";
+
+  // make nodes draggable
+  var nodeTemplate = chart.nodes.template;
+  nodeTemplate.readerTitle = "Click to show/hide or drag to rearrange";
+  nodeTemplate.showSystemTooltip = true;
+
+  var nodeLink = chart.links.template;
+  var bullet = nodeLink.bullets.push(new am4charts.CircleBullet());
+  bullet.fillOpacity = 1;
+  bullet.circle.radius = 5;
+  bullet.locationX = 0.5;
+
+  // create animations
+  chart.events.on("ready", function() {
+      for (var i = 0; i < chart.links.length; i++) {
+          var link = chart.links.getIndex(i);
+          var bullet = link.bullets.getIndex(0);
+
+          animateBullet(bullet);
+      }
+  })
+
+  function animateBullet(bullet) {
+      var duration = 3000 * Math.random() + 2000;
+      var animation = bullet.animate([{ property: "locationX", from: 0, to: 1 }], duration)
+      animation.events.on("animationended", function(event) {
+          animateBullet(event.target.object);
+      })
+  }
+
+/////////////////////////////
+
+  //9.1.1 i 9.2.1
+
+  chart3.data = stateData3['BE'];
+  chart10.data = stateData3['BE'];
+  chart4.data = stateData3['BE'];
+  chart7.data = stateData3['BE'];
+
+  chart5.data = stateData5['AT'];
+  chart6.data = stateData6['AT'];
+
+  chart8.data = stateData8['PL'];
+  chart9.data = stateData9['PL'];
+
+
+  // Create series
+
+  var dateAxis3 = chart3.xAxes.push(new am4charts.DateAxis());
+  var valueAxis3 = chart3.yAxes.push(new am4charts.ValueAxis());
+
+  var dateAxis4 = chart10.xAxes.push(new am4charts.DateAxis());
+  var valueAxis4 = chart10.yAxes.push(new am4charts.ValueAxis());
+  var dateAxis2 = chart4.xAxes.push(new am4charts.DateAxis());
+  var valueAxis2 = chart4.yAxes.push(new am4charts.ValueAxis());
+  var dateAxis7 = chart7.xAxes.push(new am4charts.DateAxis());
+  var valueAxis7 = chart7.yAxes.push(new am4charts.ValueAxis());
+
+  //valueAxis3.renderer.labels.template.disabled = true;
+  //dateAxis3.renderer.labels.template.disabled = true;
+  //valueAxis3.renderer.grid.template.disabled = true;
+
+  valueAxis3.renderer.labelsEnabled = false;
+  valueAxis2.renderer.labelsEnabled = false;
+  valueAxis4.renderer.labelsEnabled = false;
+  valueAxis7.renderer.labelsEnabled = false;
+
+  //create series
+  var series3 = chart3.series.push(new am4charts.LineSeries());
+  series3.dataFields.valueY = "value";
+  series3.dataFields.dateX = "date";
+  series3.tooltipText = "{value}"
+  series3.strokeWidth = 1;
+  series3.minBulletDistance = 1;
+
+  var series2 = chart10.series.push(new am4charts.LineSeries());
+  series2.dataFields.valueY = "value";
+  series2.dataFields.dateX = "date";
+  series2.tooltipText = "{value}"
+  series2.strokeWidth = 1;
+  series2.minBulletDistance = 1;
+
+  var series4 = chart4.series.push(new am4charts.LineSeries());
+  series4.dataFields.valueY = "value";
+  series4.dataFields.dateX = "date";
+  series4.tooltipText = "{value}"
+  series4.strokeWidth = 1;
+  series4.minBulletDistance = 1;
+
+  var series7 = chart7.series.push(new am4charts.LineSeries());
+  series7.dataFields.valueY = "value";
+  series7.dataFields.dateX = "date";
+  series7.tooltipText = "{value}"
+  series7.strokeWidth = 1;
+  series7.minBulletDistance = 1;
+
+
+  var series5 = chart5.series.push(new am4charts.PieSeries());
+  series5.dataFields.category = "name";
+  series5.dataFields.value = "VALUE_IN_EUROS";
+  series5.ticks.template.disabled = true;
+  series5.alignLabels = false;
+  chart5.numberFormatter.numberFormat = '###,###.0';
+  series5.ticks.template.events.on("ready", hideSmall);
+  series5.ticks.template.events.on("visibilitychanged", hideSmall);
+  series5.labels.template.events.on("ready", hideSmall);
+  series5.labels.template.events.on("visibilitychanged", hideSmall);
+  //create series
+  var series6 = chart6.series.push(new am4charts.PieSeries());
+  series6.dataFields.category = "name";
+  series6.dataFields.value = "VALUE_IN_EUROS";
+  series6.ticks.template.disabled = true;
+  series6.alignLabels = false;
+  chart6.numberFormatter.numberFormat = '###,###.0';
+  series6.ticks.template.events.on("ready", hideSmall);
+  series6.ticks.template.events.on("visibilitychanged", hideSmall);
+  series6.labels.template.events.on("ready", hideSmall);
+  series6.labels.template.events.on("visibilitychanged", hideSmall);
+
+
+  var series8 = chart8.series.push(new am4charts.PieSeries());
+  series8.dataFields.category = "name";
+  series8.dataFields.value = "total";
+  series8.ticks.template.disabled = true;
+  series8.alignLabels = false;
+  chart8.numberFormatter.numberFormat = '###,###.0';
+  series8.ticks.template.events.on("ready", hideSmall);
+  series8.ticks.template.events.on("visibilitychanged", hideSmall);
+  series8.labels.template.events.on("ready", hideSmall);
+  series8.labels.template.events.on("visibilitychanged", hideSmall);
+
+  var series9 = chart9.series.push(new am4charts.PieSeries());
+  series9.dataFields.category = "name";
+  series9.dataFields.value = "total";
+  series9.ticks.template.disabled = true;
+  series9.alignLabels = false;
+  chart9.numberFormatter.numberFormat = '###,###.0';
+  series9.ticks.template.events.on("ready", hideSmall);
+  series9.ticks.template.events.on("visibilitychanged", hideSmall);
+  series9.labels.template.events.on("ready", hideSmall);
+  series9.labels.template.events.on("visibilitychanged", hideSmall);
+
+  function hideSmall(ev) {
+    if (ev.target.dataItem && (ev.target.dataItem.values.value.percent > 0)) {
+      ev.target.hide();
+    }
+    else {
+      ev.target.show();
+    }
+  }
+
+  // Make bullets grow on hover
+  var bullet = series.bullets.push(new am4charts.CircleBullet());
+  bullet.circle.strokeWidth = 2;
+  bullet.circle.radius = 2;
+  bullet.circle.fill = am4core.color("#fff");
+
+  var bullethover = bullet.states.create("hover");
+  bullethover.properties.scale = 1;
+
+
+  var bullethover3 = bullet3.states.create("hover");
+  bullethover3.properties.scale = 1;
+  var bullethover4 = bullet.states.create("hover");
+  bullethover4.properties.scale = 1;
+
+  // Make bullets grow on hover
+  var bullet3 = series3.bullets.push(new am4charts.CircleBullet());
+  bullet3.circle.strokeWidth = 2;
+  bullet3.circle.radius = 4;
+  bullet3.circle.fill = am4core.color("#fff");
+
+  // Make a panning cursor
+  chart.cursor = new am4charts.XYCursor();
+  chart.cursor.behavior = "panXY";
+  chart.cursor.xAxis = dateAxis;
+  chart.cursor.snapToSeries = series;
+
+  chart3.cursor = new am4charts.XYCursor();
+  chart3.cursor.behavior = "panXY";
+  chart3.cursor.xAxis = dateAxis3;
+  chart3.cursor.snapToSeries = series3;
+
+  chart4.cursor = new am4charts.XYCursor();
+  chart4.cursor.behavior = "panXY";
+  chart4.cursor.xAxis = dateAxis4;
+  chart4.cursor.snapToSeries = series4;
+
+  chart10.cursor = new am4charts.XYCursor();
+  chart10.cursor.behavior = "panXY";
+  chart10.cursor.xAxis = dateAxis2;
+  chart10.cursor.snapToSeries = series2;
+
+  chart7.cursor = new am4charts.XYCursor();
+  chart7.cursor.behavior = "panXY";
+  chart7.cursor.xAxis = dateAxis7;
+  chart7.cursor.snapToSeries = series7;
+
+
+</script>
+
+
+
+<table >
+
+
+
+        {% assign ident = indicator_sort.indicator_id | replace: ".","-" %}
+
+              <tr class="noborders">
+                <td width="25%">
+                  <div id="shell">
+                  <div id="blue2"></div>
+                  <div id="title">Chord diagram with animated bullets</div>
+                  <a href="{{ site.baseurl }}/indicator/2-1-1/">
+                  <div id="chartdiv1"></div>  </a>
+                  </div>
+                </td>
+
+                  <td width="25%">
+                    <div id="shell">
+                      <div id="blue"></div>
+                      <div id="title">Exports (consign) by countries and CN section</div>
+                      <a href="{{ site.baseurl }}/indicator/10-1-1/">
+                        <img src="{{ site.baseurl }}/assets/img/dashbord/10_1_1.png" alt="Exports (consign) by countries and CN section" class="center"></a>
+                      </div>
+                    </td>
+
+                <td width="25%">
+                  <div id="shell">
+                  <div id="blue"></div>
+                  <div id="title">Exports (origin) by countries and  CN section</div>
+                  <a href="{{ site.baseurl }}/indicator/8-2-1/">
+                  <div id="chartdiv8"></div>  </a>
+                  </div>
+                </td>
+
+                <td width="25%">
+                  <div id="shell">
+                  <div id="blue"></div>
+                  <div id="title">Imports (origin) by countries and  CN section</div>
+                  <a href="{{ site.baseurl }}/indicator/8-2-2/">
+                  <div id="chartdiv9"></div>  </a>
+                  </div>
+                </td>
+            </tr>
+
+            <tr class="noborders">
+              <td>
+                <div id="shell">
+                <div id="green"></div>
+                <div id="title">Imports by countries and CN section</div>
+                <a href="{{ site.baseurl }}/indicator/9-1-1/">
+                <div id="chartdiv5"></div>  </a>
+                </div>
+              </td>
+
+                  <td>
+                    <div id="shell">
+                    <div id="green"></div>
+                    <div id="title">Exports by countries and  CN section</div>
+                    <a href="{{ site.baseurl }}/indicator/9-2-1/">
+                    <div id="chartdiv6"></div>  </a>
+                    </div>
+                  </td>
+
+                  <td width="25%">
+                    <div id="shell">
+                      <div id="blue"></div>
+                      <div id="title">Import - Reversed Value Axis</div>
+                      <a href="{{ site.baseurl }}/indicator/2-1-2/">
+                        <img src="{{ site.baseurl }}/assets/img/dashbord/2_1_2.png" alt="Import - Reversed Value Axis" class="center">
+                      </a>
+                      </div>
+                    </td>
+
+                    <td>
+                      <div id="shell">
+                      <div id="blue"></div>
+                      <div id="title">Export - Reversed Value Axis</div>
+                      <a href="{{ site.baseurl }}/indicator/3-1-2/">
+                        <img src="{{ site.baseurl }}/assets/img/dashbord/3_1_2.png" alt="Export - Reversed Value Axis" class="center"></a>
+                      </div>
+                    </td>
+            </tr>
+            <tr class="noborders">
+              <td width="25%">
+                <div id="shell">
+                  <div id="blue2"></div>
+                  <div id="title">Export - graphs by sections CN, 2019-2018</div>
+                  <a href="{{ site.baseurl }}/indicator/5-1-6/">
+                    <img src="{{ site.baseurl }}/assets/img/dashbord/5_1_6.png" alt="Export - graphs by sections CN" class="center"></a>
+                </td>
+
+                  <td>
+                    <div id="shell">
+                      <div id="blue2"></div>
+                      <div id="title">Import - graphs by sections CN, 2019-2018</div>
+                      <a href="{{ site.baseurl }}/indicator/5-1-7/">
+                        <img src="{{ site.baseurl }}/assets/img/dashbord/5_1_6.png" alt="Import - graphs by sections CN" class="center"></a>
+                      </div>
+                    </td>
+
+                    <td>
+                      <div id="shell">
+                        <div id="green"></div>
+                        <div id="title">Import - Reversed Value Axis</div>
+                        <a href="{{ site.baseurl }}/indicator/4-1-1/">
+                          <img src="{{ site.baseurl }}/assets/img/dashbord/2_1_2.png" alt="Import - Reversed Value Axis" class="center"></a>
+                        </div>
+                      </td>
+
+                      <td>
+                        <div id="shell">
+                        <div id="green"></div>
+                        <div id="title">Export - Reversed Value Axis</div>
+                        <a href="{{ site.baseurl }}/indicator/4-1-2/">
+                          <img src="{{ site.baseurl }}/assets/img/dashbord/3_1_2.png" alt="Export - Reversed Value Axis" class="center">
+                        </div>
+                    </td>
+            </tr>
+            <tr class="noborders">
+              <td width="25%">
+                <div id="shell">
+                  <div id="blue2"></div>
+                  <div id="title">Automatic Identification System (AIS) data - imports - metric tons of cargo</div>
+                  <a href="{{ site.baseurl }}/indicator/6-1-1/">
+                    <img src="{{ site.baseurl }}/assets/img/dashbord/6_1_1.png" alt="Automatic Identification System (AIS) data - imports - metric tons of cargo" class="center">
+                    </a>
+
+                </td>
+
+                  <td>
+                    <div id="shell">
+                      <div id="blue2"></div>
+                      <div id="title">Automatic Identification System (AIS) data - imports - number of port calls</div>
+                      <a href="{{ site.baseurl }}/indicator/6-1-2/">
+                        <img src="{{ site.baseurl }}/assets/img/dashbord/6_1_2.png" alt="Automatic Identification System (AIS) data - imports - number of port calls" class="center">
+                        </a>
+                      </div>
+                    </td>
+
+                    <td>
+                      <div id="shell">
+                        <div id="blue2"></div>
+                        <div id="title">Automatic Identification System (AIS) data - exports - metric tons of cargo</div>
+                        <a href="{{ site.baseurl }}/indicator/6-1-3/">
+                          <img src="{{ site.baseurl }}/assets/img/dashbord/6_1_3.png" alt="Automatic Identification System (AIS) data - exports - metric tons of cargo" class="center">
+                          </a>
+                        </div>
+                      </td>
+
+                      <td>
+                        <div id="shell">
+                        <div id="blue2"></div>
+                        <div id="title">Automatic Identification System (AIS) data - exports - number of port calls</div>
+                        <a href="{{ site.baseurl }}/indicator/6-1-4/">
+                          <img src="{{ site.baseurl }}/assets/img/dashbord/6_1_4.png" alt="Automatic Identification System (AIS) data - exports - number of port calls" class="center">
+                          </a>
+                        </div>
+                    </td>
+            </tr>
+            <tr class="noborders">
+              <td>
+                <div id="shell">
+                  <div id="blue"></div>
+                  <div id="title">Analysis network by sections CN, 2019-2018</div>
+                  <a href="{{ site.baseurl }}/indicator/5-1-8/">
+                    <img src="{{ site.baseurl }}/assets/img/dashbord/5_1_8.png" alt="Analysis network by sections CN, 2019-2018" class="center"></a>
+                </td>
+
+                  <td>
+                    <div id="shell">
+                      <div id="green"></div>
+                      <div id="title">Monthly transport flow1 by countries and CN section </div>
+                      <a href="{{ site.baseurl }}/indicator/9-3-1/">
+                        <img src="{{ site.baseurl }}/assets/img/dashbord/9_3_1.png" alt="Monthly transport flow1 by countries and CN section " class="center"></a>
+                      </div>
+                    </td>
+
+                    <td>
+                      <div id="shell">
+                        <div id="green"></div>
+                        <div id="title">Monthly transport flow2 by countries and CN section </div>
+                        <a href="{{ site.baseurl }}/indicator/9-4-1/">
+                          <img src="{{ site.baseurl }}/assets/img/dashbord/9_4_1.png" alt="Monthly transport flow2 by countries and CN section " class="center"></a>
+                        </div>
+                      </td>
+
+                      <td>
+                        <div id="shell">
+                        <div id="blue2"></div>
+                        <div id="title"></div>
+                        <a href="{{ site.baseurl }}/indicator/">
+                        </div>
+                    </td>
+            </tr>
+
+</table>

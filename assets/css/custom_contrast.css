@@ -1,0 +1,59 @@
+.ct-label.contrast-high {
+    color: #fff;
+  }
+
+.ct-grid.contrast-high {
+    stroke: #fff;
+    stroke-width: 1px;
+    stroke-dasharray: 2px;
+  }
+
+body.contrast-high{
+  background-color: black;
+}
+
+h3.contrast-high,h1.contrast-high,h2.contrast-high{
+  color: #ffffff;
+}
+
+g.contrast-high{
+  fill: #ffffff;
+}
+
+span.contrast-high{
+  color: #ffffff;
+}
+
+.navbar-toggler-icon.contrast-high{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+nav .navbar-nav li a.contrast-high{
+  color: white !important;
+  }
+
+td.contrast-high,th.contrast-high{
+  background-color: #000;
+  color: #fff;
+}
+
+a.contrast-high{
+  color: #fff;
+}
+
+#filtry.contrast-high{
+  color: #000;
+}
+
+.panel.contrast-high{
+  background-color: #000;
+}
+
+.panel-heading.contrast-high {
+    background-color: #000;
+}
+
+.dropdown-header.contrast-high, span.contrast-high{
+  color: #fff;
+}

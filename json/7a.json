@@ -1,0 +1,104 @@
+{
+  "PL": [
+    {
+      "name": "Raw materials",
+      "total": 16844.116407
+    },
+    {
+      "name": "Intermediate goods",
+      "total": 47366.524275
+    },
+    {
+      "name": "Consumer goods",
+      "total": 118573.767102
+    },
+    {
+      "name": "Capital goods",
+      "total": 78732.338343
+    },
+    {
+      "name": "Animal",
+      "total": 11225.53288
+    },
+    {
+      "name": "Vegetable",
+      "total": 5710.255224
+    },
+    {
+      "name": "Food Products",
+      "total": 17826.533715
+    },
+    {
+      "name": "Minerals",
+      "total": 595.245559
+    },
+    {
+      "name": "Fuels",
+      "total": 6802.02642
+    },
+    {
+      "name": "Chemicals",
+      "total": 17553.138066
+    },
+    {
+      "name": "Plastic or Rubber",
+      "total": 18975.675875
+    },
+    {
+      "name": "Hides and Skins",
+      "total": 1208.665828
+    },
+    {
+      "name": "Wood,Export",
+      "total": 14263.835288
+    },
+    {
+      "name": "Textiles and Clothing",
+      "total": 10027.766692
+    },
+    {
+      "name": "Footwear",
+      "total": 2298.32868
+    },
+    {
+      "name": "Stone and Glass",
+      "total": 6180.937315
+    },
+    {
+      "name": "Metals",
+      "total": 26194.510151
+    },
+    {
+      "name": "Mach and Elec",
+      "total": 63278.991342
+    },
+    {
+      "name": "Transportation",
+      "total": 36019.916489
+    },
+    {
+      "name": "Miscellaneous",
+      "total": 23653.909001
+    }
+  ],
+
+  "LV": [
+
+    {
+      "name": "Raw materials",
+      "total": 32216.097673
+    },
+    {
+      "name": "Intermediate goods",
+      "total": 64340.6570600001
+    },
+    {
+      "name": "Consumer goods,Import",
+      "total": 87388.7494379999
+    },
+    {
+      "name": "Capital goods",
+      "total": 79676.998383
+    }
+  ]
+}

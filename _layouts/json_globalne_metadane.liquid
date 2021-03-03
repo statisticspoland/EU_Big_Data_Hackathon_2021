@@ -1,0 +1,87 @@
+{%- capture api_output -%}
+
+{%- assign slug = page.indicator | replace: '.', '-' -%}
+{% if slug=='8-4-1' %}
+	{% assign dataset_name = 'indicator_12-2-1' %}
+  {% elsif slug=='8-4-2' %}
+	{% assign dataset_name = 'indicator_12-2-2' %}
+  {% elsif slug=='10-3-1' %}
+	{% assign dataset_name = 'indicator_16-b-1' %}
+  {% elsif slug=='15-a-1' %}
+	{% assign dataset_name = 'indicator_15-b-1' %}
+  {% elsif slug=='1-5-1' or slug=='11-5-1' %}
+	{% assign dataset_name = 'indicator_13-1-1' %}
+	{% elsif slug=='4-7-1' or slug=='12-8-1' %}
+	{% assign dataset_name = 'indicator_13-3-1' %}
+	{% elsif slug=='3-7-a-0' or slug=='11-2-a-0' %}
+	{% assign dataset_name = 'indicator_15-2-a-0' %}
+  {% elsif slug=='1-3-a-0' %}
+	{% assign dataset_name = 'indicator_5-2-a-0' %}
+  {% elsif slug=='15-2-b-0' %}
+	{% assign dataset_name = 'indicator_6-2-a-0' %}
+  {% elsif slug=='6-2-b-0' %}
+	{% assign dataset_name = 'indicator_15-2-c-0' %}
+  {% elsif slug=='8-1-a-0' %}
+	{% assign dataset_name = 'indicator_9-2-d-0' %}
+  {% elsif slug=='7-2-a-0' %}
+	{% assign dataset_name = 'indicator_13-2-a-0' %}
+  {% elsif slug=='2-2-a-0' %}
+	{% assign dataset_name = 'indicator_12-2-a-0' %}
+  {% elsif slug=='5-3-a-0' %}
+	{% assign dataset_name = 'indicator_8-5-a-0' %}
+  {% else %}
+	{% assign dataset_name = 'indicator_' | append: slug %}
+{% endif %}
+{%- assign zmienne = page.zmienne | split: ";" -%}
+{%- assign zmienna_poj = 'ogółem' -%}
+{%- assign t1 = site.metadane_globalne | where:"translation_id", slug | first -%}
+
+{%- assign kategorie = page.kategorie | split: "," -%}
+{% assign content = kategorie | strip_newlines %}
+{% assign zrodlo = page.source_url | strip %}
+
+{% assign wsk1 = page.nazwa_wskaznika | strip %}
+{% assign wsk2 = page.jednostka_prezentacji | strip %}
+{% assign wsk3 = page.wyjasnienia_metodologiczne | strip %}
+{% assign wsk4 = page.zrodlo_danych | strip %}
+
+{% assign jaki_site = site.metadane_globalne %}
+
+{%- for data in jaki_site -%}
+
+
+{
+  "{{ slug }}": [
+    {
+      "metadane": [
+			{% assign managed_fields = site.prose.metadata._indicators %}
+			{
+											{%- for managed_field in managed_fields -%}
+
+											{% if managed_field.name == 'nazwa_wskaznika'  %}
+
+                      	"{{ managed_field.field.label2 }}": "{{ wsk1  | strip_newlines }}"
+													{%- if forloop.last == false -%},{%- endif -%}
+													{%- endif -%}
+
+											{% if managed_field.name == 'jednostka_prezentacji'  %}
+
+                        "{{ managed_field.field.label2 }}": "{{ wsk2 | replace: '<b>', "" | replace: '</b>', "" | replace: '&bdquo;', ",," | replace: '&nbsp;', " " | replace: '&lt', "<" | replace: '&ge;', ">=" | replace: '&ndash;', "-" | replace: '&lsquo;', "'" | replace: '&rsquo;', "'" | replace: '&rdquo;', ",," | replace: '&ldquo;', ",," | replace: '&oacute;', "ó" | replace: '&amp;', "&" | replace: '"', "'" | strip_html | strip_newlines }}",
+                    	{%- endif -%}
+
+											{% if managed_field.name == 'wyjasnienia_metodologiczne'  %}
+
+                        "{{ managed_field.field.label2 }}": "{{ wsk3 | replace: '<b>', "" | replace: '</b>', "" | replace: '&bdquo;', ",," | replace: '&nbsp;', " " | replace: '&lt', "<" | replace: '&ge;', ">=" | replace: '&ndash;', "-" | replace: '&lsquo;', "'" | replace: '&rsquo;', "'" | replace: '&rdquo;', ",," | replace: '&ldquo;', ",," | replace: '&oacute;', "ó" | replace: '&amp;', "&" | replace: '"', "'" | strip_html | strip_newlines }}",
+                    	{%- endif -%}
+
+											{% if managed_field.name == 'zrodlo_danych'  %}
+
+                        "{{ managed_field.field.label2 }}": "{{ wsk4 | replace: '<b>', "" | replace: '</b>', "" | replace: '&bdquo;', ",," | replace: '&nbsp;', " " | replace: '&lt', "<" | replace: '&ge;', ">=" | replace: '&ndash;', "-" | replace: '&lsquo;', "'" | replace: '&rsquo;', "'" | replace: '&rdquo;', ",," | replace: '&ldquo;', ",," | replace: '&oacute;', "ó" | replace: '&amp;', "&" | replace: '"', "'" | strip_html | strip_newlines }}"
+                    	{%- endif -%}
+
+              {%- endfor -%}
+        }
+          {%- endfor -%}
+      ]
+}
+{%- endcapture -%}{{ api_output }}

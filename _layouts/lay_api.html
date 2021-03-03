@@ -1,0 +1,32 @@
+---
+layout: frontpage
+---
+
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/api.css?v={{ cache_bust }}">
+  <script src="{{ site.baseurl }}/assets/js/api.js"></script>
+
+
+  <h2 style="margin-top: 30px;">Application programming interface (API)</h2>
+  <p>The SDG API (Application Programming Interface) allows to browse and download for further processing the full range of data and metadata for global and national indicators monitoring the Sustainable Development Goals (SDGs) of the 2030 Agenda in Poland.
+    <br />The data is made available through REST API in JSON format.
+    The list below presents available web services provided as part of the API.</p>
+
+
+  <section id='content'>
+
+      {% for post in site.posts %}
+        {% if post.lang == 'en' %}
+          {% unless post.url contains '30' %}
+            <article class='{{ post.type }}'>
+              <a name='{{ post.url }}'><h2>{% if post.type %}<code><b>{{ post.type }}</b> {{ post.name }}</code> {% endif %}{{ post.title }}</h2></a>
+              <section class='body'>
+                {{ post.content }}
+              </section>
+            </article>
+          {% endunless %}
+        {% endif %}
+      {% endfor %}
+
+  </section>
+
+  <script>require('boot');</script>

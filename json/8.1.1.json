@@ -1,0 +1,2242 @@
+{
+  "2019": [
+    {
+   "AT": [
+      {
+         "name": "01 - Live animals, animal products",
+         "total": 2759229.5
+      },
+      {
+         "name": "02 - Vegetable products",
+         "total": 1620220.1
+      },
+      {
+         "name": "03 - Fats and oils",
+         "total": 327211.4
+      },
+      {
+         "name": "04 - Prepared foodstuffs",
+         "total": 7959544.3
+      },
+      {
+         "name": "05 - Mineral products",
+         "total": 4178954.2
+      },
+      {
+         "name": "06 - Products of the chemical industry",
+         "total": 17868342.8
+      },
+      {
+         "name": "07 - Plastics and rubber and articles thereof",
+         "total": 7627153.6
+      },
+      {
+         "name": "08 - Raw hides and skins, articles thereof",
+         "total": 565273.8
+      },
+      {
+         "name": "09 - Wood and articles of wood",
+         "total": 4618600.3
+      },
+      {
+         "name": "10 - Pulp of wood, paper, paperboard and articles thereof",
+         "total": 5477056.8
+      },
+      {
+         "name": "11 - Textiles and textile articles",
+         "total": 4166160.9
+      },
+      {
+         "name": "12 - Footwear, headgear, etc.",
+         "total": 912270.6
+      },
+      {
+         "name": "13 - Articles of stone, ceramic products, glass",
+         "total": 2156533.9
+      },
+      {
+         "name": "14 - Pearls, precious stones and metals, articles thereof",
+         "total": 1514927.7
+      },
+      {
+         "name": "15 - Base metals and articles thereof",
+         "total": 20639835.3
+      },
+      {
+         "name": "16 - Machinery and mechanical appliances, electrical and electrotechnical equipment",
+         "total": 44945906.6
+      },
+      {
+         "name": "17 - Transport equipment",
+         "total": 20854692.9
+      },
+      {
+         "name": "18 - Optical, photographic, measuring, checking instruments, etc.",
+         "total": 4662981.8
+      },
+      {
+         "name": "19 - Arms and ammunition",
+         "total": 362839.5
+      },
+      {
+         "name": "20 - Miscellaneous manufactured articles",
+         "total": 3542329.4
+      },
+      {
+         "name": "21 - Works of art, collectors pieces and antiques",
+         "total": 197135.1
+      }
+   ],
+   "BE": [
+      {
+         "name": "01 - Live animals, animal products",
+         "total": 8537589.1
+      },
+      {
+         "name": "02 - Vegetable products",
+         "total": 7793579.8
+      },
+      {
+         "name": "03 - Fats and oils",
+         "total": 1552222.2
+      },
+      {
+         "name": "04 - Prepared foodstuffs",
+         "total": 22177432.4
+      },
+      {
+         "name": "05 - Mineral products",
+         "total": 33934861.9
+      },
+      {
+         "name": "06 - Products of the chemical industry",
+         "total": 85797419.8
+      },
+      {
+         "name": "07 - Plastics and rubber and articles thereof",
+         "total": 29332231.9
+      },
+      {
+         "name": "08 - Raw hides and skins, articles thereof",
+         "total": 1094531.2
+      },
+      {
+         "name": "09 - Wood and articles of wood",
+         "total": 2590440.4
+      },
+      {
+         "name": "10 - Pulp of wood, paper, paperboard and articles thereof",
+         "total": 4816153.7
+      },
+      {
+         "name": "11 - Textiles and textile articles",
+         "total": 11112502.2
+      },
+      {
+         "name": "12 - Footwear, headgear, etc.",
+         "total": 5163615.1
+      },
+      {
+         "name": "13 - Articles of stone, ceramic products, glass",
+         "total": 4003226.2
+      },
+      {
+         "name": "14 - Pearls, precious stones and metals, articles thereof",
+         "total": 16689721.5
+      },
+      {
+         "name": "15 - Base metals and articles thereof",
+         "total": 28256519.1
+      },
+      {
+         "name": "16 - Machinery and mechanical appliances, electrical and electrotechnical equipment",
+         "total": 37989489.7
+      },
+      {
+         "name": "17 - Transport equipment",
+         "total": 46716357.1
+      },
+      {
+         "name": "18 - Optical, photographic, measuring, checking instruments, etc.",
+         "total": 9783378.4
+      },
+      {
+         "name": "19 - Arms and ammunition",
+         "total": 176626.5
+      },
+      {
+         "name": "20 - Miscellaneous manufactured articles",
+         "total": 4461650.7
+      },
+      {
+         "name": "21 - Works of art, collectors pieces and antiques",
+         "total": 292254.8
+      }
+   ],
+   "BG": [
+      {
+         "name": "01 - Live animals, animal products",
+         "total": 483456.6
+      },
+      {
+         "name": "02 - Vegetable products",
+         "total": 2478483.3
+      },
+      {
+         "name": "03 - Fats and oils",
+         "total": 351373.9
+      },
+      {
+         "name": "04 - Prepared foodstuffs",
+         "total": 1586554.6
+      },
+      {
+         "name": "05 - Mineral products",
+         "total": 2960096
+      },
+      {
+         "name": "06 - Products of the chemical industry",
+         "total": 2713066.9
+      },
+      {
+         "name": "07 - Plastics and rubber and articles thereof",
+         "total": 1265084.3
+      },
+      {
+         "name": "08 - Raw hides and skins, articles thereof",
+         "total": 113920.7
+      },
+      {
+         "name": "09 - Wood and articles of wood",
+         "total": 297054.6
+      },
+      {
+         "name": "10 - Pulp of wood, paper, paperboard and articles thereof",
+         "total": 388868.6
+      },
+      {
+         "name": "11 - Textiles and textile articles",
+         "total": 2261929.8
+      },
+      {
+         "name": "12 - Footwear, headgear, etc.",
+         "total": 219928.2
+      },
+      {
+         "name": "13 - Articles of stone, ceramic products, glass",
+         "total": 728761.6
+      },
+      {
+         "name": "14 - Pearls, precious stones and metals, articles thereof",
+         "total": 557699
+      },
+      {
+         "name": "15 - Base metals and articles thereof",
+         "total": 4447990.1
+      },
+      {
+         "name": "16 - Machinery and mechanical appliances, electrical and electrotechnical equipment",
+         "total": 6014655
+      },
+      {
+         "name": "17 - Transport equipment",
+         "total": 1348095.7
+      },
+      {
+         "name": "18 - Optical, photographic, measuring, checking instruments, etc.",
+         "total": 619693.3
+      },
+      {
+         "name": "19 - Arms and ammunition",
+         "total": 114150.1
+      },
+      {
+         "name": "20 - Miscellaneous manufactured articles",
+         "total": 1074956.9
+      },
+      {
+         "name": "21 - Works of art, collectors pieces and antiques",
+         "total": 2220.1
+      }
+   ],
+   "CY": [
+      {
+         "name": "01 - Live animals, animal products",
+         "total": 331761.2
+      },
+      {
+         "name": "02 - Vegetable products",
+         "total": 138552.3
+      },
+      {
+         "name": "03 - Fats and oils",
+         "total": 13532.9
+      },
+      {
+         "name": "04 - Prepared foodstuffs",
+         "total": 156724.4
+      },
+      {
+         "name": "05 - Mineral products",
+         "total": 719192
+      },
+      {
+         "name": "06 - Products of the chemical industry",
+         "total": 555408.9
+      },
+      {
+         "name": "07 - Plastics and rubber and articles thereof",
+         "total": 30610.5
+      },
+      {
+         "name": "08 - Raw hides and skins, articles thereof",
+         "total": 6827.2
+      },
+      {
+         "name": "09 - Wood and articles of wood",
+         "total": 8058.2
+      },
+      {
+         "name": "10 - Pulp of wood, paper, paperboard and articles thereof",
+         "total": 19084.5
+      },
+      {
+         "name": "11 - Textiles and textile articles",
+         "total": 25507.9
+      },
+      {
+         "name": "12 - Footwear, headgear, etc.",
+         "total": 12924.4
+      },
+      {
+         "name": "13 - Articles of stone, ceramic products, glass",
+         "total": 2608.6
+      },
+      {
+         "name": "14 - Pearls, precious stones and metals, articles thereof",
+         "total": 72401.8
+      },
+      {
+         "name": "15 - Base metals and articles thereof",
+         "total": 101057.2
+      },
+      {
+         "name": "16 - Machinery and mechanical appliances, electrical and electrotechnical equipment",
+         "total": 326292.1
+      },
+      {
+         "name": "17 - Transport equipment",
+         "total": 1076031.1
+      },
+      {
+         "name": "18 - Optical, photographic, measuring, checking instruments, etc.",
+         "total": 72571.4
+      },
+      {
+         "name": "19 - Arms and ammunition",
+         "total": 8890.6
+      },
+      {
+         "name": "20 - Miscellaneous manufactured articles",
+         "total": 33136.8
+      },
+      {
+         "name": "21 - Works of art, collectors pieces and antiques",
+         "total": 3782.2
+      }
+   ],
+   "CZ": [
+      {
+         "name": "01 - Live animals, animal products",
+         "total": 1526749.3
+      },
+      {
+         "name": "02 - Vegetable products",
+         "total": 1498776.2
+      },
+      {
+         "name": "03 - Fats and oils",
+         "total": 366955
+      },
+      {
+         "name": "04 - Prepared foodstuffs",
+         "total": 4332467.3
+      },
+      {
+         "name": "05 - Mineral products",
+         "total": 3733821.2
+      },
+      {
+         "name": "06 - Products of the chemical industry",
+         "total": 8337237.5
+      },
+      {
+         "name": "07 - Plastics and rubber and articles thereof",
+         "total": 9369587.7
+      },
+      {
+         "name": "08 - Raw hides and skins, articles thereof",
+         "total": 411583.9
+      },
+      {
+         "name": "09 - Wood and articles of wood",
+         "total": 2317572.4
+      },
+      {
+         "name": "10 - Pulp of wood, paper, paperboard and articles thereof",
+         "total": 2767894.6
+      },
+      {
+         "name": "11 - Textiles and textile articles",
+         "total": 4043268
+      },
+      {
+         "name": "12 - Footwear, headgear, etc.",
+         "total": 863229.2
+      },
+      {
+         "name": "13 - Articles of stone, ceramic products, glass",
+         "total": 2898785.1
+      },
+      {
+         "name": "14 - Pearls, precious stones and metals, articles thereof",
+         "total": 776756
+      },
+      {
+         "name": "15 - Base metals and articles thereof",
+         "total": 14577806
+      },
+      {
+         "name": "16 - Machinery and mechanical appliances, electrical and electrotechnical equipment",
+         "total": 65414566.3
+      },
+      {
+         "name": "17 - Transport equipment",
+         "total": 38830476.6
+      },
+      {
+         "name": "18 - Optical, photographic, measuring, checking instruments, etc.",
+         "total": 4204341.8
+      },
+      {
+         "name": "19 - Arms and ammunition",
+         "total": 377570.8
+      },
+      {
+         "name": "20 - Miscellaneous manufactured articles",
+         "total": 8708112.5
+      },
+      {
+         "name": "21 - Works of art, collectors pieces and antiques",
+         "total": 14762
+      }
+   ],
+   "DE": [
+      {
+         "name": "01 - Live animals, animal products",
+         "total": 21350168
+      },
+      {
+         "name": "02 - Vegetable products",
+         "total": 12909377.2
+      },
+      {
+         "name": "03 - Fats and oils",
+         "total": 2437099.7
+      },
+      {
+         "name": "04 - Prepared foodstuffs",
+         "total": 39069162.5
+      },
+      {
+         "name": "05 - Mineral products",
+         "total": 23903986.2
+      },
+      {
+         "name": "06 - Products of the chemical industry",
+         "total": 179033253.2
+      },
+      {
+         "name": "07 - Plastics and rubber and articles thereof",
+         "total": 74197659.5
+      },
+      {
+         "name": "08 - Raw hides and skins, articles thereof",
+         "total": 3033961.4
+      },
+      {
+         "name": "09 - Wood and articles of wood",
+         "total": 8392984.3
+      },
+      {
+         "name": "10 - Pulp of wood, paper, paperboard and articles thereof",
+         "total": 22926801.8
+      },
+      {
+         "name": "11 - Textiles and textile articles",
+         "total": 31900091
+      },
+      {
+         "name": "12 - Footwear, headgear, etc.",
+         "total": 7964257.7
+      },
+      {
+         "name": "13 - Articles of stone, ceramic products, glass",
+         "total": 14316411.1
+      },
+      {
+         "name": "14 - Pearls, precious stones and metals, articles thereof",
+         "total": 15562342.5
+      },
+      {
+         "name": "15 - Base metals and articles thereof",
+         "total": 96210360.1
+      },
+      {
+         "name": "16 - Machinery and mechanical appliances, electrical and electrotechnical equipment",
+         "total": 371113321.8
+      },
+      {
+         "name": "17 - Transport equipment",
+         "total": 273193879.2
+      },
+      {
+         "name": "18 - Optical, photographic, measuring, checking instruments, etc.",
+         "total": 70007982.4
+      },
+      {
+         "name": "19 - Arms and ammunition",
+         "total": 624680.5
+      },
+      {
+         "name": "20 - Miscellaneous manufactured articles",
+         "total": 24206744.6
+      },
+      {
+         "name": "21 - Works of art, collectors pieces and antiques",
+         "total": 1013413.1
+      }
+   ],
+   "DK": [
+      {
+         "name": "01 - Live animals, animal products",
+         "total": 10757010.5
+      },
+      {
+         "name": "02 - Vegetable products",
+         "total": 1950606
+      },
+      {
+         "name": "03 - Fats and oils",
+         "total": 614279.6
+      },
+      {
+         "name": "04 - Prepared foodstuffs",
+         "total": 6081092.4
+      },
+      {
+         "name": "05 - Mineral products",
+         "total": 4541449.7
+      },
+      {
+         "name": "06 - Products of the chemical industry",
+         "total": 19844033.4
+      },
+      {
+         "name": "07 - Plastics and rubber and articles thereof",
+         "total": 2705302.5
+      },
+      {
+         "name": "08 - Raw hides and skins, articles thereof",
+         "total": 944015
+      },
+      {
+         "name": "09 - Wood and articles of wood",
+         "total": 917304.7
+      },
+      {
+         "name": "10 - Pulp of wood, paper, paperboard and articles thereof",
+         "total": 983052.7
+      },
+      {
+         "name": "11 - Textiles and textile articles",
+         "total": 3971928.6
+      },
+      {
+         "name": "12 - Footwear, headgear, etc.",
+         "total": 453588.8
+      },
+      {
+         "name": "13 - Articles of stone, ceramic products, glass",
+         "total": 836416.9
+      },
+      {
+         "name": "14 - Pearls, precious stones and metals, articles thereof",
+         "total": 253154.8
+      },
+      {
+         "name": "15 - Base metals and articles thereof",
+         "total": 6067749.2
+      },
+      {
+         "name": "16 - Machinery and mechanical appliances, electrical and electrotechnical equipment",
+         "total": 22159603.2
+      },
+      {
+         "name": "17 - Transport equipment",
+         "total": 3866149.9
+      },
+      {
+         "name": "18 - Optical, photographic, measuring, checking instruments, etc.",
+         "total": 3677783.6
+      },
+      {
+         "name": "19 - Arms and ammunition",
+         "total": 38308.3
+      },
+      {
+         "name": "20 - Miscellaneous manufactured articles",
+         "total": 3395282.9
+      },
+      {
+         "name": "21 - Works of art, collectors pieces and antiques",
+         "total": 65460.8
+      }
+   ],
+   "EE": [
+      {
+         "name": "01 - Live animals, animal products",
+         "total": 451454
+      },
+      {
+         "name": "02 - Vegetable products",
+         "total": 337422.8
+      },
+      {
+         "name": "03 - Fats and oils",
+         "total": 62303.7
+      },
+      {
+         "name": "04 - Prepared foodstuffs",
+         "total": 529004.7
+      },
+      {
+         "name": "05 - Mineral products",
+         "total": 1395029.5
+      },
+      {
+         "name": "06 - Products of the chemical industry",
+         "total": 919586.7
+      },
+      {
+         "name": "07 - Plastics and rubber and articles thereof",
+         "total": 427479.6
+      },
+      {
+         "name": "08 - Raw hides and skins, articles thereof",
+         "total": 29593.1
+      },
+      {
+         "name": "09 - Wood and articles of wood",
+         "total": 1557974.8
+      },
+      {
+         "name": "10 - Pulp of wood, paper, paperboard and articles thereof",
+         "total": 335235
+      },
+      {
+         "name": "11 - Textiles and textile articles",
+         "total": 407159.9
+      },
+      {
+         "name": "12 - Footwear, headgear, etc.",
+         "total": 53625.1
+      },
+      {
+         "name": "13 - Articles of stone, ceramic products, glass",
+         "total": 239457.5
+      },
+      {
+         "name": "14 - Pearls, precious stones and metals, articles thereof",
+         "total": 245065.3
+      },
+      {
+         "name": "15 - Base metals and articles thereof",
+         "total": 1044716.3
+      },
+      {
+         "name": "16 - Machinery and mechanical appliances, electrical and electrotechnical equipment",
+         "total": 3526871.8
+      },
+      {
+         "name": "17 - Transport equipment",
+         "total": 1192007.1
+      },
+      {
+         "name": "18 - Optical, photographic, measuring, checking instruments, etc.",
+         "total": 463648.1
+      },
+      {
+         "name": "19 - Arms and ammunition",
+         "total": 4783.5
+      },
+      {
+         "name": "20 - Miscellaneous manufactured articles",
+         "total": 1175554.8
+      },
+      {
+         "name": "21 - Works of art, collectors pieces and antiques",
+         "total": 3520.4
+      }
+   ],
+   "ES": [
+      {
+         "name": "01 - Live animals, animal products",
+         "total": 12943395.5
+      },
+      {
+         "name": "02 - Vegetable products",
+         "total": 18977687.4
+      },
+      {
+         "name": "03 - Fats and oils",
+         "total": 4307573
+      },
+      {
+         "name": "04 - Prepared foodstuffs",
+         "total": 15258330.2
+      },
+      {
+         "name": "05 - Mineral products",
+         "total": 18137929.7
+      },
+      {
+         "name": "06 - Products of the chemical industry",
+         "total": 33551949
+      },
+      {
+         "name": "07 - Plastics and rubber and articles thereof",
+         "total": 14908832.4
+      },
+      {
+         "name": "08 - Raw hides and skins, articles thereof",
+         "total": 2219060.3
+      },
+      {
+         "name": "09 - Wood and articles of wood",
+         "total": 1888371.5
+      },
+      {
+         "name": "10 - Pulp of wood, paper, paperboard and articles thereof",
+         "total": 4983951.5
+      },
+      {
+         "name": "11 - Textiles and textile articles",
+         "total": 14671317.5
+      },
+      {
+         "name": "12 - Footwear, headgear, etc.",
+         "total": 2921021.6
+      },
+      {
+         "name": "13 - Articles of stone, ceramic products, glass",
+         "total": 6534416.6
+      },
+      {
+         "name": "14 - Pearls, precious stones and metals, articles thereof",
+         "total": 2773035
+      },
+      {
+         "name": "15 - Base metals and articles thereof",
+         "total": 24145805.8
+      },
+      {
+         "name": "16 - Machinery and mechanical appliances, electrical and electrotechnical equipment",
+         "total": 37796367
+      },
+      {
+         "name": "17 - Transport equipment",
+         "total": 58076303.1
+      },
+      {
+         "name": "18 - Optical, photographic, measuring, checking instruments, etc.",
+         "total": 3462752.7
+      },
+      {
+         "name": "19 - Arms and ammunition",
+         "total": 403184.4
+      },
+      {
+         "name": "20 - Miscellaneous manufactured articles",
+         "total": 5949104.5
+      },
+      {
+         "name": "21 - Works of art, collectors pieces and antiques",
+         "total": 418777.4
+      }
+   ],
+   "FI": [
+      {
+         "name": "01 - Live animals, animal products",
+         "total": 735357.2
+      },
+      {
+         "name": "02 - Vegetable products",
+         "total": 281347.8
+      },
+      {
+         "name": "03 - Fats and oils",
+         "total": 49866.2
+      },
+      {
+         "name": "04 - Prepared foodstuffs",
+         "total": 694451.4
+      },
+      {
+         "name": "05 - Mineral products",
+         "total": 6782954.9
+      },
+      {
+         "name": "06 - Products of the chemical industry",
+         "total": 5285767
+      },
+      {
+         "name": "07 - Plastics and rubber and articles thereof",
+         "total": 2652978.8
+      },
+      {
+         "name": "08 - Raw hides and skins, articles thereof",
+         "total": 352718.2
+      },
+      {
+         "name": "09 - Wood and articles of wood",
+         "total": 2963419.8
+      },
+      {
+         "name": "10 - Pulp of wood, paper, paperboard and articles thereof",
+         "total": 10927595.2
+      },
+      {
+         "name": "11 - Textiles and textile articles",
+         "total": 458377.2
+      },
+      {
+         "name": "12 - Footwear, headgear, etc.",
+         "total": 131075.3
+      },
+      {
+         "name": "13 - Articles of stone, ceramic products, glass",
+         "total": 551449.8
+      },
+      {
+         "name": "14 - Pearls, precious stones and metals, articles thereof",
+         "total": 692421.1
+      },
+      {
+         "name": "15 - Base metals and articles thereof",
+         "total": 9332285.4
+      },
+      {
+         "name": "16 - Machinery and mechanical appliances, electrical and electrotechnical equipment",
+         "total": 14794393.2
+      },
+      {
+         "name": "17 - Transport equipment",
+         "total": 7182681.7
+      },
+      {
+         "name": "18 - Optical, photographic, measuring, checking instruments, etc.",
+         "total": 2764469.8
+      },
+      {
+         "name": "19 - Arms and ammunition",
+         "total": 91059.3
+      },
+      {
+         "name": "20 - Miscellaneous manufactured articles",
+         "total": 623024.6
+      },
+      {
+         "name": "21 - Works of art, collectors pieces and antiques",
+         "total": 6040.5
+      }
+   ],
+   "FR": [
+      {
+         "name": "01 - Live animals, animal products",
+         "total": 13763947.9
+      },
+      {
+         "name": "02 - Vegetable products",
+         "total": 15442330.9
+      },
+      {
+         "name": "03 - Fats and oils",
+         "total": 1226694.9
+      },
+      {
+         "name": "04 - Prepared foodstuffs",
+         "total": 34859083.5
+      },
+      {
+         "name": "05 - Mineral products",
+         "total": 15723931.6
+      },
+      {
+         "name": "06 - Products of the chemical industry",
+         "total": 85393597.8
+      },
+      {
+         "name": "07 - Plastics and rubber and articles thereof",
+         "total": 24113345.7
+      },
+      {
+         "name": "08 - Raw hides and skins, articles thereof",
+         "total": 8966521.4
+      },
+      {
+         "name": "09 - Wood and articles of wood",
+         "total": 2704638.3
+      },
+      {
+         "name": "10 - Pulp of wood, paper, paperboard and articles thereof",
+         "total": 7598836.3
+      },
+      {
+         "name": "11 - Textiles and textile articles",
+         "total": 13835165.5
+      },
+      {
+         "name": "12 - Footwear, headgear, etc.",
+         "total": 3813548
+      },
+      {
+         "name": "13 - Articles of stone, ceramic products, glass",
+         "total": 4836227.8
+      },
+      {
+         "name": "14 - Pearls, precious stones and metals, articles thereof",
+         "total": 12374838.2
+      },
+      {
+         "name": "15 - Base metals and articles thereof",
+         "total": 32376581.7
+      },
+      {
+         "name": "16 - Machinery and mechanical appliances, electrical and electrotechnical equipment",
+         "total": 98956695.8
+      },
+      {
+         "name": "17 - Transport equipment",
+         "total": 105739228.3
+      },
+      {
+         "name": "18 - Optical, photographic, measuring, checking instruments, etc.",
+         "total": 18452479.8
+      },
+      {
+         "name": "19 - Arms and ammunition",
+         "total": 162165.6
+      },
+      {
+         "name": "20 - Miscellaneous manufactured articles",
+         "total": 6578200
+      },
+      {
+         "name": "21 - Works of art, collectors pieces and antiques",
+         "total": 2780142.2
+      }
+   ],
+   "HR": [
+      {
+         "name": "01 - Live animals, animal products",
+         "total": 506349.3
+      },
+      {
+         "name": "02 - Vegetable products",
+         "total": 486371.5
+      },
+      {
+         "name": "03 - Fats and oils",
+         "total": 74907.7
+      },
+      {
+         "name": "04 - Prepared foodstuffs",
+         "total": 1104583.9
+      },
+      {
+         "name": "05 - Mineral products",
+         "total": 1649992
+      },
+      {
+         "name": "06 - Products of the chemical industry",
+         "total": 1723975.9
+      },
+      {
+         "name": "07 - Plastics and rubber and articles thereof",
+         "total": 500367.8
+      },
+      {
+         "name": "08 - Raw hides and skins, articles thereof",
+         "total": 204312.9
+      },
+      {
+         "name": "09 - Wood and articles of wood",
+         "total": 795391.9
+      },
+      {
+         "name": "10 - Pulp of wood, paper, paperboard and articles thereof",
+         "total": 332089.9
+      },
+      {
+         "name": "11 - Textiles and textile articles",
+         "total": 780609.2
+      },
+      {
+         "name": "12 - Footwear, headgear, etc.",
+         "total": 314887.7
+      },
+      {
+         "name": "13 - Articles of stone, ceramic products, glass",
+         "total": 375534.2
+      },
+      {
+         "name": "14 - Pearls, precious stones and metals, articles thereof",
+         "total": 82254.4
+      },
+      {
+         "name": "15 - Base metals and articles thereof",
+         "total": 1311676.6
+      },
+      {
+         "name": "16 - Machinery and mechanical appliances, electrical and electrotechnical equipment",
+         "total": 2410452.4
+      },
+      {
+         "name": "17 - Transport equipment",
+         "total": 1315710.5
+      },
+      {
+         "name": "18 - Optical, photographic, measuring, checking instruments, etc.",
+         "total": 162058.7
+      },
+      {
+         "name": "19 - Arms and ammunition",
+         "total": 57349.2
+      },
+      {
+         "name": "20 - Miscellaneous manufactured articles",
+         "total": 460548
+      },
+      {
+         "name": "21 - Works of art, collectors pieces and antiques",
+         "total": 2580.1
+      }
+   ],
+   "HU": [
+      {
+         "name": "01 - Live animals, animal products",
+         "total": 2081119.6
+      },
+      {
+         "name": "02 - Vegetable products",
+         "total": 2642714.6
+      },
+      {
+         "name": "03 - Fats and oils",
+         "total": 579694.1
+      },
+      {
+         "name": "04 - Prepared foodstuffs",
+         "total": 4072740.3
+      },
+      {
+         "name": "05 - Mineral products",
+         "total": 3630315.1
+      },
+      {
+         "name": "06 - Products of the chemical industry",
+         "total": 10351477.6
+      },
+      {
+         "name": "07 - Plastics and rubber and articles thereof",
+         "total": 6027256.9
+      },
+      {
+         "name": "08 - Raw hides and skins, articles thereof",
+         "total": 403950.9
+      },
+      {
+         "name": "09 - Wood and articles of wood",
+         "total": 660309.4
+      },
+      {
+         "name": "10 - Pulp of wood, paper, paperboard and articles thereof",
+         "total": 1092586.9
+      },
+      {
+         "name": "11 - Textiles and textile articles",
+         "total": 1418644.3
+      },
+      {
+         "name": "12 - Footwear, headgear, etc.",
+         "total": 507719.5
+      },
+      {
+         "name": "13 - Articles of stone, ceramic products, glass",
+         "total": 1568176
+      },
+      {
+         "name": "14 - Pearls, precious stones and metals, articles thereof",
+         "total": 188878.4
+      },
+      {
+         "name": "15 - Base metals and articles thereof",
+         "total": 4957480.6
+      },
+      {
+         "name": "16 - Machinery and mechanical appliances, electrical and electrotechnical equipment",
+         "total": 43483462.5
+      },
+      {
+         "name": "17 - Transport equipment",
+         "total": 19725472.2
+      },
+      {
+         "name": "18 - Optical, photographic, measuring, checking instruments, etc.",
+         "total": 3600331
+      },
+      {
+         "name": "19 - Arms and ammunition",
+         "total": 39103.9
+      },
+      {
+         "name": "20 - Miscellaneous manufactured articles",
+         "total": 2723554.2
+      },
+      {
+         "name": "21 - Works of art, collectors pieces and antiques",
+         "total": 5364.4
+      }
+   ],
+   "IE": [
+      {
+         "name": "01 - Live animals, animal products",
+         "total": 7819954.2
+      },
+      {
+         "name": "02 - Vegetable products",
+         "total": 492624.6
+      },
+      {
+         "name": "03 - Fats and oils",
+         "total": 104898.2
+      },
+      {
+         "name": "04 - Prepared foodstuffs",
+         "total": 6986388.8
+      },
+      {
+         "name": "05 - Mineral products",
+         "total": 1419130.3
+      },
+      {
+         "name": "06 - Products of the chemical industry",
+         "total": 99268321.6
+      },
+      {
+         "name": "07 - Plastics and rubber and articles thereof",
+         "total": 1808768.2
+      },
+      {
+         "name": "08 - Raw hides and skins, articles thereof",
+         "total": 162178.2
+      },
+      {
+         "name": "09 - Wood and articles of wood",
+         "total": 504796.3
+      },
+      {
+         "name": "10 - Pulp of wood, paper, paperboard and articles thereof",
+         "total": 486974.6
+      },
+      {
+         "name": "11 - Textiles and textile articles",
+         "total": 592574.5
+      },
+      {
+         "name": "12 - Footwear, headgear, etc.",
+         "total": 62434.9
+      },
+      {
+         "name": "13 - Articles of stone, ceramic products, glass",
+         "total": 346369.6
+      },
+      {
+         "name": "14 - Pearls, precious stones and metals, articles thereof",
+         "total": 253788.2
+      },
+      {
+         "name": "15 - Base metals and articles thereof",
+         "total": 1365270.9
+      },
+      {
+         "name": "16 - Machinery and mechanical appliances, electrical and electrotechnical equipment",
+         "total": 25038026.5
+      },
+      {
+         "name": "17 - Transport equipment",
+         "total": 1561168.9
+      },
+      {
+         "name": "18 - Optical, photographic, measuring, checking instruments, etc.",
+         "total": 15671310.2
+      },
+      {
+         "name": "19 - Arms and ammunition",
+         "total": 1551.1
+      },
+      {
+         "name": "20 - Miscellaneous manufactured articles",
+         "total": 728458.3
+      },
+      {
+         "name": "21 - Works of art, collectors pieces and antiques",
+         "total": 26174.7
+      }
+   ],
+   "IT": [
+      {
+         "name": "01 - Live animals, animal products",
+         "total": 6467915.1
+      },
+      {
+         "name": "02 - Vegetable products",
+         "total": 9245354.4
+      },
+      {
+         "name": "03 - Fats and oils",
+         "total": 2007984.5
+      },
+      {
+         "name": "04 - Prepared foodstuffs",
+         "total": 27621920.7
+      },
+      {
+         "name": "05 - Mineral products",
+         "total": 15310794.6
+      },
+      {
+         "name": "06 - Products of the chemical industry",
+         "total": 58896092.4
+      },
+      {
+         "name": "07 - Plastics and rubber and articles thereof",
+         "total": 23928407.2
+      },
+      {
+         "name": "08 - Raw hides and skins, articles thereof",
+         "total": 14564651.4
+      },
+      {
+         "name": "09 - Wood and articles of wood",
+         "total": 1962986.8
+      },
+      {
+         "name": "10 - Pulp of wood, paper, paperboard and articles thereof",
+         "total": 7762141.9
+      },
+      {
+         "name": "11 - Textiles and textile articles",
+         "total": 30363047.5
+      },
+      {
+         "name": "12 - Footwear, headgear, etc.",
+         "total": 11632231.2
+      },
+      {
+         "name": "13 - Articles of stone, ceramic products, glass",
+         "total": 9539089.1
+      },
+      {
+         "name": "14 - Pearls, precious stones and metals, articles thereof",
+         "total": 13630921.2
+      },
+      {
+         "name": "15 - Base metals and articles thereof",
+         "total": 43569179.8
+      },
+      {
+         "name": "16 - Machinery and mechanical appliances, electrical and electrotechnical equipment",
+         "total": 119587987.4
+      },
+      {
+         "name": "17 - Transport equipment",
+         "total": 46220735.9
+      },
+      {
+         "name": "18 - Optical, photographic, measuring, checking instruments, etc.",
+         "total": 12835848.6
+      },
+      {
+         "name": "19 - Arms and ammunition",
+         "total": 600833.4
+      },
+      {
+         "name": "20 - Miscellaneous manufactured articles",
+         "total": 14931125.7
+      },
+      {
+         "name": "21 - Works of art, collectors pieces and antiques",
+         "total": 962879.5
+      }
+   ],
+   "LT": [
+      {
+         "name": "01 - Live animals, animal products",
+         "total": 1467423.7
+      },
+      {
+         "name": "02 - Vegetable products",
+         "total": 1634019.2
+      },
+      {
+         "name": "03 - Fats and oils",
+         "total": 120032.6
+      },
+      {
+         "name": "04 - Prepared foodstuffs",
+         "total": 2237627.7
+      },
+      {
+         "name": "05 - Mineral products",
+         "total": 3895112.3
+      },
+      {
+         "name": "06 - Products of the chemical industry",
+         "total": 3333566
+      },
+      {
+         "name": "07 - Plastics and rubber and articles thereof",
+         "total": 1873461.7
+      },
+      {
+         "name": "08 - Raw hides and skins, articles thereof",
+         "total": 84333.3
+      },
+      {
+         "name": "09 - Wood and articles of wood",
+         "total": 1101489.6
+      },
+      {
+         "name": "10 - Pulp of wood, paper, paperboard and articles thereof",
+         "total": 405870.3
+      },
+      {
+         "name": "11 - Textiles and textile articles",
+         "total": 1178399.3
+      },
+      {
+         "name": "12 - Footwear, headgear, etc.",
+         "total": 76878.6
+      },
+      {
+         "name": "13 - Articles of stone, ceramic products, glass",
+         "total": 340569.6
+      },
+      {
+         "name": "14 - Pearls, precious stones and metals, articles thereof",
+         "total": 227153.9
+      },
+      {
+         "name": "15 - Base metals and articles thereof",
+         "total": 1605132.2
+      },
+      {
+         "name": "16 - Machinery and mechanical appliances, electrical and electrotechnical equipment",
+         "total": 3863645.4
+      },
+      {
+         "name": "17 - Transport equipment",
+         "total": 1597587.7
+      },
+      {
+         "name": "18 - Optical, photographic, measuring, checking instruments, etc.",
+         "total": 733305
+      },
+      {
+         "name": "19 - Arms and ammunition",
+         "total": 13939.2
+      },
+      {
+         "name": "20 - Miscellaneous manufactured articles",
+         "total": 2486755.9
+      },
+      {
+         "name": "21 - Works of art, collectors pieces and antiques",
+         "total": 1761.7
+      }
+   ],
+   "LU": [
+      {
+         "name": "01 - Live animals, animal products",
+         "total": 411501.7
+      },
+      {
+         "name": "02 - Vegetable products",
+         "total": 183252.3
+      },
+      {
+         "name": "03 - Fats and oils",
+         "total": 56662.6
+      },
+      {
+         "name": "04 - Prepared foodstuffs",
+         "total": 592273.1
+      },
+      {
+         "name": "05 - Mineral products",
+         "total": 162453.2
+      },
+      {
+         "name": "06 - Products of the chemical industry",
+         "total": 1135533
+      },
+      {
+         "name": "07 - Plastics and rubber and articles thereof",
+         "total": 2259785.9
+      },
+      {
+         "name": "08 - Raw hides and skins, articles thereof",
+         "total": 11236.2
+      },
+      {
+         "name": "09 - Wood and articles of wood",
+         "total": 270145.5
+      },
+      {
+         "name": "10 - Pulp of wood, paper, paperboard and articles thereof",
+         "total": 401222.4
+      },
+      {
+         "name": "11 - Textiles and textile articles",
+         "total": 611264.4
+      },
+      {
+         "name": "12 - Footwear, headgear, etc.",
+         "total": 62864
+      },
+      {
+         "name": "13 - Articles of stone, ceramic products, glass",
+         "total": 399849.2
+      },
+      {
+         "name": "14 - Pearls, precious stones and metals, articles thereof",
+         "total": 170161.6
+      },
+      {
+         "name": "15 - Base metals and articles thereof",
+         "total": 4735666.1
+      },
+      {
+         "name": "16 - Machinery and mechanical appliances, electrical and electrotechnical equipment",
+         "total": 3600157.1
+      },
+      {
+         "name": "17 - Transport equipment",
+         "total": 1357183.3
+      },
+      {
+         "name": "18 - Optical, photographic, measuring, checking instruments, etc.",
+         "total": 265939.1
+      },
+      {
+         "name": "19 - Arms and ammunition",
+         "total": 7725.6
+      },
+      {
+         "name": "20 - Miscellaneous manufactured articles",
+         "total": 100198
+      },
+      {
+         "name": "21 - Works of art, collectors pieces and antiques",
+         "total": 59456.6
+      }
+   ],
+   "LV": [
+      {
+         "name": "01 - Live animals, animal products",
+         "total": 514785.7
+      },
+      {
+         "name": "02 - Vegetable products",
+         "total": 938232.4
+      },
+      {
+         "name": "03 - Fats and oils",
+         "total": 25901.5
+      },
+      {
+         "name": "04 - Prepared foodstuffs",
+         "total": 1231972.9
+      },
+      {
+         "name": "05 - Mineral products",
+         "total": 1085125.6
+      },
+      {
+         "name": "06 - Products of the chemical industry",
+         "total": 1213770.6
+      },
+      {
+         "name": "07 - Plastics and rubber and articles thereof",
+         "total": 446825.8
+      },
+      {
+         "name": "08 - Raw hides and skins, articles thereof",
+         "total": 22792.9
+      },
+      {
+         "name": "09 - Wood and articles of wood",
+         "total": 2436543.5
+      },
+      {
+         "name": "10 - Pulp of wood, paper, paperboard and articles thereof",
+         "total": 271742
+      },
+      {
+         "name": "11 - Textiles and textile articles",
+         "total": 386727
+      },
+      {
+         "name": "12 - Footwear, headgear, etc.",
+         "total": 36448.4
+      },
+      {
+         "name": "13 - Articles of stone, ceramic products, glass",
+         "total": 339381.7
+      },
+      {
+         "name": "14 - Pearls, precious stones and metals, articles thereof",
+         "total": 102648.7
+      },
+      {
+         "name": "15 - Base metals and articles thereof",
+         "total": 1197378.2
+      },
+      {
+         "name": "16 - Machinery and mechanical appliances, electrical and electrotechnical equipment",
+         "total": 2483079.1
+      },
+      {
+         "name": "17 - Transport equipment",
+         "total": 779126.6
+      },
+      {
+         "name": "18 - Optical, photographic, measuring, checking instruments, etc.",
+         "total": 232733.3
+      },
+      {
+         "name": "19 - Arms and ammunition",
+         "total": 1919.1
+      },
+      {
+         "name": "20 - Miscellaneous manufactured articles",
+         "total": 467674.8
+      },
+      {
+         "name": "21 - Works of art, collectors pieces and antiques",
+         "total": 1295.9
+      }
+   ],
+   "MT": [
+      {
+         "name": "01 - Live animals, animal products",
+         "total": 151485
+      },
+      {
+         "name": "02 - Vegetable products",
+         "total": 18582.6
+      },
+      {
+         "name": "03 - Fats and oils",
+         "total": 4532.4
+      },
+      {
+         "name": "04 - Prepared foodstuffs",
+         "total": 124947
+      },
+      {
+         "name": "05 - Mineral products",
+         "total": 800636.1
+      },
+      {
+         "name": "06 - Products of the chemical industry",
+         "total": 502427.1
+      },
+      {
+         "name": "07 - Plastics and rubber and articles thereof",
+         "total": 168060.2
+      },
+      {
+         "name": "08 - Raw hides and skins, articles thereof",
+         "total": 6879.4
+      },
+      {
+         "name": "09 - Wood and articles of wood",
+         "total": 1496.4
+      },
+      {
+         "name": "10 - Pulp of wood, paper, paperboard and articles thereof",
+         "total": 203824.7
+      },
+      {
+         "name": "11 - Textiles and textile articles",
+         "total": 63648.3
+      },
+      {
+         "name": "12 - Footwear, headgear, etc.",
+         "total": 37432.2
+      },
+      {
+         "name": "13 - Articles of stone, ceramic products, glass",
+         "total": 8297.6
+      },
+      {
+         "name": "14 - Pearls, precious stones and metals, articles thereof",
+         "total": 44231.9
+      },
+      {
+         "name": "15 - Base metals and articles thereof",
+         "total": 70903
+      },
+      {
+         "name": "16 - Machinery and mechanical appliances, electrical and electrotechnical equipment",
+         "total": 1055565.6
+      },
+      {
+         "name": "17 - Transport equipment",
+         "total": 296792.5
+      },
+      {
+         "name": "18 - Optical, photographic, measuring, checking instruments, etc.",
+         "total": 104455.7
+      },
+      {
+         "name": "19 - Arms and ammunition",
+         "total": 350.9
+      },
+      {
+         "name": "20 - Miscellaneous manufactured articles",
+         "total": 196459.4
+      },
+      {
+         "name": "21 - Works of art, collectors pieces and antiques",
+         "total": 1593.3
+      }
+   ],
+   "NL": [
+      {
+         "name": "01 - Live animals, animal products",
+         "total": 24331248.2
+      },
+      {
+         "name": "02 - Vegetable products",
+         "total": 27420619.8
+      },
+      {
+         "name": "03 - Fats and oils",
+         "total": 4421415.5
+      },
+      {
+         "name": "04 - Prepared foodstuffs",
+         "total": 35206743.4
+      },
+      {
+         "name": "05 - Mineral products",
+         "total": 69880878.3
+      },
+      {
+         "name": "06 - Products of the chemical industry",
+         "total": 85399034.5
+      },
+      {
+         "name": "07 - Plastics and rubber and articles thereof",
+         "total": 26092976.5
+      },
+      {
+         "name": "08 - Raw hides and skins, articles thereof",
+         "total": 2304632.4
+      },
+      {
+         "name": "09 - Wood and articles of wood",
+         "total": 1538128.9
+      },
+      {
+         "name": "10 - Pulp of wood, paper, paperboard and articles thereof",
+         "total": 7535800.1
+      },
+      {
+         "name": "11 - Textiles and textile articles",
+         "total": 14131629.1
+      },
+      {
+         "name": "12 - Footwear, headgear, etc.",
+         "total": 3890710.6
+      },
+      {
+         "name": "13 - Articles of stone, ceramic products, glass",
+         "total": 2719004.8
+      },
+      {
+         "name": "14 - Pearls, precious stones and metals, articles thereof",
+         "total": 1152300.2
+      },
+      {
+         "name": "15 - Base metals and articles thereof",
+         "total": 33501827.7
+      },
+      {
+         "name": "16 - Machinery and mechanical appliances, electrical and electrotechnical equipment",
+         "total": 146143289.8
+      },
+      {
+         "name": "17 - Transport equipment",
+         "total": 32916188.1
+      },
+      {
+         "name": "18 - Optical, photographic, measuring, checking instruments, etc.",
+         "total": 28282824.8
+      },
+      {
+         "name": "19 - Arms and ammunition",
+         "total": 35227.1
+      },
+      {
+         "name": "20 - Miscellaneous manufactured articles",
+         "total": 9288356.3
+      },
+      {
+         "name": "21 - Works of art, collectors pieces and antiques",
+         "total": 359995.5
+      }
+   ],
+   "PL": [
+      {
+         "name": "01 - Live animals, animal products",
+         "total": 9885562.5
+      },
+      {
+         "name": "02 - Vegetable products",
+         "total": 4919006
+      },
+      {
+         "name": "03 - Fats and oils",
+         "total": 460886.3
+      },
+      {
+         "name": "04 - Prepared foodstuffs",
+         "total": 16634758.2
+      },
+      {
+         "name": "05 - Mineral products",
+         "total": 5415382.4
+      },
+      {
+         "name": "06 - Products of the chemical industry",
+         "total": 15702353.6
+      },
+      {
+         "name": "07 - Plastics and rubber and articles thereof",
+         "total": 15720898.2
+      },
+      {
+         "name": "08 - Raw hides and skins, articles thereof",
+         "total": 997981.6
+      },
+      {
+         "name": "09 - Wood and articles of wood",
+         "total": 4760216.5
+      },
+      {
+         "name": "10 - Pulp of wood, paper, paperboard and articles thereof",
+         "total": 6362281.9
+      },
+      {
+         "name": "11 - Textiles and textile articles",
+         "total": 7344872.7
+      },
+      {
+         "name": "12 - Footwear, headgear, etc.",
+         "total": 1977451
+      },
+      {
+         "name": "13 - Articles of stone, ceramic products, glass",
+         "total": 4569783.8
+      },
+      {
+         "name": "14 - Pearls, precious stones and metals, articles thereof",
+         "total": 1692036.5
+      },
+      {
+         "name": "15 - Base metals and articles thereof",
+         "total": 22211283.1
+      },
+      {
+         "name": "16 - Machinery and mechanical appliances, electrical and electrotechnical equipment",
+         "total": 59119633.2
+      },
+      {
+         "name": "17 - Transport equipment",
+         "total": 32401011.5
+      },
+      {
+         "name": "18 - Optical, photographic, measuring, checking instruments, etc.",
+         "total": 4798232.7
+      },
+      {
+         "name": "19 - Arms and ammunition",
+         "total": 98326.6
+      },
+      {
+         "name": "20 - Miscellaneous manufactured articles",
+         "total": 16754744.5
+      },
+      {
+         "name": "21 - Works of art, collectors pieces and antiques",
+         "total": 38383.6
+      }
+   ],
+   "PT": [
+      {
+         "name": "01 - Live animals, animal products",
+         "total": 1743442.5
+      },
+      {
+         "name": "02 - Vegetable products",
+         "total": 1580668.7
+      },
+      {
+         "name": "03 - Fats and oils",
+         "total": 784448.8
+      },
+      {
+         "name": "04 - Prepared foodstuffs",
+         "total": 3303798.7
+      },
+      {
+         "name": "05 - Mineral products",
+         "total": 3670515.4
+      },
+      {
+         "name": "06 - Products of the chemical industry",
+         "total": 3642187.5
+      },
+      {
+         "name": "07 - Plastics and rubber and articles thereof",
+         "total": 4238729.9
+      },
+      {
+         "name": "08 - Raw hides and skins, articles thereof",
+         "total": 311452.5
+      },
+      {
+         "name": "09 - Wood and articles of wood",
+         "total": 1771740.2
+      },
+      {
+         "name": "10 - Pulp of wood, paper, paperboard and articles thereof",
+         "total": 2829934.6
+      },
+      {
+         "name": "11 - Textiles and textile articles",
+         "total": 5693973.7
+      },
+      {
+         "name": "12 - Footwear, headgear, etc.",
+         "total": 2043587.2
+      },
+      {
+         "name": "13 - Articles of stone, ceramic products, glass",
+         "total": 1748042.3
+      },
+      {
+         "name": "14 - Pearls, precious stones and metals, articles thereof",
+         "total": 331963.5
+      },
+      {
+         "name": "15 - Base metals and articles thereof",
+         "total": 4489123.5
+      },
+      {
+         "name": "16 - Machinery and mechanical appliances, electrical and electrotechnical equipment",
+         "total": 9355024.9
+      },
+      {
+         "name": "17 - Transport equipment",
+         "total": 10165752.5
+      },
+      {
+         "name": "18 - Optical, photographic, measuring, checking instruments, etc.",
+         "total": 1753275.1
+      },
+      {
+         "name": "19 - Arms and ammunition",
+         "total": 56487.3
+      },
+      {
+         "name": "20 - Miscellaneous manufactured articles",
+         "total": 2160840.8
+      },
+      {
+         "name": "21 - Works of art, collectors pieces and antiques",
+         "total": 10959.2
+      }
+   ],
+   "RO": [
+      {
+         "name": "01 - Live animals, animal products",
+         "total": 1002710.6
+      },
+      {
+         "name": "02 - Vegetable products",
+         "total": 4241101.8
+      },
+      {
+         "name": "03 - Fats and oils",
+         "total": 222001.8
+      },
+      {
+         "name": "04 - Prepared foodstuffs",
+         "total": 2304352.6
+      },
+      {
+         "name": "05 - Mineral products",
+         "total": 2777463.2
+      },
+      {
+         "name": "06 - Products of the chemical industry",
+         "total": 2466685.8
+      },
+      {
+         "name": "07 - Plastics and rubber and articles thereof",
+         "total": 3928939.8
+      },
+      {
+         "name": "08 - Raw hides and skins, articles thereof",
+         "total": 395624.5
+      },
+      {
+         "name": "09 - Wood and articles of wood",
+         "total": 1583016.4
+      },
+      {
+         "name": "10 - Pulp of wood, paper, paperboard and articles thereof",
+         "total": 514911.5
+      },
+      {
+         "name": "11 - Textiles and textile articles",
+         "total": 4143952.6
+      },
+      {
+         "name": "12 - Footwear, headgear, etc.",
+         "total": 1324485.4
+      },
+      {
+         "name": "13 - Articles of stone, ceramic products, glass",
+         "total": 413280.7
+      },
+      {
+         "name": "14 - Pearls, precious stones and metals, articles thereof",
+         "total": 252491.4
+      },
+      {
+         "name": "15 - Base metals and articles thereof",
+         "total": 5896867.7
+      },
+      {
+         "name": "16 - Machinery and mechanical appliances, electrical and electrotechnical equipment",
+         "total": 21369356.8
+      },
+      {
+         "name": "17 - Transport equipment",
+         "total": 13073147.4
+      },
+      {
+         "name": "18 - Optical, photographic, measuring, checking instruments, etc.",
+         "total": 2512723.9
+      },
+      {
+         "name": "19 - Arms and ammunition",
+         "total": 16688.5
+      },
+      {
+         "name": "20 - Miscellaneous manufactured articles",
+         "total": 2968400.4
+      },
+      {
+         "name": "21 - Works of art, collectors pieces and antiques",
+         "total": 22224.9
+      }
+   ],
+   "SE": [
+      {
+         "name": "01 - Live animals, animal products",
+         "total": 4232431.2
+      },
+      {
+         "name": "02 - Vegetable products",
+         "total": 749717.4
+      },
+      {
+         "name": "03 - Fats and oils",
+         "total": 542484.7
+      },
+      {
+         "name": "04 - Prepared foodstuffs",
+         "total": 3583818.4
+      },
+      {
+         "name": "05 - Mineral products",
+         "total": 12394417.7
+      },
+      {
+         "name": "06 - Products of the chemical industry",
+         "total": 15523183.9
+      },
+      {
+         "name": "07 - Plastics and rubber and articles thereof",
+         "total": 5578530.7
+      },
+      {
+         "name": "08 - Raw hides and skins, articles thereof",
+         "total": 261347.5
+      },
+      {
+         "name": "09 - Wood and articles of wood",
+         "total": 3636904
+      },
+      {
+         "name": "10 - Pulp of wood, paper, paperboard and articles thereof",
+         "total": 10728565.6
+      },
+      {
+         "name": "11 - Textiles and textile articles",
+         "total": 2129289
+      },
+      {
+         "name": "12 - Footwear, headgear, etc.",
+         "total": 393894.8
+      },
+      {
+         "name": "13 - Articles of stone, ceramic products, glass",
+         "total": 724863.2
+      },
+      {
+         "name": "14 - Pearls, precious stones and metals, articles thereof",
+         "total": 1016969.8
+      },
+      {
+         "name": "15 - Base metals and articles thereof",
+         "total": 13770428.3
+      },
+      {
+         "name": "16 - Machinery and mechanical appliances, electrical and electrotechnical equipment",
+         "total": 35430804
+      },
+      {
+         "name": "17 - Transport equipment",
+         "total": 23157157
+      },
+      {
+         "name": "18 - Optical, photographic, measuring, checking instruments, etc.",
+         "total": 3910169.8
+      },
+      {
+         "name": "19 - Arms and ammunition",
+         "total": 182486.3
+      },
+      {
+         "name": "20 - Miscellaneous manufactured articles",
+         "total": 3201761.4
+      },
+      {
+         "name": "21 - Works of art, collectors pieces and antiques",
+         "total": 33978.6
+      }
+   ],
+   "SI": [
+      {
+         "name": "01 - Live animals, animal products",
+         "total": 460376.5
+      },
+      {
+         "name": "02 - Vegetable products",
+         "total": 504371.8
+      },
+      {
+         "name": "03 - Fats and oils",
+         "total": 51097.3
+      },
+      {
+         "name": "04 - Prepared foodstuffs",
+         "total": 920370.1
+      },
+      {
+         "name": "05 - Mineral products",
+         "total": 1970047.1
+      },
+      {
+         "name": "06 - Products of the chemical industry",
+         "total": 5804825.7
+      },
+      {
+         "name": "07 - Plastics and rubber and articles thereof",
+         "total": 2172773.4
+      },
+      {
+         "name": "08 - Raw hides and skins, articles thereof",
+         "total": 219482.7
+      },
+      {
+         "name": "09 - Wood and articles of wood",
+         "total": 911941.1
+      },
+      {
+         "name": "10 - Pulp of wood, paper, paperboard and articles thereof",
+         "total": 1165252
+      },
+      {
+         "name": "11 - Textiles and textile articles",
+         "total": 855693.5
+      },
+      {
+         "name": "12 - Footwear, headgear, etc.",
+         "total": 212119.5
+      },
+      {
+         "name": "13 - Articles of stone, ceramic products, glass",
+         "total": 521788.3
+      },
+      {
+         "name": "14 - Pearls, precious stones and metals, articles thereof",
+         "total": 54172.1
+      },
+      {
+         "name": "15 - Base metals and articles thereof",
+         "total": 4064145
+      },
+      {
+         "name": "16 - Machinery and mechanical appliances, electrical and electrotechnical equipment",
+         "total": 7732859.2
+      },
+      {
+         "name": "17 - Transport equipment",
+         "total": 7455713.7
+      },
+      {
+         "name": "18 - Optical, photographic, measuring, checking instruments, etc.",
+         "total": 808665
+      },
+      {
+         "name": "19 - Arms and ammunition",
+         "total": 18473.7
+      },
+      {
+         "name": "20 - Miscellaneous manufactured articles",
+         "total": 1397307
+      },
+      {
+         "name": "21 - Works of art, collectors pieces and antiques",
+         "total": 986.9
+      }
+   ],
+   "SK": [
+      {
+         "name": "01 - Live animals, animal products",
+         "total": 666388.1
+      },
+      {
+         "name": "02 - Vegetable products",
+         "total": 975171.1
+      },
+      {
+         "name": "03 - Fats and oils",
+         "total": 115928.6
+      },
+      {
+         "name": "04 - Prepared foodstuffs",
+         "total": 1306070.5
+      },
+      {
+         "name": "05 - Mineral products",
+         "total": 2696815.1
+      },
+      {
+         "name": "06 - Products of the chemical industry",
+         "total": 2169093.9
+      },
+      {
+         "name": "07 - Plastics and rubber and articles thereof",
+         "total": 4364484.5
+      },
+      {
+         "name": "08 - Raw hides and skins, articles thereof",
+         "total": 230547.1
+      },
+      {
+         "name": "09 - Wood and articles of wood",
+         "total": 928993.3
+      },
+      {
+         "name": "10 - Pulp of wood, paper, paperboard and articles thereof",
+         "total": 1232423.7
+      },
+      {
+         "name": "11 - Textiles and textile articles",
+         "total": 1566125.8
+      },
+      {
+         "name": "12 - Footwear, headgear, etc.",
+         "total": 870266
+      },
+      {
+         "name": "13 - Articles of stone, ceramic products, glass",
+         "total": 818051.9
+      },
+      {
+         "name": "14 - Pearls, precious stones and metals, articles thereof",
+         "total": 384489.4
+      },
+      {
+         "name": "15 - Base metals and articles thereof",
+         "total": 7590184.4
+      },
+      {
+         "name": "16 - Machinery and mechanical appliances, electrical and electrotechnical equipment",
+         "total": 23843825.3
+      },
+      {
+         "name": "17 - Transport equipment",
+         "total": 28783002.6
+      },
+      {
+         "name": "18 - Optical, photographic, measuring, checking instruments, etc.",
+         "total": 934243.1
+      },
+      {
+         "name": "19 - Arms and ammunition",
+         "total": 84973.4
+      },
+      {
+         "name": "20 - Miscellaneous manufactured articles",
+         "total": 2335036.7
+      },
+      {
+         "name": "21 - Works of art, collectors pieces and antiques",
+         "total": 3048.3
+      }
+  ]
+}
+]
+}

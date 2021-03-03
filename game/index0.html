@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<h1 id="mainHeader"></h1>
+
+<script>
+	      $('#mainHeader').typeIt({
+          speed: 50,
+          autoStart: false,
+
+      })
+      .tiType('This is my titel')
+      .tiPause(500)
+      .tiDelete(2)
+      .tiType('el')
+      .tiBreak()
+      .tiPause(500) .tiType('<h3>This is my subtitle. As you can see the cursor does not follow the text.</h3>');
+</script>

@@ -1,0 +1,67 @@
+{%- assign which_number = page.all |  split: "," -%}
+{
+  "globalne":[
+      {% for which_num in which_number %}
+      {
+          {% assign number = which_num | prepend: "/" | append: "-"%}
+          "{{ which_num }}":[
+              {%- for data in site.metadane_globalne -%}
+
+
+                  {%- assign t1 = site.metadane_globalne  -%}
+
+                  {
+                    "{{ slug }}": [
+                      {
+                        "dane": [
+                          {
+                              {%- unless zmienne[0] contains 'null' -%}
+                                  {%- if kategorie[0] contains 'null' -%}
+                                      {%- if zrodlo!="www.stat.gov.pl" -%}
+                                        "{{ zmienna_poj }}": [
+                                            {
+                                            {%- for data in site.data.globalne[dataset_name] -%}
+                                              {% if data["year"] != 'year' %}
+                                                "{{ data["year"] }}" :   "{{ data[zmienna_poj] }}"
+                                                {%- if forloop.last == false -%},{%- endif -%}
+                                              {% endif %}
+                                            {% endfor %}
+                                            }
+                                        ]
+                                      {% endif %}
+                                  {% else %}
+                                    {% for poj_kategorie in kategorie %}
+                                            "{{ poj_kategorie | strip }}": [
+                                                {
+                                                {%- assign gr_zmienne = zmienne[forloop.index0] | split: "," -%}
+                                                  {%- for poj_zmienne in gr_zmienne -%}
+                                                    {%- assign poj_z= poj_zmienne | strip -%}
+                                                    "{{ poj_z | replace: '_', ""}}": [
+                                                        {
+                                                        {%- for data in site.data.globalne[dataset_name] -%}
+                                                          {% if data["year"] != 'year' %}
+                                                            "{{ data["year"] }}" : "{{ data[poj_z] }}"
+                                                            {%- if forloop.last == false -%},{%- endif -%}
+                                                          {% endif %}
+                                                        {% endfor %}
+                                                        }
+                                                    ]{%- if forloop.last == false -%},{%- endif -%}
+                                                  {% endfor %}
+                                                }
+                                            ]
+                                            {%- if forloop.last == false -%},{%- endif -%}
+                                    {% endfor %}
+                                  {% endif %}
+                              {% endunless %}
+                          }
+                        ]
+                      }
+                    ]
+                  }{%- if data.next.path contains number -%},{%- endif -%}{%- if data.path=='_metadane_globalne/12-4-2-b.md' -%},{%- endif -%}
+              {%- endfor -%}
+        ]
+
+      }{% if forloop.last == false -%},{%- endif %}
+      {% endfor %}
+  ]
+}

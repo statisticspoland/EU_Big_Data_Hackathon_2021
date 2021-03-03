@@ -1,0 +1,245 @@
+---
+layout: default
+---
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/quiz.css?v={{ cache_bust }}">
+<div id = "frame" role = "content" style="padding: .5rem 1rem;display: inline-table;width: 99%;margin-top: 35px;min-height: 100%; margin-bottom: 142px; ">
+
+</div>
+
+<script>
+
+  var quiztitle = "Quiz: Six basic questions about coronavirus";
+
+
+  var quiz = [
+         {
+             "question" : "QUESTION 1: A high temperature and a continuous cough have been official coronavirus symptoms in the UK since the start of the pandemic. But which of these did the government add to the list of early symptoms that people should look for?",
+             "image" : "{{site.baseurl}}/assets/img/cards/Q1_1.png",
+             "choices" : [
+                                     "A sore throat",
+                                     "A rash on your skin",
+                                     "Losing your sense of smell or taste"
+                                 ],
+             "correct" : "Losing your sense of smell or taste",
+             "explanation" : "It’s a losing your sense of smell or taste – or sometimes just a noticeable change in smell or taste. These are the three symptoms the government lists as ones which could require you to self-isolate: a high-temperature, a new persistent cough and the loss of smell or taste. Difficulty breathing, extreme tiredness, stomach pain and diarrhoea are among the other symptoms that have been associated with the virus, but these are usually present along with at least one of the main three symptoms.",
+         },
+         {
+             "question" : "QUESTION 2: Washing your hands for 20 seconds is one of the most important ways of avoiding infection. But what part of the process is it that destroys the virus?",
+             "image" : "{{site.baseurl}}/assets/img/cards/Q2.png",
+             "choices" : [
+                                     "Water",
+                                     "Soap",
+                                     "Friction"
+                                 ],
+             "correct" : "Soap",
+             "explanation" : "The main factor is the soap. The soap molecules dissolve the wall that surrounds and protects the virus. If you wash your hands with soap for a good 20 seconds the virus will literally fall apart on your skin and no longer be a danger.",
+         },
+         {
+             "question" : "QUESTION 3: People are advised to social distance by staying two metres apart. But which kitchen appliance did the government use to help people understand how far two metres is?",
+             "image" : "{{site.baseurl}}/assets/img/cards/Q3_1.png",
+             "choices" : [
+                                     "Cooker",
+                                     "Fridge",
+                                     "Microwave"
+                                 ],
+             "correct" : "Fridge",
+             "explanation" : "The government put out advice saying you could measure two metres by imagining the width of three fridges between you and the next person. It wasn’t seen as particularly useful advice and was widely mocked on social media. Other two metre distance comparisons from the government were: a bed; two benches or four chairs. ",
+         },
+         {
+             "question" : "QUESTION 4: People are encouraged to meet up outside wherever possible, but which of these do we know is a major factor in preventing the virus from spreading as easily outside?",
+             "image" : "{{site.baseurl}}/assets/img/cards/Q4_1.png",
+             "choices" : [
+                                     "The pollution",
+                                     "The breeze",
+                                     "Oxygen levels"
+                                 ],
+             "correct" : "The breeze",
+             "explanation" : "It’s the breeze. Scientists are still studying all the reasons why being with people outside is so much safer than being in an enclosed space, but even the slightest breeze helps disperse the virus, exposing you to much lower levels than you would meeting inside. Some studies have also found direct sunlight reduces the amount of time the virus will remain infectious, which is another benefit of being outside. ",
+         },
+         {
+             "question" : "QUESTION 5: The UK is currently at Covid-19 alert level 3 – but can you remember what this means?",
+             "image" : "{{site.baseurl}}/assets/img/cards/Q5.png",
+             "choices" : [
+                                     "Virus transmission is high",
+                                     "Virus transmission is low",
+                                     "Virus is in general circulation"
+                                 ],
+             "correct" : "Virus is in general circulation",
+             "explanation" : "It means the virus is in general circulation. At level three people are expected to continue social distancing but the rules can be slowly relaxed. This is why shops and restaurants have been allowed to reopen. Previously the UK was at level 4.",
+         },
+         {
+             "question" : "QUESTION 6: The R number for the UK is currently between 0.8 and 0.9. But what is the target for R?",
+             "image" : "{{site.baseurl}}/assets/img/cards/Q6.png",
+             "choices" : [
+                                     "Keep R below 1",
+                                     "Keep R as close to 1 as possible",
+                                     "Move R above 1"
+                                 ],
+             "correct" : "Keep R below 1",
+             "explanation" : "The aim is to keep the number below one. The R number represents the average number of people an infected person will pass the virus on to. If the number stays below one for a sustained period, the number of new cases being reported each day should get fewer and fewer.",
+         },
+
+
+         ];
+
+
+  var currentquestion = 0,
+      score = 0,
+      submt = true,
+      picked;
+
+  jQuery(document).ready(function ($) {
+
+
+      function htmlEncode(value) {
+          return $(document.createElement('div')).text(value).html();
+      }
+
+
+      function addChoices(choices) {
+          if (typeof choices !== "undefined" && $.type(choices) == "array") {
+              $('#choice-block').empty();
+              for (var i = 0; i < choices.length; i++) {
+                  $(document.createElement('li')).addClass('choice choice-box').attr('data-index', i).text(choices[i]).appendTo('#choice-block');
+              }
+          }
+      }
+
+      function nextQuestion() {
+          submt = true;
+          $('#explanation').empty();
+          $('#question').text(quiz[currentquestion]['question']);
+          $('#pager').text('Question ' + Number(currentquestion + 1) + ' of ' + quiz.length);
+          if (quiz[currentquestion].hasOwnProperty('image') && quiz[currentquestion]['image'] != "") {
+              if ($('#question-image').length == 0) {
+                  $(document.createElement('img')).addClass('question-image').attr('id', 'question-image').attr('src', quiz[currentquestion]['image']).attr('alt', htmlEncode(quiz[currentquestion]['question'])).insertAfter('#question');
+              } else {
+                  $('#question-image').attr('src', quiz[currentquestion]['image']).attr('alt', htmlEncode(quiz[currentquestion]['question']));
+              }
+          } else {
+              $('#question-image').remove();
+          }
+          addChoices(quiz[currentquestion]['choices']);
+          setupButtons();
+
+
+      }
+
+
+      function processQuestion(choice) {
+          if (quiz[currentquestion]['choices'][choice] == quiz[currentquestion]['correct']) {
+              $('.choice').eq(choice).css({
+                  'background-color': '#50D943'
+              });
+              $('#explanation').html('<strong>Correct!</strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
+
+              score++;
+          } else {
+              $('.choice').eq(choice).css({
+                  'background-color': '#D92623'
+              });
+              $('#explanation').html('<strong>Incorrect.</strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
+          }
+          currentquestion++;
+          $('#submitbutton').html('NEXT QUESTION &raquo;').on('click', function () {
+              if (currentquestion == quiz.length) {
+                  endQuiz();
+              } else {
+                  $(this).text('Check Answer').css({
+                      'color': '#222'
+                  }).off('click');
+                  nextQuestion();
+              }
+          })
+      }
+
+
+      function setupButtons() {
+          $('.choice').on('mouseover', function () {
+              $(this).css({
+                  'background-color': '#e1e1e1'
+              });
+          });
+          $('.choice').on('mouseout', function () {
+              $(this).css({
+                  'background-color': '#fff'
+              });
+          })
+          $('.choice').on('click', function () {
+              picked = $(this).attr('data-index');
+              $('.choice').removeAttr('style').off('mouseout mouseover');
+              $(this).css({
+                  'border-color': '#222',
+                  'font-weight': 700,
+                  'background-color': '#c1c1c1'
+              });
+              if (submt) {
+                  submt = false;
+                  $('#submitbutton').css({
+                      'color': '#000'
+                  }).on('click', function () {
+                      $('.choice').off('click');
+                      $(this).off('click');
+                      processQuestion(picked);
+                  });
+              }
+          })
+      }
+
+
+      function endQuiz() {
+          $('#explanation').empty();
+          $('#question').empty();
+          $('#choice-block').empty();
+          $('#submitbutton').remove();
+          $('#question').text("You got " + score + " out of " + quiz.length + " correct.");
+          $(document.createElement('h2')).css({
+              'text-align': 'center',
+              'font-size': '2em'
+          }).text(Math.round(score / quiz.length * 100) + '%').insertAfter('#question');
+      }
+
+
+      function init() {
+          //add title
+          if (typeof quiztitle !== "undefined" && $.type(quiztitle) === "string") {
+              $(document.createElement('h2')).text(quiztitle).appendTo('#frame');
+          } else {
+              $(document.createElement('h2')).text("Quiz").appendTo('#frame');
+          }
+
+          //add pager and questions
+          if (typeof quiz !== "undefined" && $.type(quiz) === "array") {
+              //add pager
+              $(document.createElement('p')).addClass('pager').attr('id', 'pager').text('Question 1 of ' + quiz.length).appendTo('#frame');
+              //add first question
+              $(document.createElement('p')).addClass('question').attr('id', 'question').text(quiz[0]['question']).appendTo('#frame');
+              //add image if present
+              if (quiz[0].hasOwnProperty('image') && quiz[0]['image'] != "") {
+                  $(document.createElement('img')).addClass('question-image').attr('id', 'question-image').attr('src', quiz[0]['image']).attr('alt', htmlEncode(quiz[0]['question'])).appendTo('#frame');
+              }
+              $(document.createElement('p')).addClass('explanation').attr('id', 'explanation').html('&nbsp;').appendTo('#frame');
+
+              //questions holder
+              $(document.createElement('ul')).attr('id', 'choice-block').appendTo('#frame');
+
+              //add choices
+              addChoices(quiz[0]['choices']);
+
+              //add submit button
+              $(document.createElement('div')).addClass('choice-box').attr('id', 'submitbutton').text('Check Answer').css({
+                  'font-weight': 700,
+                  'color': '#222',
+                  'padding': '30px 0'
+              }).appendTo('#frame');
+
+              setupButtons();
+          }
+      }
+
+      init();
+
+  });
+
+
+</script>

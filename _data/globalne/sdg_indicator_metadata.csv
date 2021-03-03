@@ -1,0 +1,21 @@
+target_id,goal,indicator_id,indicator,zrodlo
+8.2.1,8,8.2.1,"Exports (origin) by countries and  CN section",ITGS_Reference
+8.2.2,8,8.2.2,"Imports by countries and CN section",ITGS_Reference
+9.1.1,9,9.1.1,"Imports by countries and  CN section",COMEXT
+9.2.1,9,9.2.1,"Exports by countries and  CN section",COMEXT
+9.3.1,9,9.3.1,"Monthly transport flow1 by countries and  CN section",COMEXT
+9.4.1,9,9.4.1,"Monthly transport flow2 by countries and  CN section",COMEXT
+10.1.1,8,10.1.1,"Exports (consign) by countries and CN section",ITGS_Reference
+2.1.1,2,2.1.1,"Chord diagram with animated bullets",ITGS_Reference
+5.1.6,5,5.1.6,"Export - graphs by sections CN, 2019-2018",ITGS_Reference
+5.1.7,5,5.1.7,"Import - graphs by sections CN, 2019-2018",ITGS_Reference
+5.1.8,5,5.1.8,"Analysis network by sections CN, 2019-2018",ITGS_Reference
+2.1.2,2,2.1.2,"Import - Reversed Value Axis",ITGS_Reference
+3.1.2,2,3.1.2,"Export - Reversed Value Axis",ITGS_Reference
+4.1.1,2,4.1.1,"Imports by countries and CN section",COMEXT
+4.1.2,2,4.1.2,"Exports by countries and CN section",COMEXT
+6.1.1,2,6.1.1,"Automatic Identification System (AIS) data - imports - metric tons of cargo",UN COMTRADE - (AIS Task Team)
+6.1.2,2,6.1.2,"Automatic Identification System (AIS) data - imports - number of port calls",UN COMTRADE - (AIS Task Team)
+6.1.3,2,6.1.3,"Automatic Identification System (AIS) data -exports - metric tons of cargo",UN COMTRADE - (AIS Task Team)
+6.1.4,2,6.1.4,"Automatic Identification System (AIS) data - exports - number of port calls",UN COMTRADE - (AIS Task Team)
+7.1.1,7,7.1.1,"Europe Trade Statistics in 2018",World Bank

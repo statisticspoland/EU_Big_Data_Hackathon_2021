@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+{% include header.html %}
+
+<style>
+.front {
+position: relative;
+width: 100%;
+top: 100px;
+right: 0;
+z-index: 3;
+
+}
+</style>
+
+<div class="front" style="padding: .5rem 1rem;display: inline-table;width: 98%;margin-top: 35px;">
+			{{ content }}
+
+		{% include footer.html %}
+</div>
+
+</body>
+
+</html>

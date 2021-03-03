@@ -1,0 +1,89 @@
+
+{
+   "AT": [
+      {
+         "name": "01 - Live animals, animal products",
+         "VALUE_IN_EUROS": 44374523
+      },
+      {
+         "name": "02 - Vegetable products",
+         "VALUE_IN_EUROS": 110266085
+      },
+      {
+         "name": "03 - Fats and oils",
+         "VALUE_IN_EUROS": 94283910
+      },
+      {
+         "name": "04 - Prepared foodstuffs",
+         "VALUE_IN_EUROS": 15735345434
+      },
+      {
+         "name": "05 - Mineral products",
+         "VALUE_IN_EUROS": 850005950
+      },
+      {
+         "name": "06 - Products of the chemical industry",
+         "VALUE_IN_EUROS": 1387990142
+      },
+      {
+         "name": "07 - Plastics and rubber and articles thereof",
+         "VALUE_IN_EUROS": 363198963
+      },
+      {
+         "name": "08 - Raw hides and skins, articles thereof",
+         "VALUE_IN_EUROS": 53857790
+      },
+      {
+         "name": "09 - Wood and articles of wood",
+         "VALUE_IN_EUROS": 480083
+      },
+      {
+         "name": "10 - Pulp of wood, paper, paperboard and articles thereof",
+         "VALUE_IN_EUROS": 5330216
+      },
+      {
+         "name": "11 - Textiles and textile articles",
+         "VALUE_IN_EUROS": 13855982
+      },
+      {
+         "name": "12 - Footwear, headgear, etc.",
+         "VALUE_IN_EUROS": 101868422
+      },
+      {
+         "name": "13 - Articles of stone, ceramic products, glass",
+         "VALUE_IN_EUROS": 937932578
+      },
+      {
+         "name": "14 - Pearls, precious stones and metals, articles thereof",
+         "VALUE_IN_EUROS": 314370024
+      },
+      {
+         "name": "15 - Base metals and articles thereof",
+         "VALUE_IN_EUROS": 389460286
+      },
+      {
+         "name": "16 - Machinery and mechanical appliances, electrical and electrotechnical equipment",
+         "VALUE_IN_EUROS": 94282474
+      },
+      {
+         "name": "17 - Transport equipment",
+         "VALUE_IN_EUROS": 512892769
+      },
+      {
+         "name": "18 - Optical, photographic, measuring, checking instruments, etc.",
+         "VALUE_IN_EUROS": 808448896
+      },
+      {
+         "name": "19 - Arms and ammunition",
+         "VALUE_IN_EUROS": 1367814095
+      },
+      {
+         "name": "20 - Miscellaneous manufactured articles",
+         "VALUE_IN_EUROS": 76839833
+      },
+      {
+         "name": "21 - Works of art, collectors pieces and antiques",
+         "VALUE_IN_EUROS": 52189722
+      }
+   ]
+}

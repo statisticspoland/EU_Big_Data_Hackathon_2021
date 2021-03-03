@@ -1,0 +1,980 @@
+<!-- Mapa z wykresem liniowym gdzie wykres liniowy zależy od państwa a na osi X są lata -->
+<script>
+  am4core.useTheme(am4themes_animated);
+
+  var mainContainer = am4core.create("chartdiv", am4core.Container);
+  mainContainer.width = am4core.percent(100);
+  mainContainer.height = am4core.percent(100);
+  mainContainer.layout = "horizontal";
+
+  var usData = [
+    {
+      "age": "2007",
+      "female": 9736305
+    },
+    {
+      "age": "2008",
+      "female": 10031835
+    },
+    {
+      "age": "2009",
+      "female": 10117913
+    },
+    {
+      "age": "2010",
+      "female": 6142996
+    },
+    {
+      "age": "2011",
+      "female": 8874664
+    },
+    {
+      "age": "2012",
+      "female": 6422017
+    },
+    {
+      "age": "2013",
+      "female": 10708414
+    },
+    {
+      "age": "2014",
+      "female": 10557848
+    },
+    {
+      "age": "2015",
+      "female": 9956213
+    },
+    {
+      "age": "2016",
+      "female": 10465142
+    },
+    {
+      "age": "2017",
+      "female": 10798384
+    },
+    {
+      "age": "2018",
+      "female": 11474081
+    }
+  ];
+
+  var femaleChart = mainContainer.createChild(am4charts.XYChart);
+  femaleChart.paddingLeft = 0;
+  femaleChart.data = JSON.parse(JSON.stringify(usData));
+
+
+  var femaleDateAxis = femaleChart.xAxes.push(new am4charts.DateAxis());
+  femaleDateAxis.renderer.grid.template.location = 0;
+
+  var femaleValueAxis = femaleChart.yAxes.push(new am4charts.ValueAxis());
+  femaleValueAxis.tooltip.disabled = true;
+  femaleValueAxis.renderer.minWidth = 35;
+
+  var femaleSeries = femaleChart.series.push(new am4charts.LineSeries());
+  femaleSeries.dataFields.dateX = "age";
+  femaleSeries.dataFields.valueY = "female";
+  femaleSeries.tooltipText = "{female}";
+  femaleSeries.tooltip.pointerOrientation = "vertical";
+  femaleSeries.tooltip.background.fillOpacity = 0.5;
+
+  femaleChart.cursor = new am4charts.XYCursor();
+  femaleChart.cursor.snapToSeries = femaleSeries;
+  femaleChart.cursor.xAxis = femaleDateAxis;
+
+
+  var mapChart = mainContainer.createChild(am4maps.MapChart);
+  mapChart.projection = new am4maps.projections.Mercator();
+  mapChart.geodata = am4geodata_worldLow;
+  mapChart.zIndex = -1;
+  mapChart.homeZoomLevel=1;
+  mapChart.homeGeoPoint = {
+  latitude: 52,
+  longitude: 11
+  };
+
+  var polygonSeries = mapChart.series.push(new am4maps.MapPolygonSeries())
+  polygonSeries.useGeodata = true;
+  polygonSeries.include = ["PL","BG","FR","DK","LU","GE","IT","IE","GB","GR","PT","ES","CY","MT","RO","HR","SI","HU","SK","AT","CZ","BE","LT","LV","EE","FI","SE","DE"];
+
+  var selectedStateId = "BG";
+  var selectedPolygon;
+  var selectedStateName;
+
+  var polygonTemplate = polygonSeries.mapPolygons.template;
+  polygonTemplate.togglable = true;
+
+  var hoverState = polygonTemplate.states.create("hover");
+  hoverState.properties.fill = mapChart.colors.getIndex(2);
+
+  var activeState = polygonTemplate.states.create("active");
+  activeState.properties.fill = mapChart.colors.getIndex(6);
+
+  polygonTemplate.events.on("hit", function(event) {
+    var id = event.target.dataItem.dataContext.id;
+    showState(id, event.target.dataItem.dataContext.name, event.target);
+  })
+
+
+  mapChart.seriesContainer.background.events.on("over", function(event) {
+    showState(selectedStateId, selectedStateName, selectedPolygon);
+  });
+
+
+  function showState(id, stateName, polygon) {
+    if(selectedStateId != id){
+
+      var newData = stateData[id];
+
+      if (selectedPolygon) {
+        selectedPolygon.isActive = false;
+      }
+
+      for (var i = 0; i < femaleChart.data.length; i++) {
+        femaleChart.data[i].female = newData[i].female;
+      }
+
+      femaleChart.invalidateRawData();
+
+      selectedStateName = stateName;
+      selectedStateId = id;
+      selectedPolygon = polygon;
+
+      label.text = stateName + " pyramid";
+      label.hide(0);
+      label.show();
+     }
+  }
+
+  var label = mainContainer.createChild(am4core.Label);
+  label.isMeasured = false;
+  label.x = am4core.percent(80);
+  label.horizontalCenter = "middle";
+  label.y = 50;
+  label.showOnInit = true;
+  label.text = "EU pyramid";
+  label.hiddenState.properties.dy = -100;
+
+  var stateData = {
+    "PL": [
+        {
+          "age": "2007",
+          "female": 26607
+        },
+        {
+          "age": "2008",
+          "female": 24821
+        },
+        {
+          "age": "2009",
+          "female": 14735
+        },
+        {
+          "age": "2010",
+          "female": 19030
+        },
+        {
+          "age": "2011",
+          "female": 15663
+        },
+        {
+          "age": "2012",
+          "female": 28259
+        },
+        {
+          "age": "2013",
+          "female": 25272
+        },
+        {
+          "age": "2014",
+          "female": 22002
+        },
+        {
+          "age": "2015",
+          "female": 21968
+        },
+        {
+          "age": "2016",
+          "female": 22784
+        },
+        {
+          "age": "2017",
+          "female": 25063
+        },
+        {
+          "age": "2018",
+          "female": 25503
+        }
+    ],
+    "DE": [
+        {
+          "age": "2007",
+          "female": 144194
+        },
+        {
+          "age": "2008",
+          "female": 156841
+        },
+        {
+          "age": "2009",
+          "female": 94462
+        },
+        {
+          "age": "2010",
+          "female": 136514
+        },
+        {
+          "age": "2011",
+          "female": 101444
+        },
+        {
+          "age": "2012",
+          "female": 159815
+        },
+        {
+          "age": "2013",
+          "female": 156764
+        },
+        {
+          "age": "2014",
+          "female": 152220
+        },
+        {
+          "age": "2015",
+          "female": 159835
+        },
+        {
+          "age": "2016",
+          "female": 163909
+        },
+        {
+          "age": "2017",
+          "female": 149334
+        },
+        {
+          "age": "2018",
+          "female": 178187
+        }
+    ]
+
+  }
+
+</script>
+
+<!-- Mapa z wykresem piramidą, gdzie piramida zależy od państwa a na osi X są procenty, oś Y to wiek osob -->
+
+<script>
+  am4core.useTheme(am4themes_animated);
+
+  var mainContainer = am4core.create("chartdiv", am4core.Container);
+  mainContainer.width = am4core.percent(100);
+  mainContainer.height = am4core.percent(100);
+  mainContainer.layout = "horizontal";
+
+  var usData = [
+    {
+      "age": "0 to 5",
+      "male": 10175713,
+      "female": 9736305
+    },
+    {
+      "age": "5 to 9",
+      "male": 10470147,
+      "female": 10031835
+    },
+    {
+      "age": "10 to 14",
+      "male": 10561873,
+      "female": 10117913
+    },
+    {
+      "age": "15 to 17",
+      "male": 6447043,
+      "female": 6142996
+    },
+    {
+      "age": "18 to 21",
+      "male": 9349745,
+      "female": 8874664
+    },
+    {
+      "age": "22 to 24",
+      "male": 6722248,
+      "female": 6422017
+    },
+    {
+      "age": "25 to 29",
+      "male": 10989596,
+      "female": 10708414
+    },
+    {
+      "age": "30 to 34",
+      "male": 10625791,
+      "female": 10557848
+    },
+    {
+      "age": "35 to 39",
+      "male": 9899569,
+      "female": 9956213
+    },
+    {
+      "age": "40 to 44",
+      "male": 10330986,
+      "female": 10465142
+    },
+    {
+      "age": "45 to 49",
+      "male": 10571984,
+      "female": 10798384
+    },
+    {
+      "age": "50 to 54",
+      "male": 11051409,
+      "female": 11474081
+    },
+    {
+      "age": "55 to 59",
+      "male": 10173646,
+      "female": 10828301
+    },
+    {
+      "age": "60 to 64",
+      "male": 8824852,
+      "female": 9590829
+    },
+    {
+      "age": "65 to 69",
+      "male": 6876271,
+      "female": 7671175
+    },
+    {
+      "age": "70 to 74",
+      "male": 4867513,
+      "female": 5720208
+    },
+    {
+      "age": "75 to 79",
+      "male": 3416432,
+      "female": 4313697
+    },
+    {
+      "age": "80 to 84",
+      "male": 2378691,
+      "female": 3432738
+    },
+    {
+      "age": "85 and Older",
+      "male": 2000771,
+      "female": 3937981
+    }
+  ];
+
+  var maleChart = mainContainer.createChild(am4charts.XYChart);
+  maleChart.paddingRight = 0;
+  maleChart.data = JSON.parse(JSON.stringify(usData));
+
+  // Create axes
+  var maleCategoryAxis = maleChart.yAxes.push(new am4charts.CategoryAxis());
+  maleCategoryAxis.dataFields.category = "age";
+  maleCategoryAxis.renderer.grid.template.location = 0;
+  //maleCategoryAxis.renderer.inversed = true;
+  maleCategoryAxis.renderer.minGridDistance = 15;
+
+  var maleValueAxis = maleChart.xAxes.push(new am4charts.ValueAxis());
+  maleValueAxis.renderer.inversed = true;
+  maleValueAxis.min = 0;
+  maleValueAxis.max = 10;
+  maleValueAxis.strictMinMax = true;
+
+  maleValueAxis.numberFormatter = new am4core.NumberFormatter();
+  maleValueAxis.numberFormatter.numberFormat = "#.#'%'";
+
+  // Create series
+  var maleSeries = maleChart.series.push(new am4charts.ColumnSeries());
+  maleSeries.dataFields.valueX = "male";
+  maleSeries.dataFields.valueXShow = "percent";
+  maleSeries.calculatePercent = true;
+  maleSeries.dataFields.categoryY = "age";
+  maleSeries.interpolationDuration = 1000;
+  maleSeries.columns.template.tooltipText = "Males, age {categoryY}: {valueX} ({valueX.percent.formatNumber('#.0')}%)";
+  //maleSeries.sequencedInterpolation = true;
+
+
+  var femaleChart = mainContainer.createChild(am4charts.XYChart);
+  femaleChart.paddingLeft = 0;
+  femaleChart.data = JSON.parse(JSON.stringify(usData));
+
+  // Create axes
+  var femaleCategoryAxis = femaleChart.yAxes.push(new am4charts.CategoryAxis());
+  femaleCategoryAxis.renderer.opposite = true;
+  femaleCategoryAxis.dataFields.category = "age";
+  femaleCategoryAxis.renderer.grid.template.location = 0;
+  femaleCategoryAxis.renderer.minGridDistance = 15;
+
+  var femaleValueAxis = femaleChart.xAxes.push(new am4charts.ValueAxis());
+  femaleValueAxis.min = 0;
+  femaleValueAxis.max = 10;
+  femaleValueAxis.strictMinMax = true;
+  femaleValueAxis.numberFormatter = new am4core.NumberFormatter();
+  femaleValueAxis.numberFormatter.numberFormat = "#.#'%'";
+  femaleValueAxis.renderer.minLabelPosition = 0.01;
+
+  // Create series
+  var femaleSeries = femaleChart.series.push(new am4charts.ColumnSeries());
+  femaleSeries.dataFields.valueX = "female";
+  femaleSeries.dataFields.valueXShow = "percent";
+  femaleSeries.calculatePercent = true;
+  femaleSeries.fill = femaleChart.colors.getIndex(4);
+  femaleSeries.stroke = femaleSeries.fill;
+  //femaleSeries.sequencedInterpolation = true;
+  femaleSeries.columns.template.tooltipText = "Females, age {categoryY}: {valueX} ({valueX.percent.formatNumber('#.0')}%)";
+  femaleSeries.dataFields.categoryY = "age";
+  femaleSeries.interpolationDuration = 1000;
+
+
+  var mapChart = mainContainer.createChild(am4maps.MapChart);
+  mapChart.projection = new am4maps.projections.Mercator();
+  mapChart.geodata = am4geodata_worldLow;
+  mapChart.zIndex = -1;
+  mapChart.homeZoomLevel=1;
+  mapChart.homeGeoPoint = {
+  latitude: 52,
+  longitude: 11
+  };
+
+  var polygonSeries = mapChart.series.push(new am4maps.MapPolygonSeries())
+  polygonSeries.useGeodata = true;
+  polygonSeries.include = ["PL","BG","FR","DK","LU","GE","IT","IE","GB","GR","PT","ES","CY","MT","RO","HR","SI","HU","SK","AT","CZ","BE","LT","LV","EE","FI","SE","DE"];
+
+  var selectedStateId = "BG";
+  var selectedPolygon;
+  var selectedStateName;
+
+  var polygonTemplate = polygonSeries.mapPolygons.template;
+  polygonTemplate.togglable = true;
+
+  var hoverState = polygonTemplate.states.create("hover");
+  hoverState.properties.fill = mapChart.colors.getIndex(2);
+
+  var activeState = polygonTemplate.states.create("active");
+  activeState.properties.fill = mapChart.colors.getIndex(6);
+
+  polygonTemplate.events.on("hit", function(event) {
+    var id = event.target.dataItem.dataContext.id;
+    showState(id, event.target.dataItem.dataContext.name, event.target);
+  })
+
+
+  mapChart.seriesContainer.background.events.on("over", function(event) {
+    showState(selectedStateId, selectedStateName, selectedPolygon);
+  });
+
+
+  function showState(id, stateName, polygon) {
+    if(selectedStateId != id){
+
+      var newData = stateData[id];
+
+      if (selectedPolygon) {
+        selectedPolygon.isActive = false;
+      }
+
+      for (var i = 0; i < femaleChart.data.length; i++) {
+        femaleChart.data[i].female = newData[i].female;
+        maleChart.data[i].male = newData[i].male;
+      }
+
+      femaleChart.invalidateRawData();
+      maleChart.invalidateRawData();
+
+      selectedStateName = stateName;
+      selectedStateId = id;
+      selectedPolygon = polygon;
+
+      label.text = stateName + " pyramid";
+      label.hide(0);
+      label.show();
+     }
+  }
+
+  var label = mainContainer.createChild(am4core.Label);
+  label.isMeasured = false;
+  label.x = am4core.percent(80);
+  label.horizontalCenter = "middle";
+  label.y = 50;
+  label.showOnInit = true;
+  label.text = "EU pyramid";
+  label.hiddenState.properties.dy = -100;
+
+  var stateData = {
+    "PL": [
+        {
+          "age": "0 to 5",
+          "male": 28346,
+          "female": 26607
+        },
+        {
+          "age": "10 to 14",
+          "male": 26350,
+          "female": 24821
+        },
+        {
+          "age": "15 to 17",
+          "male": 15929,
+          "female": 14735
+        },
+        {
+          "age": "18 to 21",
+          "male": 25360,
+          "female": 19030
+        },
+        {
+          "age": "22 to 24",
+          "male": 20755,
+          "female": 15663
+        },
+        {
+          "age": "25 to 29",
+          "male": 32415,
+          "female": 28259
+        },
+        {
+          "age": "30 to 34",
+          "male": 28232,
+          "female": 25272
+        },
+        {
+          "age": "35 to 39",
+          "male": 24217,
+          "female": 22002
+        },
+        {
+          "age": "40 to 44",
+          "male": 23429,
+          "female": 21968
+        },
+        {
+          "age": "45 to 49",
+          "male": 24764,
+          "female": 22784
+        },
+        {
+          "age": "5 to 9",
+          "male": 26276,
+          "female": 25063
+        },
+        {
+          "age": "50 to 54",
+          "male": 27623,
+          "female": 25503
+        },
+        {
+          "age": "55 to 59",
+          "male": 26300,
+          "female": 25198
+        },
+        {
+          "age": "60 to 64",
+          "male": 21798,
+          "female": 18970
+        },
+        {
+          "age": "65 to 69",
+          "male": 13758,
+          "female": 12899
+        },
+        {
+          "age": "70 to 74",
+          "male": 8877,
+          "female": 8269
+        },
+        {
+          "age": "75 to 79",
+          "male": 4834,
+          "female": 4894
+        },
+        {
+          "age": "80 to 84",
+          "male": 3015,
+          "female": 3758
+        },
+        {
+          "age": "85 and Older",
+          "male": 1882,
+          "female": 3520
+        }
+    ],
+    "DE": [
+        {
+          "age": "0 to 5",
+          "male": 150860,
+          "female": 144194
+        },
+        {
+          "age": "10 to 14",
+          "male": 161596,
+          "female": 156841
+        },
+        {
+          "age": "15 to 17",
+          "male": 98307,
+          "female": 94462
+        },
+        {
+          "age": "18 to 21",
+          "male": 142173,
+          "female": 136514
+        },
+        {
+          "age": "22 to 24",
+          "male": 99164,
+          "female": 101444
+        },
+        {
+          "age": "25 to 29",
+          "male": 154977,
+          "female": 159815
+        },
+        {
+          "age": "30 to 34",
+          "male": 150036,
+          "female": 156764
+        },
+        {
+          "age": "35 to 39",
+          "male": 141667,
+          "female": 152220
+        },
+        {
+          "age": "40 to 44",
+          "male": 155693,
+          "female": 159835
+        },
+        {
+          "age": "45 to 49",
+          "male": 156413,
+          "female": 163909
+        },
+        {
+          "age": "5 to 9",
+          "male": 156380,
+          "female": 149334
+        },
+        {
+          "age": "50 to 54",
+          "male": 166863,
+          "female": 178187
+        },
+        {
+          "age": "55 to 59",
+          "male": 156994,
+          "female": 169355
+        },
+        {
+          "age": "60 to 64",
+          "male": 140659,
+          "female": 156638
+        },
+        {
+          "age": "65 to 69",
+          "male": 112724,
+          "female": 128494
+        },
+        {
+          "age": "70 to 74",
+          "male": 79258,
+          "female": 96507
+        },
+        {
+          "age": "75 to 79",
+          "male": 55122,
+          "female": 75371
+        },
+        {
+          "age": "80 to 84",
+          "male": 36252,
+          "female": 53976
+        },
+        {
+          "age": "85 and Older",
+          "male": 25955,
+          "female": 55667
+        }
+    ]
+
+  }
+
+</script>
+
+
+<!-- Mapa z wykresem kołowym gdzie wykres kołowy zależy od państwa kategorią są lata -->
+<script>
+  am4core.useTheme(am4themes_animated);
+
+  var mainContainer = am4core.create("chartdiv", am4core.Container);
+  mainContainer.width = am4core.percent(100);
+  mainContainer.height = am4core.percent(100);
+  mainContainer.layout = "horizontal";
+
+  var usData = [
+    {
+      "age": "2007",
+      "female": 9736305
+    },
+    {
+      "age": "2008",
+      "female": 10031835
+    },
+    {
+      "age": "2009",
+      "female": 10117913
+    },
+    {
+      "age": "2010",
+      "female": 6142996
+    },
+    {
+      "age": "2011",
+      "female": 8874664
+    },
+    {
+      "age": "2012",
+      "female": 6422017
+    },
+    {
+      "age": "2013",
+      "female": 10708414
+    },
+    {
+      "age": "2014",
+      "female": 10557848
+    },
+    {
+      "age": "2015",
+      "female": 9956213
+    },
+    {
+      "age": "2016",
+      "female": 10465142
+    },
+    {
+      "age": "2017",
+      "female": 10798384
+    },
+    {
+      "age": "2018",
+      "female": 11474081
+    }
+  ];
+
+
+  var femaleChart = mainContainer.createChild(am4charts.PieChart);
+  femaleChart.paddingLeft = 0;
+  femaleChart.data = JSON.parse(JSON.stringify(usData));
+
+
+  var femaleSeries = femaleChart.series.push(new am4charts.PieSeries());
+  femaleSeries.dataFields.category = "age";
+  femaleSeries.dataFields.value = "female";
+
+  femaleSeries.hiddenState.properties.opacity = 1;
+  femaleSeries.hiddenState.properties.endAngle = -90;
+  femaleSeries.hiddenState.properties.startAngle = -90;
+
+
+  var mapChart = mainContainer.createChild(am4maps.MapChart);
+  mapChart.projection = new am4maps.projections.Mercator();
+  mapChart.geodata = am4geodata_worldLow;
+  mapChart.zIndex = -1;
+  mapChart.homeZoomLevel=1;
+  mapChart.homeGeoPoint = {
+  latitude: 52,
+  longitude: 11
+  };
+
+  var polygonSeries = mapChart.series.push(new am4maps.MapPolygonSeries())
+  polygonSeries.useGeodata = true;
+  polygonSeries.include = ["PL","BG","FR","DK","LU","GE","IT","IE","GB","GR","PT","ES","CY","MT","RO","HR","SI","HU","SK","AT","CZ","BE","LT","LV","EE","FI","SE","DE"];
+
+  var selectedStateId = "BG";
+  var selectedPolygon;
+  var selectedStateName;
+
+  var polygonTemplate = polygonSeries.mapPolygons.template;
+  polygonTemplate.togglable = true;
+
+  var hoverState = polygonTemplate.states.create("hover");
+  hoverState.properties.fill = mapChart.colors.getIndex(2);
+
+  var activeState = polygonTemplate.states.create("active");
+  activeState.properties.fill = mapChart.colors.getIndex(6);
+
+  polygonTemplate.events.on("hit", function(event) {
+    var id = event.target.dataItem.dataContext.id;
+    showState(id, event.target.dataItem.dataContext.name, event.target);
+  })
+
+
+  mapChart.seriesContainer.background.events.on("over", function(event) {
+    showState(selectedStateId, selectedStateName, selectedPolygon);
+  });
+
+
+  function showState(id, stateName, polygon) {
+    if(selectedStateId != id){
+
+      var newData = stateData[id];
+
+      if (selectedPolygon) {
+        selectedPolygon.isActive = false;
+      }
+
+      for (var i = 0; i < femaleChart.data.length; i++) {
+        femaleChart.data[i].female = newData[i].female;
+      }
+
+      femaleChart.invalidateRawData();
+
+      selectedStateName = stateName;
+      selectedStateId = id;
+      selectedPolygon = polygon;
+
+      label.text = stateName + " pyramid";
+      label.hide(0);
+      label.show();
+     }
+  }
+
+  var label = mainContainer.createChild(am4core.Label);
+  label.isMeasured = false;
+  label.x = am4core.percent(80);
+  label.horizontalCenter = "middle";
+  label.y = 50;
+  label.showOnInit = true;
+  label.text = "EU pyramid";
+  label.hiddenState.properties.dy = -100;
+
+  var stateData = {
+    "PL": [
+        {
+          "age": "2007",
+          "female": 26607
+        },
+        {
+          "age": "2008",
+          "female": 24821
+        },
+        {
+          "age": "2009",
+          "female": 14735
+        },
+        {
+          "age": "2010",
+          "female": 19030
+        },
+        {
+          "age": "2011",
+          "female": 15663
+        },
+        {
+          "age": "2012",
+          "female": 28259
+        },
+        {
+          "age": "2013",
+          "female": 25272
+        },
+        {
+          "age": "2014",
+          "female": 22002
+        },
+        {
+          "age": "2015",
+          "female": 21968
+        },
+        {
+          "age": "2016",
+          "female": 22784
+        },
+        {
+          "age": "2017",
+          "female": 25063
+        },
+        {
+          "age": "2018",
+          "female": 25503
+        }
+    ],
+    "DE": [
+        {
+          "age": "2007",
+          "female": 144194
+        },
+        {
+          "age": "2008",
+          "female": 156841
+        },
+        {
+          "age": "2009",
+          "female": 94462
+        },
+        {
+          "age": "2010",
+          "female": 136514
+        },
+        {
+          "age": "2011",
+          "female": 101444
+        },
+        {
+          "age": "2012",
+          "female": 159815
+        },
+        {
+          "age": "2013",
+          "female": 156764
+        },
+        {
+          "age": "2014",
+          "female": 152220
+        },
+        {
+          "age": "2015",
+          "female": 159835
+        },
+        {
+          "age": "2016",
+          "female": 163909
+        },
+        {
+          "age": "2017",
+          "female": 149334
+        },
+        {
+          "age": "2018",
+          "female": 178187
+        }
+    ]
+
+  }
+
+</script>
+
+
+<div id="chartdiv"></div>
+
+<script>
+    am4core.useTheme(am4themes_animated);
+
+    am4core.useTheme(am4themes_animated);
+    var chart = am4core.create("chartdiv", am4plugins_wordCloud.WordCloud);
+    var series = chart.series.push(new am4plugins_wordCloud.WordCloudSeries());
+
+    series.maxCount = 100;
+    series.minWordLength = 2;
+    series.excludeWords = ["the", "an", "to"];
+    series.colors=new am4core.ColorSet();
+    series.colors.passOptions = {};
+    series.text = "Though yet of Hamlet our dear brother's death The memory be green, and that it us befitted To bear our hearts in grief and our whole kingdom To be contracted in one brow of woe, Yet so far hath discretion fought with nature That we with wisest sorrow think on him, Together with remembrance of ourselves. Therefore our sometime sister, now our queen, The imperial jointress to this warlike state, Have we, as 'twere with a defeated joy,-- With an auspicious and a dropping eye, With mirth in funeral and with dirge in marriage, In equal scale weighing delight and dole,-- Taken to wife: nor have we herein barr'd Your better wisdoms, which have freely gone With this affair along. For all, our thanks. Now follows, that you know, young Fortinbras, Holding a weak supposal of our worth, Or thinking by our late dear brother's death Our state to be disjoint and out of frame, Colleagued with the dream of his advantage, He hath not fail'd to pester us with message, Importing the surrender of those lands Lost by his father, with all bonds of law, To our most valiant brother. So much for him. Now for ourself and for this time of meeting: Thus much the business is: we have here writ To Norway, uncle of young Fortinbras,-- Who, impotent and bed-rid, scarcely hears Of this his nephew's purpose,--to suppress His further gait herein; in that the levies, The lists and full proportions, are all made Out of his subject: and we here dispatch You, good Cornelius, and you, Voltimand, For bearers of this greeting to old Norway; Giving to you no further personal power To business with the king, more than the scope Of these delated articles allow. Farewell, and let your haste commend your duty. Tis sweet and commendable in your nature, Hamlet,To give these mourning duties to your father: But, you must know, your father lost a father; That father lost, lost his, and the survivor bound In filial obligation for some term To do obsequious sorrow: but to persever In obstinate condolement is a course Of impious stubbornness; 'tis unmanly grief; It shows a will most incorrect to heaven, A heart unfortified, a mind impatient, An understanding simple and unschool'd: For what we know must be and is as common As any the most vulgar thing to sense, Why should we in our peevish opposition Take it to heart? Fie! 'tis a fault to heaven, A fault against the dead, a fault to nature, To reason most absurd: whose common theme Is death of fathers, and who still hath cried, From the first corse till he that died to-day, 'This must be so.' We pray you, throw to earth This unprevailing woe, and think of us As of a father: for let the world take note, You are the most immediate to our throne; And with no less nobility of love Than that which dearest father bears his son, Do I impart toward you. For your intent In going back to school in Wittenberg, It is most retrograde to our desire: And we beseech you, bend you to remain Here, in the cheer and comfort of our eye, Our chiefest courtier, cousin, and our son.";
+
+
+</script>

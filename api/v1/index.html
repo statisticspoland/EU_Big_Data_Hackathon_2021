@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<meta charset="utf-8">
+
+				<title>API</title>
+				<link rel="icon" type="image/png" href="/assets/img/favicon.png" />
+
+        
+
+				<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+				<script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+				<link rel="stylesheet" href="/assets/css/chartist.css">
+        <link rel="stylesheet" href="/assets/css/chartist-plugin-tooltip.css">
+				<link rel="stylesheet" href="/assets/css/custom.css?v=2021-02-18-21-23-13-+0100">
+				<link rel="stylesheet" href="/assets/css/custom_panel.css?v=2021-02-18-21-23-13-+0100">
+				<link rel="stylesheet" href="/assets/css/custom_contrast.css?v=2021-02-18-21-23-13-+0100">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+				<script src="/assets/js/vendor/chartist.min.js"></script>
+        <script src="/assets/js/vendor/chartist-plugin-accessibility.min.js"></script>
+        <script src="/assets/js/vendor/chartist-plugin-legend.js"></script>
+        <script src="/assets/js/vendor/chartist-plugin-axistitle.js"></script>
+        <script src="/assets/js/vendor/chartist-plugin-tooltip.min.js"></script>
+
+				<script src="/assets/js/accessibility.js"></script>
+
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+				<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
+				<script src="/assets/amcharts4/core.js"></script>
+				<script src="/assets/amcharts4/maps.js"></script>
+				<script src="/assets/amcharts4/charts.js"></script>
+				<script src="/assets/amcharts4/themes/animated.js"></script>
+				<script src="/assets/amcharts4/themes/dataviz.js"></script>
+				<script src="/assets/amcharts4/geodata/worldLow.js"></script>
+
+				<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js"></script>
+				<script src="https://cdn.rawgit.com/jasondavies/d3-cloud/v1.2.1/build/d3.layout.cloud.js"></script>
+
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="/"><img src="/assets/img/logo_GUS_en.png"></a>
+  <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" style="background-color: transparent;">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="margin-left: auto;">
+
+      <li class="nav-item">
+        <a class="nav-link" href="/indicator">Indicators</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/api">API</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/game">Game</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/dashboard">Dashboard</a>
+      </li>
+      <li class="nav-item kontrast" style="margin-top: 20px;">
+
+      </li>
+    </ul>
+
+    <form class="form-inline my-2 my-lg-0" action="/search/?search=">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" name="search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="width: 15px;"><i class="fa fa-search"></i></button>
+    </form>
+
+  </div>
+</nav>
+
+<script>
+var switcher = new accessibilitySwitcher('');
+$(".high").attr('style',  'font-size:26px;color:#000000;');
+$(".default").attr('style',  'font-size:26px;color:#ffffff;');
+
+
+if ($("body").css("background-color")=='rgb(0, 0, 0)'){
+  $(".high").attr('style',  'display:none');
+}else{
+  $(".default").attr('style',  'display:none');
+}
+
+$(".high").click(function() {
+  $(".high").attr('style',  'display:none');
+  $(".default").attr('style',  'font-size:26px;color:#ffffff;display:block;');
+});
+
+$(".default").click(function() {
+  $(".default").attr('style',  'display:none');
+  $(".high").attr('style',  'font-size:26px;color:#000000;display:block;');
+});
+
+</script>
+
+
+<div class="front" style="padding: .5rem 1rem;display: inline-table;width: 98%;margin-top: 35px;">
+			  <link rel="stylesheet" href="/assets/css/api.css?v=">
+  <script src="/assets/js/api.js"></script>
+
+
+  <h2 style="margin-top: 30px;">Application programming interface (API)</h2>
+  <p>The SDG API (Application Programming Interface) allows to browse and download for further processing the full range of data and metadata for global and national indicators monitoring the Sustainable Development Goals (SDGs) of the 2030 Agenda in Poland.
+    <br />The data is made available through REST API in JSON format.
+    The list below presents available web services provided as part of the API.</p>
+
+
+  <section id='content'>
+
+      
+        
+      
+        
+          
+            <article class=''>
+              <a name='/2012/12/31/en_response-status-codes.html'><h2>Response status codes</h2></a>
+              <section class='body'>
+                <table id="api_table">
+  <tr>
+    <th><b>Status code</b></th>
+    <th><b>Definition</b></th>
+    <th><b>Message</b></th>
+  </tr>
+  <tr>
+    <td><b>200</b></td>
+    <td>OK</td>
+    <td>The request was successful and the response body contains the representation requested</td>
+  </tr>
+  <tr>
+    <td><b>302</b></td>
+    <td>FOUND</td>
+    <td>A common redirect response; you can GET the representation at the URI in the Location response header</td>
+  </tr>
+  <tr>
+    <td><b>304</b></td>
+    <td>NOT MODIFIED</td>
+    <td>There is no new data to return</td>
+  </tr>
+  <tr>
+    <td><b>400</b></td>
+    <td>BAD REQUEST</td>
+    <td>The request was invalid or cannot be otherwise served</td>
+  </tr>
+  <tr>
+    <td><b>401</b></td>
+    <td>UNAUTHORIZED</td>
+    <td>The authentication credentials are missing, or if supplied are not valid or not sufficient to access the resource</td>
+  </tr>
+  <tr>
+    <td><b>403</b></td>
+    <td>FORBIDDEN</td>
+    <td>The request has been refused</td>
+  </tr>
+  <tr>
+    <td><b>404</b></td>
+    <td>NOT FOUND</td>
+    <td>The URI requested is invalid or the resource requested does not exists</td>
+  </tr>
+  <tr>
+    <td><b>406</b></td>
+    <td>NOT ACCEPTABLE</td>
+    <td>The request specified an invalid format</td>
+  </tr>
+  <tr>
+    <td><b>410</b></td>
+    <td>GONE</td>
+    <td>This resource is gone</td>
+  </tr>
+  <tr>
+    <td><b>500</b></td>
+    <td>INTERNAL SERVER ERROR</td>
+    <td>Something is horribly wrong</td>
+  </tr>
+  <tr>
+    <td><b>502</b></td>
+    <td>BAD GATEWAY</td>
+    <td>The service is down or being upgraded</td>
+  </tr>
+  <tr>
+    <td><b>503</b></td>
+    <td>SERVICE UNAVAILABLE</td>
+    <td>The service is up, but overloaded with requests</td>
+  </tr>
+  <tr>
+    <td><b>504</b></td>
+    <td>GATEWAY TIMEOUT</td>
+    <td>Servers are up, but the request couldn’t be serviced due to some failure within our stack</td>
+  </tr>
+</table>
+
+              </section>
+            </article>
+          
+        
+      
+        
+          
+            <article class=''>
+              <a name='/2012/12/31/en_limits.html'><h2>Limits and API key</h2></a>
+              <section class='body'>
+                <p>For API security reasons, quantitative limits are imposed on the number of requests. For unauthenticated requests, the rate limit allows for up to 60 requests per hour. For API requests using OAuth, you can make up to 5000 requests per hour. To use OAuth, you need to create account on Github and generate personal access token in developer settings. Then set the Authorization header with token in your request. For example:</p>
+
+<div id="example">
+
+<p><code class="highlighter-rouge">curl -H "Accept:application/vnd.github.v3.raw" -H "Authorization: token generated_token" "https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/en/global/1/1-1-1.json"</code></p>
+
+</div>
+
+<p>
+  For more information, please visit:<br />
+  <a target="_blank" href="https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line" class="contrast-default">help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line</a><br />
+  <a target="_blank" href="https://developer.github.com/v3/auth/" class="contrast-default">developer.github.com/v3/auth/</a><br />
+</p>
+
+              </section>
+            </article>
+          
+        
+      
+        
+      
+        
+      
+        
+          
+            <article class='GET'>
+              <a name='/2012/12/27/api_en_globalne_metadata.html'><h2><code><b>GET</b> /api/v1/en/global_metadata.json</code> Download metadata for all global indicators</h2></a>
+              <section class='body'>
+                <p>This method allows users to download metadata for all global indicators in English.</p>
+
+<h3 id="parameters">Parameters</h3>
+
+<p>No input parameters</p>
+
+<p style="float:left;margin-top: 7px;">Response content type</p>
+<p><select style="float:left;padding: 0px 15px;width: 155px;margin-left: 10px;text-align-last: center;">
+  <option>application/json</option>
+</select></p>
+
+<div id="example">
+
+<h3 id="przykładowy-curl">Curl example</h3>
+
+<p><code class="highlighter-rouge">curl -H "Accept:application/vnd.github.v3.raw" "https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/en/global_metadata.json"</code></p>
+
+<h3 id="przykładowy-url">URL example</h3>
+
+<p><code class="highlighter-rouge">https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/en/global_metadata.json</code></p>
+
+<h3 id="przykładowy-kod-odpowiedzi">Response code</h3>
+
+<p><code class="highlighter-rouge">200</code></p>
+
+<h3 id="przykładowa-odpowiedź">Response</h3>
+
+<p><code class="highlighter-rouge" id="show-data-glob-en-metadata">
+</code></p>
+
+</div>
+
+<script>
+
+$.getJSON('https://sdg.gov.pl/api/v1/en/global_metadata.json', function(data) {
+    $('#show-data-glob-en-metadata').html(JSON.stringify(data, null, 2));
+});
+
+</script>
+
+
+              </section>
+            </article>
+          
+        
+      
+        
+          
+            <article class='GET'>
+              <a name='/2012/12/27/api_en_globalne_data.html'><h2><code><b>GET</b> /api/v1/en/global_data.json</code> Download data for all global indicators</h2></a>
+              <section class='body'>
+                <p>This method allows users to download data for all global indicators in English.</p>
+
+<h3 id="parameters">Parameters</h3>
+
+<p>No input parameters</p>
+
+<p style="float:left;margin-top: 7px;">Response content type</p>
+<p><select style="float:left;padding: 0px 15px;width: 155px;margin-left: 10px;text-align-last: center;">
+  <option>application/json</option>
+</select></p>
+
+<div id="example">
+
+<h3 id="przykładowy-curl">Curl example</h3>
+
+<p><code class="highlighter-rouge">curl -H "Accept:application/vnd.github.v3.raw" "https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/en/global_data.json"</code></p>
+
+<h3 id="przykładowy-url">URL example</h3>
+
+<p><code class="highlighter-rouge">https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/en/global_data.json</code></p>
+
+<h3 id="przykładowy-kod-odpowiedzi">Response code</h3>
+
+<p><code class="highlighter-rouge">200</code></p>
+
+<h3 id="przykładowa-odpowiedź">Response</h3>
+
+<p><code class="highlighter-rouge" id="show-data-glob-en-data">
+</code></p>
+
+</div>
+
+<script>
+
+$.getJSON('https://sdg.gov.pl/api/v1/en/global_data.json', function(data) {
+    $('#show-data-glob-en-data').html(JSON.stringify(data, null, 2));
+});
+
+</script>
+
+
+              </section>
+            </article>
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+            <article class='GET'>
+              <a name='/2012/12/25/api_en_globalne_1-1-1.html'><h2><code><b>GET</b> /api/v1/en/global/{goal}/{num}.json</code> Download global indicator</h2></a>
+              <section class='body'>
+                <p>This method allows users to download data and metadata for chosen global indicator in English.</p>
+
+<h3 id="parameters">Parameters</h3>
+
+<table id="api_table">
+  <tr>
+    <th><b>Name</b></th>
+    <th><b>Description</b></th>
+  </tr>
+  <tr>
+    <td><b>goal</b></td>
+    <td>number of indicator's goal ( 1 - 17 )</td>
+  </tr>
+  <tr>
+    <td><b>num</b></td>
+    <td>numer of indicator</td>
+  </tr>
+</table>
+
+<p style="float:left;margin-top: 7px;">Response content type</p>
+<p><select style="float:left;padding: 0px 15px;width: 155px;margin-left: 10px;text-align-last: center;">
+  <option>application/json</option>
+</select></p>
+
+<div id="example2">
+
+<h3 id="przykładowy-curl">Curl example</h3>
+
+<p><code class="highlighter-rouge">curl -H "Accept:application/vnd.github.v3.raw" "https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/en/global/1/1-1-1.json"</code></p>
+
+<h3 id="przykładowy-url">URL example</h3>
+
+<p><code class="highlighter-rouge">https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/en/global/1/1-1-1.json</code></p>
+
+<h3 id="przykładowy-kod-odpowiedzi">Response code</h3>
+
+<p><code class="highlighter-rouge">200</code></p>
+
+<h3 id="przykładowa-odpowiedź">Response</h3>
+
+<p><code class="highlighter-rouge" id="show-data-1-1-1-en">
+</code></p>
+
+</div>
+
+<script>
+
+$.getJSON('https://sdg.gov.pl/api/v1/en/global/1/1-1-1.json', function(data) {
+    $('#show-data-1-1-1-en').html(JSON.stringify(data, null, 2));
+});
+
+</script>
+
+
+              </section>
+            </article>
+          
+        
+      
+
+  </section>
+
+  <script>require('boot');</script>
+
+
+		<footer>
+
+</footer>
+
+</div>
+
+</body>
+
+</html>
