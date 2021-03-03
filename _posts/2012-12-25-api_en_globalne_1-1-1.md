@@ -40,7 +40,7 @@ This method allows users to download data and metadata for chosen global indicat
 
 <script>
 
-$.getJSON('http://127.0.0.1:4000/api/v1/global/1/1-1-2.json', function(data) {
+$.getJSON('http://127.0.0.1:4000/api/v1/globalne/1/10-1-1.json', function(data) {
     $('#show-data-1-1-1-en').html(JSON.stringify(data, null, 2));
 });
 

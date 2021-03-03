@@ -1,0 +1,214 @@
+---
+layout: frontpage
+---
+
+{% assign id = page.indicator | slugify %}
+{% assign ktore = site.data.globalne %}
+{% assign sdg_goals = ktore.sdg_goals %}
+
+{% assign slug = page.indicator | replace: '.', '-' %}
+{% assign dataset_name = 'indicator_' | append: slug %}
+
+{% assign array = "" | split: ""  %}
+{% assign precyzja = array %}
+{% assign header_csv = array %}
+{% assign filtry = array %}
+{% assign wszystkie = array %}
+{% assign jednostka = array %}
+{% assign tytul = array %}
+{% assign metadane = array %}
+
+{% assign precyzja = page.pre %}
+{% assign metadane =page %}
+{% assign tytul = page.graph_title %}
+{% assign jednostka = page.jednostka %}
+{% assign wszystkie = page.zmienne | split: ";" %}
+{% assign filtry = page.kategorie | split: "," %}
+{% assign header_csv = page.indicator_variable_1 | split: "," %}
+{% assign sdg_indicator = ktore[dataset_name] %}
+{% assign sdg_indicators = ktore.sdg_indicator_metadata %}
+
+{% assign foo = array %}
+{% for wszy in wszystkie %}
+{% assign ha = wszy | split: "," | jsonify | append:','%}
+{% assign foo = foo | push: ha %}
+{% endfor %}
+
+{% for indicators in sdg_indicators %}
+{% if indicators.indicator_id == page.indicator %}
+  {% assign this_sdg_indicator_metadata = indicators %}
+{% endif %}
+{% endfor %}
+
+{% assign indicator_title = this_sdg_indicator_metadata.indicator %}
+{% assign licznik = header_csv | size %}
+{% assign row = array %}
+{% assign labels = array %}
+
+{% assign row1 = array %}
+{%for i in (0..licznik) %}
+  {% for indicator in sdg_indicator %}
+    {% assign a = header_csv[i] %}
+    {% assign row1 = row1 | push: indicator[a] %}
+  {%endfor%}
+{%endfor%}
+
+{% for indicator in sdg_indicator %}
+  {% assign labels = labels | push: indicator.year %}
+{% endfor %}
+
+<h3 style="margin: 2em 0;">{{ page.indicator}} - {{ indicator_title }} </h3>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item"><a class="nav-link active" href="#data" aria-controls="data" role="tab" data-toggle="tab">Data</a></li>
+  <li class="nav-item"><a class="nav-link" href="#metadata" aria-controls="metadata" role="tab" data-toggle="tab">Metadata</a></li>
+
+</ul>
+
+<div style="float: left;width: 100%;">
+  {% assign table_template = 'components/table.html' %}
+
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="data">
+          <div style="display: flow-root;margin-top: 15px;">
+                <div id="title" style="text-align: center"></div>
+                <div id="chartdiv" style="margin-top: 29px;"><figure><img src="{{site.baseurl}}/assets/img/mp/corr/corrAT.png" id="image1" style="width: 100%;cursor: pointer;"></figure></div>
+                <div id="chartdiv2"></div>
+
+                <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+              </div>
+
+          </div>
+
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="metadata">
+      <div class="metadata-table">
+          <h2>Information about indicator</h2>
+          <table>
+            {% for indicator_metadata in site.prose.metadata._indicators %}
+              {% if indicator_metadata.field.scope == "global" %}
+                <tr>
+                  <th style="padding: 5px; height: 45px;">  {{ indicator_metadata.field.label2 }} </th>
+                  <td style="padding: 10px; text-align: justify; height: 45px;">  {{ metadane[indicator_metadata.name] }} </td>
+                </tr>
+              {% endif %}
+            {% endfor %}
+          </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<script>
+
+
+  var modal = document.getElementById('myModal');
+
+
+  var img = document.getElementById('image1');
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+
+
+  var span = document.getElementsByClassName("close")[0];
+
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+
+  var stateData =(function() {
+        var json = null;
+        $.ajax({
+            'async': false,
+            'url': "{{site.baseurl}}/json/{{page.indicator}}.json",
+            'dataType': "json",
+            'success': function (data) {
+                json = data;
+            }
+        });
+        return json;
+  })();
+
+
+  am4core.useTheme(am4themes_animated);
+  am4core.useTheme(am4themes_dataviz);
+
+  var mainContainer2 = am4core.create("chartdiv2", am4core.Container);
+  mainContainer2.width = am4core.percent(100);
+  mainContainer2.height = am4core.percent(100);
+
+  var mapChart = mainContainer2.createChild(am4maps.MapChart);
+  mapChart.projection = new am4maps.projections.Mercator();
+  mapChart.geodata = am4geodata_worldLow;
+  mapChart.zIndex = -1;
+  mapChart.homeZoomLevel=1;
+  mapChart.homeGeoPoint = {
+  latitude: 52,
+  longitude: 11
+  };
+  mapChart.seriesContainer.events.disableType("doublehit");
+  mapChart.chartContainer.background.events.disableType("doublehit");
+  mapChart.chartContainer.wheelable = false;
+
+  var polygonSeries = mapChart.series.push(new am4maps.MapPolygonSeries())
+  polygonSeries.useGeodata = true;
+  polygonSeries.include = ["PL","NO","BG","FR","DK","LU","GE","IT","IE","GB","GR","PT","ES","CY","MT","RO","HR","SI","HU","SK","AT","CZ","BE","LT","LV","EE","FI","SE","DE"];
+
+  var selectedStateId = "AT";
+  var selectedPolygon;
+  var selectedStateName;
+
+  var polygonTemplate = polygonSeries.mapPolygons.template;
+  polygonTemplate.togglable = true;
+
+  var hoverState = polygonTemplate.states.create("hover");
+  hoverState.properties.fill = mapChart.colors.getIndex(2);
+
+  var activeState = polygonTemplate.states.create("active");
+  activeState.properties.fill = mapChart.colors.getIndex(4);
+
+  polygonTemplate.events.on("hit", function(event) {
+    var id = event.target.dataItem.dataContext.id;
+    showState(id, event.target.dataItem.dataContext.name, event.target);
+  })
+
+
+  mapChart.seriesContainer.background.events.on("over", function(event) {
+      showState(selectedStateId, selectedStateName, selectedPolygon);
+  });
+
+
+  function showState(id, stateName, polygon) {
+       if(selectedStateId != id){
+         if (typeof stateData[id]!='undefined'){
+           if (selectedPolygon) {
+             selectedPolygon.isActive = false;
+           }
+           document.getElementById("image1").src="{{site.baseurl}}"+stateData[id][0].source;
+           selectedStateName = stateName;
+           selectedStateId = id;
+           selectedPolygon = polygon;
+           $("#title h3").html(stateName + " movements");
+         }else{
+           selectedPolygon.isActive = false;
+         }
+
+       }
+
+     }
+
+
+
+</script>

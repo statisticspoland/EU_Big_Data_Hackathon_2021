@@ -1,0 +1,43 @@
+
+
+
+
+
+
+
+
+
+{
+  "2-1-2": [
+    {
+      "metadane": [
+			
+			{
+
+                      	"Name of the indicator": "2.1.2 Import - Reversed Value Axis",
+
+                        "Measure unit": "mln",
+
+                        "Description of the indicator": "The data shows Import - Reversed Value Axis",
+
+                        "Data sources": "ITGS_Reference"}
+      ],
+      "dane": [
+        {
+                      "Kontekst społeczny": [
+                          {
+                              "lokal1": [
+                                  {
+                                  }
+                              ],
+                              "lokal2": [
+                                  {
+                                  }
+                              ]
+                          }
+                      ]}
+      ]
+    }
+
+  ]
+}

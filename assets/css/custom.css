@@ -308,7 +308,7 @@ margin-right: -1px;
   margin: auto;
   display: block;
   width: 100%;
-  max-width: 1000px;
+  //max-width: 1000px;
 }
 
 /* Caption of Modal Image */

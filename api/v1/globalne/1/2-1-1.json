@@ -1,0 +1,43 @@
+
+
+
+
+
+
+
+
+
+{
+  "2-1-1": [
+    {
+      "metadane": [
+			
+			{
+
+                      	"Name of the indicator": "2.1.1 Chord diagram with animated bullets",
+
+                        "Measure unit": "thous.",
+
+                        "Description of the indicator": "The data shows Chord diagram with animated bullets",
+
+                        "Data sources": "ITGS_Reference"}
+      ],
+      "dane": [
+        {
+                      "Kontekst społeczny": [
+                          {
+                              "lokal1": [
+                                  {
+                                  }
+                              ],
+                              "lokal2": [
+                                  {
+                                  }
+                              ]
+                          }
+                      ]}
+      ]
+    }
+
+  ]
+}

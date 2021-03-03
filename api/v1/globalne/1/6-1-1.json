@@ -1,0 +1,39 @@
+
+
+
+
+
+
+
+
+
+{
+  "6-1-1": [
+    {
+      "metadane": [
+			
+			{
+
+                      	"Name of the indicator": "6.1.1 Automatic Identification System (AIS) data - imports - metric tons of cargo",
+
+                        "Measure unit": "mtc = metric tons of carg",
+
+                        "Description of the indicator": "(AIS) data - imports - metric tons of cargo",
+
+                        "Data sources": "UN COMTRADE - (AIS Task Team)"}
+      ],
+      "dane": [
+        {
+                      "AIS": [
+                          {
+                              "(AIS) data - imports - metric tons of cargo": [
+                                  {
+                                  }
+                              ]
+                          }
+                      ]}
+      ]
+    }
+
+  ]
+}

@@ -1,0 +1,59 @@
+
+
+
+
+
+
+
+
+
+{
+  "4-1-2": [
+    {
+      "metadane": [
+			
+			{
+
+                      	"Name of the indicator": "4.1.2 Exports by countries and CN section",
+
+                        "Measure unit": "EUR",
+
+                        "Description of the indicator": "The data shows Exports by countries and CN section",
+
+                        "Data sources": "COMEXT"}
+      ],
+      "dane": [
+        {
+                      "Kontekst społeczny": [
+                          {
+                              "lokal1": [
+                                  {
+                                      "D" :   "",
+                                  
+                                      "G" :   "",
+                                  
+                                      "M" :   "",
+                                  
+                                      "Q" :   ""
+                                  
+                                  }
+                              ],
+                              "lokal2": [
+                                  {
+                                      "D" :   "",
+                                  
+                                      "G" :   "",
+                                  
+                                      "M" :   "",
+                                  
+                                      "Q" :   ""
+                                  
+                                  }
+                              ]
+                          }
+                      ]}
+      ]
+    }
+
+  ]
+}

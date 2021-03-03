@@ -1,0 +1,43 @@
+
+
+
+
+
+
+
+
+
+{
+  "8-2-2": [
+    {
+      "metadane": [
+			
+			{
+
+                      	"Name of the indicator": "8.2.2 Imports by countries and CN section",
+
+                        "Measure unit": "mln Euro",
+
+                        "Description of the indicator": "The data shows Imports by countries and CN section",
+
+                        "Data sources": "ITGS_Reference"}
+      ],
+      "dane": [
+        {
+                      "Kontekst społeczny": [
+                          {
+                              "lokal1": [
+                                  {
+                                  }
+                              ],
+                              "lokal2": [
+                                  {
+                                  }
+                              ]
+                          }
+                      ]}
+      ]
+    }
+
+  ]
+}

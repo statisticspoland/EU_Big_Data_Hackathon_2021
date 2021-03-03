@@ -1,0 +1,43 @@
+
+
+
+
+
+
+
+
+
+{
+  "8-1-1": [
+    {
+      "metadane": [
+			
+			{
+
+                      	"Name of the indicator": "8.1.1 Exports (consign) by countries and  CN section",
+
+                        "Measure unit": "mln Euro",
+
+                        "Description of the indicator": "The data shows Exports (consign) by countries and  CN section",
+
+                        "Data sources": "ITGS_Reference"}
+      ],
+      "dane": [
+        {
+                      "Kontekst społeczny": [
+                          {
+                              "lokal1": [
+                                  {
+                                  }
+                              ],
+                              "lokal2": [
+                                  {
+                                  }
+                              ]
+                          }
+                      ]}
+      ]
+    }
+
+  ]
+}

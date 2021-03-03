@@ -1,0 +1,39 @@
+
+
+
+
+
+
+
+
+
+{
+  "6-1-2": [
+    {
+      "metadane": [
+			
+			{
+
+                      	"Name of the indicator": "6.1.2 Automatic Identification System (AIS) data - imports - number of port calls",
+
+                        "Measure unit": "num_pc = number of port calls",
+
+                        "Description of the indicator": "(AIS) data - imports - number of port calls",
+
+                        "Data sources": "UN COMTRADE - (AIS Task Team)"}
+      ],
+      "dane": [
+        {
+                      "AIS": [
+                          {
+                              "(AIS) data - imports - number of port calls": [
+                                  {
+                                  }
+                              ]
+                          }
+                      ]}
+      ]
+    }
+
+  ]
+}

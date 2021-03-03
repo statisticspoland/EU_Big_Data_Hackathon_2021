@@ -1,0 +1,75 @@
+
+
+
+
+
+
+
+
+
+{
+  "4-1-1": [
+    {
+      "metadane": [
+			
+			{
+
+                      	"Name of the indicator": "4.1.1 Imports by countries and CN section",
+
+                        "Measure unit": "EUR",
+
+                        "Description of the indicator": "The data shows Imports by countries and CN section",
+
+                        "Data sources": "COMEXT"}
+      ],
+      "dane": [
+        {
+                      "Kontekst społeczny": [
+                          {
+                              "lokal1": [
+                                  {
+                                      "2010" :   "",
+                                  
+                                      "2011" :   "",
+                                  
+                                      "2012" :   "",
+                                  
+                                      "2013" :   "",
+                                  
+                                      "2014" :   "",
+                                  
+                                      "2015" :   "",
+                                  
+                                      "2016" :   "",
+                                  
+                                      "2017" :   ""
+                                  
+                                  }
+                              ],
+                              "lokal2": [
+                                  {
+                                      "2010" :   "",
+                                  
+                                      "2011" :   "",
+                                  
+                                      "2012" :   "",
+                                  
+                                      "2013" :   "",
+                                  
+                                      "2014" :   "",
+                                  
+                                      "2015" :   "",
+                                  
+                                      "2016" :   "",
+                                  
+                                      "2017" :   ""
+                                  
+                                  }
+                              ]
+                          }
+                      ]}
+      ]
+    }
+
+  ]
+}
