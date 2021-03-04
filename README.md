@@ -27,4 +27,4 @@ The project is available - https://statisticspoland.github.io/EU_Big_Data_Hackat
 
 API - https://statisticspoland.github.io/EU_Big_Data_Hackathon_2021/api/
 
-More information - https://ec.europa.eu/eurostat/cros/EU-BD-Hackathon_en
+More information - https://ec.europa.eu/eurostat/cros/BD_Hackathon2021_en
