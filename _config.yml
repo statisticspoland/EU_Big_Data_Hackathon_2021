@@ -17,6 +17,10 @@ title: Hackathon EU BD - Statistics Poland
 email: your-email@example.com
 description: Statistics Poland
 baseurl: "https://statisticspoland.github.io/EU_Big_Data_Hackathon_2021" 
+
+# Google Analytics
+google_analytics: G-17L6ZNBXCK
+
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
