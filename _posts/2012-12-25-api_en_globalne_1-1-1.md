@@ -20,11 +20,11 @@ This method allows users to download data and metadata for chosen global indicat
 
 <h3 id="przykładowy-curl">Curl example</h3>
 
-<p><code class="highlighter-rouge">curl -H "Accept:application/vnd.github.v3.raw" "https://api.github.com/repos/statisticspoland/EU_Big_Data_Hackathon_2021/contents/api/v1/global/1/3-1-2.json"</code></p>
+<p><code class="highlighter-rouge">curl -H "Accept:application/vnd.github.v3.raw" "https://api.github.com/repos/statisticspoland/EU_Big_Data_Hackathon_2021/contents/api/v1/globalne/1/4-1-1.json"</code></p>
 
 <h3 id="przykładowy-url">URL example</h3>
 
-<p><code class="highlighter-rouge">https://api.github.com/repos/statisticspoland/EU_Big_Data_Hackathon_2021/contents/api/v1/global/1/3-1-2.json</code></p>
+<p><code class="highlighter-rouge">https://api.github.com/repos/statisticspoland/EU_Big_Data_Hackathon_2021/contents/api/v1/globalne/1/4-1-1.json</code></p>
 
 <h3 id="przykładowy-kod-odpowiedzi">Response code</h3>
 
@@ -40,7 +40,7 @@ This method allows users to download data and metadata for chosen global indicat
 
 <script>
 
-$.getJSON('http://127.0.0.1:4000/api/v1/globalne/1/10-1-1.json', function(data) {
+$.getJSON('https://api.github.com/repos/statisticspoland/EU_Big_Data_Hackathon_2021/api/v1/globalne/1/4-1-1.json', function(data) {
     $('#show-data-1-1-1-en').html(JSON.stringify(data, null, 2));
 });
 
