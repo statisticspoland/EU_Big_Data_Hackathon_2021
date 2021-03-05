@@ -1,0 +1,17 @@
+
+{
+  "11-2-1": [
+    {
+      "metadane": [
+			
+			{
+
+                      	"Name of the indicator": "11.2.1 Prediction of export based on COVID cases",
+                        "Measure unit": "Number of cases, EUR in millions",
+                        "Description of the indicator": "It shows the graphs of prediction of changes in export in different countries by CN sections, depending on the increasing number of cases",
+                        "Data sources": "COMEXT month data (Eurostat), COVID (Worldometer)"}
+      ]
+    }
+
+  ]
+}

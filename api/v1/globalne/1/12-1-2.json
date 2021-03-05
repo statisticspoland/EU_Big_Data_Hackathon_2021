@@ -1,0 +1,17 @@
+
+{
+  "12-1-2": [
+    {
+      "metadane": [
+			
+			{
+
+                      	"Name of the indicator": "12.1.2 Traffic intensity of aircrafts in Europe- 2020-2021 - ADS-B data",
+                        "Measure unit": "",
+                        "Description of the indicator": "The indicator presents traffic intensity of aircrafts in Europe- 2020-2021. The chart was generated based on the satellite ADS-B data. The purpose of presenting the chart is to present how the aircraft position changed during the COVID-19 pandemic.",
+                        "Data sources": "ADS-B (Automatic Dependent Surveillance - Broadcast) on UN Global Platform"}
+      ]
+    }
+
+  ]
+}

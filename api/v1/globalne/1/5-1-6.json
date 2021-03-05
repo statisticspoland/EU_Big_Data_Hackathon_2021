@@ -1,49 +1,14 @@
 
-
-
-
-
-
-
-
-
 {
   "5-1-6": [
     {
       "metadane": [
 			
 			{
-
                       	"Name of the indicator": "5.1.6 Export - graphs by sections CN, 2019-2018",
-
                         "Measure unit": "graph",
-
                         "Description of the indicator": "",
-
                         "Data sources": "ITGS_Reference"}
-      ],
-      "dane": [
-        {
-                      "diseases": [
-                          {
-                              "diseases of the circulatory system": [
-                                  {
-                                  }
-                              ],
-                              "diabetes mellitus": [
-                                  {
-                                  }
-                              ],
-                              "malignant neoplasms": [
-                                  {
-                                  }
-                              ],
-                              "chronic respiratory disease": [
-                                  {
-                                  }
-                              ]
-                          }
-                      ]}
       ]
     }
 

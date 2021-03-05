@@ -20,9 +20,9 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 				<link rel="stylesheet" href="/assets/css/chartist.css">
         <link rel="stylesheet" href="/assets/css/chartist-plugin-tooltip.css">
-				<link rel="stylesheet" href="/assets/css/custom.css?v=2021-03-03-13-14-28-+0100">
-				<link rel="stylesheet" href="/assets/css/custom_panel.css?v=2021-03-03-13-14-28-+0100">
-				<link rel="stylesheet" href="/assets/css/custom_contrast.css?v=2021-03-03-13-14-28-+0100">
+				<link rel="stylesheet" href="/assets/css/custom.css?v=2021-03-04-21-48-34-+0100">
+				<link rel="stylesheet" href="/assets/css/custom_panel.css?v=2021-03-04-21-48-34-+0100">
+				<link rel="stylesheet" href="/assets/css/custom_contrast.css?v=2021-03-04-21-48-34-+0100">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 				<script src="/assets/js/vendor/chartist.min.js"></script>
@@ -122,7 +122,7 @@
         <a class="nav-link" href="/api">API</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/game">Game</a>
+        <a class="nav-link" href="/game">Quiz</a>
       </li>
       <li class="nav-item kontrast" style="margin-top: 20px;">
 
@@ -188,9 +188,8 @@ z-index: 3;
 
 
   <h2 style="margin-top: 30px;">Application programming interface (API)</h2>
-  <p>The SDG API (Application Programming Interface) allows to browse and download for further processing the full range of data and metadata for global and national indicators monitoring the Sustainable Development Goals (SDGs) of the 2030 Agenda in Poland.
-    <br />The data is made available through REST API in JSON format.
-    The list below presents available web services provided as part of the API.</p>
+  <p>The web application API (Application Programming Interface) allows to browse and download for further processing the full range of data and metadata for all indicators.
+    <br />The data is made available through REST API in JSON format. The list below presents available web services provided as part of the API.</p>
 
 
   <section id='content'>
@@ -290,7 +289,7 @@ z-index: 3;
 
 <div id="example">
 
-<p><code class="highlighter-rouge">curl -H "Accept:application/vnd.github.v3.raw" -H "Authorization: token generated_token" "https://api.github.com/repos/statisticspoland/sdg-indicators-pl/contents/api/v1/en/global/1/1-1-1.json"</code></p>
+<p><code class="highlighter-rouge">curl -H "Accept:application/vnd.github.v3.raw" -H "Authorization: token generated_token" "https://api.github.com/repos/statisticspoland/EU_Big_Data_Hackathon_2021/api/v1/globalne/1/4-1-1.json"</code></p>
 
 </div>
 
@@ -323,11 +322,11 @@ z-index: 3;
 
 <h3 id="przykładowy-curl">Curl example</h3>
 
-<p><code class="highlighter-rouge">curl -H "Accept:application/vnd.github.v3.raw" "https://api.github.com/repos/statisticspoland/EU_Big_Data_Hackathon_2021/contents/api/v1/global/1/3-1-2.json"</code></p>
+<p><code class="highlighter-rouge">curl -H "Accept:application/vnd.github.v3.raw" "https://api.github.com/repos/statisticspoland/EU_Big_Data_Hackathon_2021/contents/api/v1/globalne/1/4-1-1.json"</code></p>
 
 <h3 id="przykładowy-url">URL example</h3>
 
-<p><code class="highlighter-rouge">https://api.github.com/repos/statisticspoland/EU_Big_Data_Hackathon_2021/contents/api/v1/global/1/3-1-2.json</code></p>
+<p><code class="highlighter-rouge">https://api.github.com/repos/statisticspoland/EU_Big_Data_Hackathon_2021/contents/api/v1/globalne/1/4-1-1.json</code></p>
 
 <h3 id="przykładowy-kod-odpowiedzi">Response code</h3>
 
@@ -342,7 +341,7 @@ z-index: 3;
 
 <script>
 
-$.getJSON('https://api.github.com/repos/statisticspoland/EU_Big_Data_Hackathon_2021/contents/api/v1/global/1/3-1-2.json', function(data) {
+$.getJSON('https://statisticspoland.github.io/EU_Big_Data_Hackathon_2021/api/v1/globalne/1/4-1-1.json', function(data) {
     $('#show-data-1-1-1-en').html(JSON.stringify(data, null, 2));
 });
 

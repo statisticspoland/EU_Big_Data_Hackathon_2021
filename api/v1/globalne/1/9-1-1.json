@@ -1,12 +1,4 @@
 
-
-
-
-
-
-
-
-
 {
   "9-1-1": [
     {
@@ -14,28 +6,10 @@
 			
 			{
 
-                      	"Name of the indicator": "9.1.1 Import by countries and  CN section",
-
+                      	"Name of the indicator": "9.1.1 COVID-19 Test kits and diagnostic reagents - export by country in 2020",
                         "Measure unit": "Euro",
-
-                        "Description of the indicator": "The data shows Imports by countries and  CN section",
-
+                        "Description of the indicator": "The graph shows exports by countries for group A1 - COVID-19 Test kits and diagnostic reagents",
                         "Data sources": "COMEXT"}
-      ],
-      "dane": [
-        {
-                      "Kontekst społeczny": [
-                          {
-                              "lokal1": [
-                                  {
-                                  }
-                              ],
-                              "lokal2": [
-                                  {
-                                  }
-                              ]
-                          }
-                      ]}
       ]
     }
 
