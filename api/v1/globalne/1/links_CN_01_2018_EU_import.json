@@ -1,0 +1,3332 @@
+[
+  {
+    "country1": "AT",
+    "country2": "SI",
+    "val_exp_ijp": 148343.4
+  },
+  {
+    "country1": "BE",
+    "country2": "IE",
+    "val_exp_ijp": 219850.2
+  },
+  {
+    "country1": "BG",
+    "country2": "DE",
+    "val_exp_ijp": 28983.5
+  },
+  {
+    "country1": "BG",
+    "country2": "HR",
+    "val_exp_ijp": 1218.3
+  },
+  {
+    "country1": "BG",
+    "country2": "LT",
+    "val_exp_ijp": 3423.6
+  },
+  {
+    "country1": "BG",
+    "country2": "LV",
+    "val_exp_ijp": 2157.3
+  },
+  {
+    "country1": "CY",
+    "country2": "IE",
+    "val_exp_ijp": 2250
+  },
+  {
+    "country1": "CZ",
+    "country2": "ES",
+    "val_exp_ijp": 151721.5
+  },
+  {
+    "country1": "CZ",
+    "country2": "SI",
+    "val_exp_ijp": 1730.1
+  },
+  {
+    "country1": "DE",
+    "country2": "BG",
+    "val_exp_ijp": 74319
+  },
+  {
+    "country1": "DE",
+    "country2": "FI",
+    "val_exp_ijp": 152482.7
+  },
+  {
+    "country1": "DE",
+    "country2": "FR",
+    "val_exp_ijp": 1420682.3
+  },
+  {
+    "country1": "DE",
+    "country2": "IT",
+    "val_exp_ijp": 1827913.8
+  },
+  {
+    "country1": "DK",
+    "country2": "IE",
+    "val_exp_ijp": 70308
+  },
+  {
+    "country1": "EE",
+    "country2": "IE",
+    "val_exp_ijp": 1145.6
+  },
+  {
+    "country1": "ES",
+    "country2": "CZ",
+    "val_exp_ijp": 10946
+  },
+  {
+    "country1": "ES",
+    "country2": "HU",
+    "val_exp_ijp": 30491.3
+  },
+  {
+    "country1": "ES",
+    "country2": "SK",
+    "val_exp_ijp": 22619.5
+  },
+  {
+    "country1": "FI",
+    "country2": "DE",
+    "val_exp_ijp": 17685.8
+  },
+  {
+    "country1": "FI",
+    "country2": "LT",
+    "val_exp_ijp": 12815.7
+  },
+  {
+    "country1": "FI",
+    "country2": "LV",
+    "val_exp_ijp": 4268.8
+  },
+  {
+    "country1": "FR",
+    "country2": "DE",
+    "val_exp_ijp": 1828486.2
+  },
+  {
+    "country1": "FR",
+    "country2": "HR",
+    "val_exp_ijp": 25055.8
+  },
+  {
+    "country1": "FR",
+    "country2": "RO",
+    "val_exp_ijp": 33886.9
+  },
+  {
+    "country1": "GR",
+    "country2": "IE",
+    "val_exp_ijp": 16048.7
+  },
+  {
+    "country1": "HR",
+    "country2": "BG",
+    "val_exp_ijp": 3537.9
+  },
+  {
+    "country1": "HR",
+    "country2": "FR",
+    "val_exp_ijp": 10446.6
+  },
+  {
+    "country1": "HR",
+    "country2": "IT",
+    "val_exp_ijp": 45614.1
+  },
+  {
+    "country1": "HU",
+    "country2": "ES",
+    "val_exp_ijp": 73780.9
+  },
+  {
+    "country1": "HU",
+    "country2": "LT",
+    "val_exp_ijp": 3191.2
+  },
+  {
+    "country1": "HU",
+    "country2": "LV",
+    "val_exp_ijp": 1761.9
+  },
+  {
+    "country1": "IE",
+    "country2": "BE",
+    "val_exp_ijp": 16335.6
+  },
+  {
+    "country1": "IE",
+    "country2": "CY",
+    "val_exp_ijp": 39.6
+  },
+  {
+    "country1": "IE",
+    "country2": "DK",
+    "val_exp_ijp": 78783
+  },
+  {
+    "country1": "IE",
+    "country2": "EE",
+    "val_exp_ijp": 30541.6
+  },
+  {
+    "country1": "IE",
+    "country2": "GR",
+    "val_exp_ijp": 67145.5
+  },
+  {
+    "country1": "IE",
+    "country2": "NL",
+    "val_exp_ijp": 134514.1
+  },
+  {
+    "country1": "IE",
+    "country2": "PL",
+    "val_exp_ijp": 44732.4
+  },
+  {
+    "country1": "IE",
+    "country2": "SE",
+    "val_exp_ijp": 13797.5
+  },
+  {
+    "country1": "IT",
+    "country2": "DE",
+    "val_exp_ijp": 1071015.6
+  },
+  {
+    "country1": "IT",
+    "country2": "HR",
+    "val_exp_ijp": 100955.8
+  },
+  {
+    "country1": "IT",
+    "country2": "RO",
+    "val_exp_ijp": 68331.5
+  },
+  {
+    "country1": "LT",
+    "country2": "BG",
+    "val_exp_ijp": 755.9
+  },
+  {
+    "country1": "LT",
+    "country2": "FI",
+    "val_exp_ijp": 20573
+  },
+  {
+    "country1": "LT",
+    "country2": "HU",
+    "val_exp_ijp": 23858.3
+  },
+  {
+    "country1": "LT",
+    "country2": "SK",
+    "val_exp_ijp": 811.6
+  },
+  {
+    "country1": "LV",
+    "country2": "BG",
+    "val_exp_ijp": 41.6
+  },
+  {
+    "country1": "LV",
+    "country2": "FI",
+    "val_exp_ijp": 2658.6
+  },
+  {
+    "country1": "LV",
+    "country2": "HU",
+    "val_exp_ijp": 446.1
+  },
+  {
+    "country1": "LV",
+    "country2": "SK",
+    "val_exp_ijp": 759
+  },
+  {
+    "country1": "MT",
+    "country2": "PT",
+    "val_exp_ijp": 1582.7
+  },
+  {
+    "country1": "NL",
+    "country2": "IE",
+    "val_exp_ijp": 605124.5
+  },
+  {
+    "country1": "NL",
+    "country2": "SK",
+    "val_exp_ijp": 11322.1
+  },
+  {
+    "country1": "PL",
+    "country2": "IE",
+    "val_exp_ijp": 35602.7
+  },
+  {
+    "country1": "PL",
+    "country2": "SE",
+    "val_exp_ijp": 436084.1
+  },
+  {
+    "country1": "PT",
+    "country2": "MT",
+    "val_exp_ijp": 9539.2
+  },
+  {
+    "country1": "RO",
+    "country2": "FR",
+    "val_exp_ijp": 78339.1
+  },
+  {
+    "country1": "RO",
+    "country2": "IT",
+    "val_exp_ijp": 122738.4
+  },
+  {
+    "country1": "RO",
+    "country2": "SK",
+    "val_exp_ijp": 59165.5
+  },
+  {
+    "country1": "SE",
+    "country2": "IE",
+    "val_exp_ijp": 120163.5
+  },
+  {
+    "country1": "SE",
+    "country2": "PL",
+    "val_exp_ijp": 123435.6
+  },
+  {
+    "country1": "SI",
+    "country2": "AT",
+    "val_exp_ijp": 57534.2
+  },
+  {
+    "country1": "SI",
+    "country2": "CZ",
+    "val_exp_ijp": 11792.6
+  },
+  {
+    "country1": "SK",
+    "country2": "ES",
+    "val_exp_ijp": 23949.6
+  },
+  {
+    "country1": "SK",
+    "country2": "LT",
+    "val_exp_ijp": 3104.6
+  },
+  {
+    "country1": "SK",
+    "country2": "LV",
+    "val_exp_ijp": 2184.1
+  },
+  {
+    "country1": "SK",
+    "country2": "NL",
+    "val_exp_ijp": 24781.5
+  },
+  {
+    "country1": "SK",
+    "country2": "RO",
+    "val_exp_ijp": 16685.2
+  },
+  {
+    "country1": "AT",
+    "country2": "BE",
+    "val_exp_ijp": 38018.8
+  },
+  {
+    "country1": "AT",
+    "country2": "DK",
+    "val_exp_ijp": 105627
+  },
+  {
+    "country1": "AT",
+    "country2": "EE",
+    "val_exp_ijp": 140.8
+  },
+  {
+    "country1": "AT",
+    "country2": "GR",
+    "val_exp_ijp": 1179.9
+  },
+  {
+    "country1": "BE",
+    "country2": "AT",
+    "val_exp_ijp": 9471.8
+  },
+  {
+    "country1": "BE",
+    "country2": "LU",
+    "val_exp_ijp": 55850.5
+  },
+  {
+    "country1": "BE",
+    "country2": "NL",
+    "val_exp_ijp": 2470862.2
+  },
+  {
+    "country1": "BE",
+    "country2": "PL",
+    "val_exp_ijp": 161730.2
+  },
+  {
+    "country1": "BE",
+    "country2": "SE",
+    "val_exp_ijp": 74718.3
+  },
+  {
+    "country1": "BG",
+    "country2": "ES",
+    "val_exp_ijp": 28585
+  },
+  {
+    "country1": "BG",
+    "country2": "PT",
+    "val_exp_ijp": 2463.3
+  },
+  {
+    "country1": "CY",
+    "country2": "AT",
+    "val_exp_ijp": 1362.3
+  },
+  {
+    "country1": "CY",
+    "country2": "CZ",
+    "val_exp_ijp": 285.5
+  },
+  {
+    "country1": "CY",
+    "country2": "HU",
+    "val_exp_ijp": 668.8
+  },
+  {
+    "country1": "CY",
+    "country2": "RO",
+    "val_exp_ijp": 3676.4
+  },
+  {
+    "country1": "CZ",
+    "country2": "CY",
+    "val_exp_ijp": 71.7
+  },
+  {
+    "country1": "CZ",
+    "country2": "DK",
+    "val_exp_ijp": 33430.5
+  },
+  {
+    "country1": "CZ",
+    "country2": "EE",
+    "val_exp_ijp": 1393
+  },
+  {
+    "country1": "CZ",
+    "country2": "GR",
+    "val_exp_ijp": 6787.1
+  },
+  {
+    "country1": "DE",
+    "country2": "MT",
+    "val_exp_ijp": 231.7
+  },
+  {
+    "country1": "DE",
+    "country2": "PL",
+    "val_exp_ijp": 1814174.3
+  },
+  {
+    "country1": "DE",
+    "country2": "SE",
+    "val_exp_ijp": 231199.6
+  },
+  {
+    "country1": "DK",
+    "country2": "AT",
+    "val_exp_ijp": 20650.5
+  },
+  {
+    "country1": "DK",
+    "country2": "CZ",
+    "val_exp_ijp": 4598.6
+  },
+  {
+    "country1": "DK",
+    "country2": "HU",
+    "val_exp_ijp": 16157.1
+  },
+  {
+    "country1": "DK",
+    "country2": "LU",
+    "val_exp_ijp": 813.2
+  },
+  {
+    "country1": "DK",
+    "country2": "NL",
+    "val_exp_ijp": 330599.5
+  },
+  {
+    "country1": "DK",
+    "country2": "RO",
+    "val_exp_ijp": 6726
+  },
+  {
+    "country1": "EE",
+    "country2": "AT",
+    "val_exp_ijp": 2021.5
+  },
+  {
+    "country1": "EE",
+    "country2": "CZ",
+    "val_exp_ijp": 3930.1
+  },
+  {
+    "country1": "EE",
+    "country2": "HU",
+    "val_exp_ijp": 1767
+  },
+  {
+    "country1": "EE",
+    "country2": "NL",
+    "val_exp_ijp": 12966.3
+  },
+  {
+    "country1": "EE",
+    "country2": "RO",
+    "val_exp_ijp": 168.1
+  },
+  {
+    "country1": "ES",
+    "country2": "BG",
+    "val_exp_ijp": 13600
+  },
+  {
+    "country1": "ES",
+    "country2": "FI",
+    "val_exp_ijp": 8268.6
+  },
+  {
+    "country1": "ES",
+    "country2": "FR",
+    "val_exp_ijp": 1227133.7
+  },
+  {
+    "country1": "ES",
+    "country2": "IT",
+    "val_exp_ijp": 340351.8
+  },
+  {
+    "country1": "ES",
+    "country2": "LV",
+    "val_exp_ijp": 880.8
+  },
+  {
+    "country1": "FI",
+    "country2": "ES",
+    "val_exp_ijp": 4251.1
+  },
+  {
+    "country1": "FI",
+    "country2": "PT",
+    "val_exp_ijp": 296.5
+  },
+  {
+    "country1": "FR",
+    "country2": "ES",
+    "val_exp_ijp": 1218411
+  },
+  {
+    "country1": "FR",
+    "country2": "PT",
+    "val_exp_ijp": 223372.9
+  },
+  {
+    "country1": "GR",
+    "country2": "AT",
+    "val_exp_ijp": 27888.3
+  },
+  {
+    "country1": "GR",
+    "country2": "CZ",
+    "val_exp_ijp": 11638.7
+  },
+  {
+    "country1": "GR",
+    "country2": "HU",
+    "val_exp_ijp": 14565.2
+  },
+  {
+    "country1": "GR",
+    "country2": "LU",
+    "val_exp_ijp": 1910.2
+  },
+  {
+    "country1": "GR",
+    "country2": "NL",
+    "val_exp_ijp": 436458.7
+  },
+  {
+    "country1": "GR",
+    "country2": "RO",
+    "val_exp_ijp": 79262.3
+  },
+  {
+    "country1": "HR",
+    "country2": "PL",
+    "val_exp_ijp": 55944.7
+  },
+  {
+    "country1": "HR",
+    "country2": "SE",
+    "val_exp_ijp": 6737.3
+  },
+  {
+    "country1": "HU",
+    "country2": "DK",
+    "val_exp_ijp": 7861.2
+  },
+  {
+    "country1": "HU",
+    "country2": "EE",
+    "val_exp_ijp": 1101
+  },
+  {
+    "country1": "HU",
+    "country2": "GR",
+    "val_exp_ijp": 249.3
+  },
+  {
+    "country1": "IE",
+    "country2": "SI",
+    "val_exp_ijp": 183.4
+  },
+  {
+    "country1": "IT",
+    "country2": "ES",
+    "val_exp_ijp": 2323980.7
+  },
+  {
+    "country1": "IT",
+    "country2": "PT",
+    "val_exp_ijp": 276961.9
+  },
+  {
+    "country1": "LT",
+    "country2": "LV",
+    "val_exp_ijp": 332051.4
+  },
+  {
+    "country1": "LU",
+    "country2": "BE",
+    "val_exp_ijp": 122912.4
+  },
+  {
+    "country1": "LU",
+    "country2": "DK",
+    "val_exp_ijp": 4966.1
+  },
+  {
+    "country1": "LU",
+    "country2": "GR",
+    "val_exp_ijp": 588.7
+  },
+  {
+    "country1": "LV",
+    "country2": "ES",
+    "val_exp_ijp": 8393.1
+  },
+  {
+    "country1": "LV",
+    "country2": "LT",
+    "val_exp_ijp": 105226.1
+  },
+  {
+    "country1": "MT",
+    "country2": "BE",
+    "val_exp_ijp": 4802.2
+  },
+  {
+    "country1": "MT",
+    "country2": "DE",
+    "val_exp_ijp": 8887.4
+  },
+  {
+    "country1": "MT",
+    "country2": "HR",
+    "val_exp_ijp": 765.5
+  },
+  {
+    "country1": "MT",
+    "country2": "SE",
+    "val_exp_ijp": 891.5
+  },
+  {
+    "country1": "NL",
+    "country2": "BE",
+    "val_exp_ijp": 1674114.6
+  },
+  {
+    "country1": "NL",
+    "country2": "DK",
+    "val_exp_ijp": 353221.2
+  },
+  {
+    "country1": "NL",
+    "country2": "EE",
+    "val_exp_ijp": 8088.7
+  },
+  {
+    "country1": "NL",
+    "country2": "GR",
+    "val_exp_ijp": 26586.1
+  },
+  {
+    "country1": "PL",
+    "country2": "BE",
+    "val_exp_ijp": 350320.5
+  },
+  {
+    "country1": "PL",
+    "country2": "DE",
+    "val_exp_ijp": 949623.4
+  },
+  {
+    "country1": "PL",
+    "country2": "HR",
+    "val_exp_ijp": 2765.9
+  },
+  {
+    "country1": "PT",
+    "country2": "BG",
+    "val_exp_ijp": 32739.2
+  },
+  {
+    "country1": "PT",
+    "country2": "FI",
+    "val_exp_ijp": 45625.7
+  },
+  {
+    "country1": "PT",
+    "country2": "FR",
+    "val_exp_ijp": 325301.2
+  },
+  {
+    "country1": "PT",
+    "country2": "IT",
+    "val_exp_ijp": 66257.8
+  },
+  {
+    "country1": "RO",
+    "country2": "CY",
+    "val_exp_ijp": 5780.7
+  },
+  {
+    "country1": "RO",
+    "country2": "DK",
+    "val_exp_ijp": 47998.2
+  },
+  {
+    "country1": "RO",
+    "country2": "EE",
+    "val_exp_ijp": 27289.5
+  },
+  {
+    "country1": "RO",
+    "country2": "GR",
+    "val_exp_ijp": 54607.7
+  },
+  {
+    "country1": "SE",
+    "country2": "BE",
+    "val_exp_ijp": 19053.3
+  },
+  {
+    "country1": "SE",
+    "country2": "DE",
+    "val_exp_ijp": 313505.8
+  },
+  {
+    "country1": "SE",
+    "country2": "HR",
+    "val_exp_ijp": 2813.6
+  },
+  {
+    "country1": "SI",
+    "country2": "IE",
+    "val_exp_ijp": 3260.5
+  },
+  {
+    "country1": "SK",
+    "country2": "LU",
+    "val_exp_ijp": 1406.6
+  },
+  {
+    "country1": "AT",
+    "country2": "CZ",
+    "val_exp_ijp": 123872
+  },
+  {
+    "country1": "AT",
+    "country2": "HU",
+    "val_exp_ijp": 239461.7
+  },
+  {
+    "country1": "BE",
+    "country2": "RO",
+    "val_exp_ijp": 9633.3
+  },
+  {
+    "country1": "BG",
+    "country2": "IE",
+    "val_exp_ijp": 6250.2
+  },
+  {
+    "country1": "BG",
+    "country2": "SK",
+    "val_exp_ijp": 7347.2
+  },
+  {
+    "country1": "CY",
+    "country2": "LU",
+    "val_exp_ijp": 295.2
+  },
+  {
+    "country1": "CZ",
+    "country2": "AT",
+    "val_exp_ijp": 43352.9
+  },
+  {
+    "country1": "CZ",
+    "country2": "HU",
+    "val_exp_ijp": 45056.5
+  },
+  {
+    "country1": "DE",
+    "country2": "ES",
+    "val_exp_ijp": 358112.7
+  },
+  {
+    "country1": "DE",
+    "country2": "NL",
+    "val_exp_ijp": 3154729.7
+  },
+  {
+    "country1": "DE",
+    "country2": "RO",
+    "val_exp_ijp": 167098.7
+  },
+  {
+    "country1": "DK",
+    "country2": "MT",
+    "val_exp_ijp": 6.4
+  },
+  {
+    "country1": "ES",
+    "country2": "DE",
+    "val_exp_ijp": 630503.4
+  },
+  {
+    "country1": "ES",
+    "country2": "HR",
+    "val_exp_ijp": 10645.7
+  },
+  {
+    "country1": "ES",
+    "country2": "LT",
+    "val_exp_ijp": 14484.5
+  },
+  {
+    "country1": "ES",
+    "country2": "SI",
+    "val_exp_ijp": 2347.8
+  },
+  {
+    "country1": "FI",
+    "country2": "IE",
+    "val_exp_ijp": 2071.2
+  },
+  {
+    "country1": "FR",
+    "country2": "IE",
+    "val_exp_ijp": 830049.8
+  },
+  {
+    "country1": "FR",
+    "country2": "SK",
+    "val_exp_ijp": 4528.3
+  },
+  {
+    "country1": "GR",
+    "country2": "MT",
+    "val_exp_ijp": 16.9
+  },
+  {
+    "country1": "HR",
+    "country2": "ES",
+    "val_exp_ijp": 67412.9
+  },
+  {
+    "country1": "HR",
+    "country2": "LT",
+    "val_exp_ijp": 8083.3
+  },
+  {
+    "country1": "HR",
+    "country2": "LV",
+    "val_exp_ijp": 404.3
+  },
+  {
+    "country1": "HR",
+    "country2": "NL",
+    "val_exp_ijp": 68253.7
+  },
+  {
+    "country1": "HR",
+    "country2": "RO",
+    "val_exp_ijp": 50660.5
+  },
+  {
+    "country1": "HU",
+    "country2": "AT",
+    "val_exp_ijp": 92683.8
+  },
+  {
+    "country1": "HU",
+    "country2": "CZ",
+    "val_exp_ijp": 55196.2
+  },
+  {
+    "country1": "IE",
+    "country2": "BG",
+    "val_exp_ijp": 612.6
+  },
+  {
+    "country1": "IE",
+    "country2": "FI",
+    "val_exp_ijp": 3648.5
+  },
+  {
+    "country1": "IE",
+    "country2": "FR",
+    "val_exp_ijp": 447035.5
+  },
+  {
+    "country1": "IE",
+    "country2": "IT",
+    "val_exp_ijp": 39500.6
+  },
+  {
+    "country1": "IE",
+    "country2": "LT",
+    "val_exp_ijp": 2253.6
+  },
+  {
+    "country1": "IE",
+    "country2": "LV",
+    "val_exp_ijp": 412.8
+  },
+  {
+    "country1": "IE",
+    "country2": "PT",
+    "val_exp_ijp": 1036.7
+  },
+  {
+    "country1": "IT",
+    "country2": "IE",
+    "val_exp_ijp": 92206.3
+  },
+  {
+    "country1": "IT",
+    "country2": "SK",
+    "val_exp_ijp": 27289.2
+  },
+  {
+    "country1": "LT",
+    "country2": "ES",
+    "val_exp_ijp": 6883
+  },
+  {
+    "country1": "LT",
+    "country2": "HR",
+    "val_exp_ijp": 93.7
+  },
+  {
+    "country1": "LT",
+    "country2": "IE",
+    "val_exp_ijp": 2800.4
+  },
+  {
+    "country1": "LT",
+    "country2": "NL",
+    "val_exp_ijp": 79776.5
+  },
+  {
+    "country1": "LT",
+    "country2": "SI",
+    "val_exp_ijp": 36.8
+  },
+  {
+    "country1": "LU",
+    "country2": "CY",
+    "val_exp_ijp": 27.3
+  },
+  {
+    "country1": "LU",
+    "country2": "PL",
+    "val_exp_ijp": 1164.2
+  },
+  {
+    "country1": "LU",
+    "country2": "RO",
+    "val_exp_ijp": 68.8
+  },
+  {
+    "country1": "LU",
+    "country2": "SE",
+    "val_exp_ijp": 633.7
+  },
+  {
+    "country1": "LV",
+    "country2": "IE",
+    "val_exp_ijp": 188.8
+  },
+  {
+    "country1": "MT",
+    "country2": "CY",
+    "val_exp_ijp": 102.3
+  },
+  {
+    "country1": "MT",
+    "country2": "DK",
+    "val_exp_ijp": 4481.1
+  },
+  {
+    "country1": "MT",
+    "country2": "EE",
+    "val_exp_ijp": 75
+  },
+  {
+    "country1": "MT",
+    "country2": "GR",
+    "val_exp_ijp": 2007.7
+  },
+  {
+    "country1": "MT",
+    "country2": "RO",
+    "val_exp_ijp": 2104.3
+  },
+  {
+    "country1": "NL",
+    "country2": "DE",
+    "val_exp_ijp": 3002099.6
+  },
+  {
+    "country1": "NL",
+    "country2": "HR",
+    "val_exp_ijp": 5865.5
+  },
+  {
+    "country1": "NL",
+    "country2": "LT",
+    "val_exp_ijp": 92095.9
+  },
+  {
+    "country1": "NL",
+    "country2": "SI",
+    "val_exp_ijp": 3229.1
+  },
+  {
+    "country1": "PL",
+    "country2": "LU",
+    "val_exp_ijp": 1119.9
+  },
+  {
+    "country1": "PL",
+    "country2": "PT",
+    "val_exp_ijp": 10279.4
+  },
+  {
+    "country1": "PL",
+    "country2": "SI",
+    "val_exp_ijp": 798
+  },
+  {
+    "country1": "PT",
+    "country2": "IE",
+    "val_exp_ijp": 18588.7
+  },
+  {
+    "country1": "PT",
+    "country2": "PL",
+    "val_exp_ijp": 17054.8
+  },
+  {
+    "country1": "PT",
+    "country2": "SE",
+    "val_exp_ijp": 378705.8
+  },
+  {
+    "country1": "RO",
+    "country2": "BE",
+    "val_exp_ijp": 14441
+  },
+  {
+    "country1": "RO",
+    "country2": "DE",
+    "val_exp_ijp": 46135.4
+  },
+  {
+    "country1": "RO",
+    "country2": "HR",
+    "val_exp_ijp": 4429.7
+  },
+  {
+    "country1": "RO",
+    "country2": "LU",
+    "val_exp_ijp": 2023.8
+  },
+  {
+    "country1": "RO",
+    "country2": "SI",
+    "val_exp_ijp": 3720.7
+  },
+  {
+    "country1": "SE",
+    "country2": "LU",
+    "val_exp_ijp": 939.9
+  },
+  {
+    "country1": "SE",
+    "country2": "PT",
+    "val_exp_ijp": 606.3
+  },
+  {
+    "country1": "SE",
+    "country2": "SI",
+    "val_exp_ijp": 6860.9
+  },
+  {
+    "country1": "SI",
+    "country2": "ES",
+    "val_exp_ijp": 8750.6
+  },
+  {
+    "country1": "SI",
+    "country2": "LT",
+    "val_exp_ijp": 11967.1
+  },
+  {
+    "country1": "SI",
+    "country2": "LV",
+    "val_exp_ijp": 907
+  },
+  {
+    "country1": "SI",
+    "country2": "NL",
+    "val_exp_ijp": 16063.6
+  },
+  {
+    "country1": "SI",
+    "country2": "PL",
+    "val_exp_ijp": 15808
+  },
+  {
+    "country1": "SI",
+    "country2": "RO",
+    "val_exp_ijp": 2255.7
+  },
+  {
+    "country1": "SI",
+    "country2": "SE",
+    "val_exp_ijp": 381
+  },
+  {
+    "country1": "SK",
+    "country2": "BG",
+    "val_exp_ijp": 375.2
+  },
+  {
+    "country1": "SK",
+    "country2": "FI",
+    "val_exp_ijp": 15.3
+  },
+  {
+    "country1": "SK",
+    "country2": "FR",
+    "val_exp_ijp": 6264.4
+  },
+  {
+    "country1": "SK",
+    "country2": "IT",
+    "val_exp_ijp": 13482.7
+  },
+  {
+    "country1": "AT",
+    "country2": "ES",
+    "val_exp_ijp": 85429.3
+  },
+  {
+    "country1": "AT",
+    "country2": "PT",
+    "val_exp_ijp": 407.4
+  },
+  {
+    "country1": "BE",
+    "country2": "BG",
+    "val_exp_ijp": 22716.4
+  },
+  {
+    "country1": "BE",
+    "country2": "FI",
+    "val_exp_ijp": 8968.5
+  },
+  {
+    "country1": "BE",
+    "country2": "FR",
+    "val_exp_ijp": 1364790.5
+  },
+  {
+    "country1": "BE",
+    "country2": "IT",
+    "val_exp_ijp": 192078.4
+  },
+  {
+    "country1": "BE",
+    "country2": "LT",
+    "val_exp_ijp": 67743.9
+  },
+  {
+    "country1": "BE",
+    "country2": "LV",
+    "val_exp_ijp": 2582.5
+  },
+  {
+    "country1": "BG",
+    "country2": "BE",
+    "val_exp_ijp": 11373
+  },
+  {
+    "country1": "BG",
+    "country2": "DK",
+    "val_exp_ijp": 15383.1
+  },
+  {
+    "country1": "BG",
+    "country2": "EE",
+    "val_exp_ijp": 3804.7
+  },
+  {
+    "country1": "BG",
+    "country2": "GR",
+    "val_exp_ijp": 69970.1
+  },
+  {
+    "country1": "CY",
+    "country2": "FR",
+    "val_exp_ijp": 8907.5
+  },
+  {
+    "country1": "CY",
+    "country2": "IT",
+    "val_exp_ijp": 5082
+  },
+  {
+    "country1": "CY",
+    "country2": "SI",
+    "val_exp_ijp": 262.3
+  },
+  {
+    "country1": "CZ",
+    "country2": "IE",
+    "val_exp_ijp": 4573.7
+  },
+  {
+    "country1": "CZ",
+    "country2": "PT",
+    "val_exp_ijp": 21820.8
+  },
+  {
+    "country1": "DE",
+    "country2": "LT",
+    "val_exp_ijp": 322622.6
+  },
+  {
+    "country1": "DE",
+    "country2": "LV",
+    "val_exp_ijp": 263454.6
+  },
+  {
+    "country1": "DK",
+    "country2": "BG",
+    "val_exp_ijp": 636.6
+  },
+  {
+    "country1": "DK",
+    "country2": "FI",
+    "val_exp_ijp": 37644.9
+  },
+  {
+    "country1": "DK",
+    "country2": "FR",
+    "val_exp_ijp": 100202.1
+  },
+  {
+    "country1": "DK",
+    "country2": "IT",
+    "val_exp_ijp": 76693.4
+  },
+  {
+    "country1": "EE",
+    "country2": "BG",
+    "val_exp_ijp": 249.1
+  },
+  {
+    "country1": "EE",
+    "country2": "FR",
+    "val_exp_ijp": 3021.9
+  },
+  {
+    "country1": "EE",
+    "country2": "IT",
+    "val_exp_ijp": 598
+  },
+  {
+    "country1": "EE",
+    "country2": "SI",
+    "val_exp_ijp": 12
+  },
+  {
+    "country1": "ES",
+    "country2": "AT",
+    "val_exp_ijp": 31108.9
+  },
+  {
+    "country1": "ES",
+    "country2": "LU",
+    "val_exp_ijp": 1214.6
+  },
+  {
+    "country1": "ES",
+    "country2": "MT",
+    "val_exp_ijp": 2353.4
+  },
+  {
+    "country1": "ES",
+    "country2": "NL",
+    "val_exp_ijp": 681799.7
+  },
+  {
+    "country1": "ES",
+    "country2": "PL",
+    "val_exp_ijp": 263408.8
+  },
+  {
+    "country1": "ES",
+    "country2": "SE",
+    "val_exp_ijp": 366834.2
+  },
+  {
+    "country1": "FI",
+    "country2": "BE",
+    "val_exp_ijp": 8274.9
+  },
+  {
+    "country1": "FI",
+    "country2": "DK",
+    "val_exp_ijp": 112903.7
+  },
+  {
+    "country1": "FI",
+    "country2": "GR",
+    "val_exp_ijp": 72.5
+  },
+  {
+    "country1": "FR",
+    "country2": "BE",
+    "val_exp_ijp": 1357649.8
+  },
+  {
+    "country1": "FR",
+    "country2": "CY",
+    "val_exp_ijp": 245338.6
+  },
+  {
+    "country1": "FR",
+    "country2": "DK",
+    "val_exp_ijp": 552663.3
+  },
+  {
+    "country1": "FR",
+    "country2": "EE",
+    "val_exp_ijp": 15243.8
+  },
+  {
+    "country1": "FR",
+    "country2": "GR",
+    "val_exp_ijp": 70368.1
+  },
+  {
+    "country1": "GR",
+    "country2": "BG",
+    "val_exp_ijp": 111020.2
+  },
+  {
+    "country1": "GR",
+    "country2": "FI",
+    "val_exp_ijp": 589.9
+  },
+  {
+    "country1": "GR",
+    "country2": "FR",
+    "val_exp_ijp": 246644.5
+  },
+  {
+    "country1": "GR",
+    "country2": "IT",
+    "val_exp_ijp": 143884.6
+  },
+  {
+    "country1": "HU",
+    "country2": "IE",
+    "val_exp_ijp": 13246.1
+  },
+  {
+    "country1": "HU",
+    "country2": "PT",
+    "val_exp_ijp": 168.9
+  },
+  {
+    "country1": "HU",
+    "country2": "SI",
+    "val_exp_ijp": 4851.6
+  },
+  {
+    "country1": "IE",
+    "country2": "CZ",
+    "val_exp_ijp": 43.4
+  },
+  {
+    "country1": "IE",
+    "country2": "HU",
+    "val_exp_ijp": 2316.4
+  },
+  {
+    "country1": "IE",
+    "country2": "RO",
+    "val_exp_ijp": 7329.6
+  },
+  {
+    "country1": "IT",
+    "country2": "BE",
+    "val_exp_ijp": 650361.1
+  },
+  {
+    "country1": "IT",
+    "country2": "CY",
+    "val_exp_ijp": 1406.8
+  },
+  {
+    "country1": "IT",
+    "country2": "DK",
+    "val_exp_ijp": 1041382.1
+  },
+  {
+    "country1": "IT",
+    "country2": "EE",
+    "val_exp_ijp": 67535.5
+  },
+  {
+    "country1": "IT",
+    "country2": "GR",
+    "val_exp_ijp": 142282.2
+  },
+  {
+    "country1": "LT",
+    "country2": "BE",
+    "val_exp_ijp": 8158
+  },
+  {
+    "country1": "LT",
+    "country2": "DE",
+    "val_exp_ijp": 26762.2
+  },
+  {
+    "country1": "LT",
+    "country2": "LU",
+    "val_exp_ijp": 121.9
+  },
+  {
+    "country1": "LT",
+    "country2": "PL",
+    "val_exp_ijp": 63242.7
+  },
+  {
+    "country1": "LT",
+    "country2": "SE",
+    "val_exp_ijp": 227310.5
+  },
+  {
+    "country1": "LU",
+    "country2": "ES",
+    "val_exp_ijp": 2508.2
+  },
+  {
+    "country1": "LV",
+    "country2": "BE",
+    "val_exp_ijp": 3885.1
+  },
+  {
+    "country1": "LV",
+    "country2": "DE",
+    "val_exp_ijp": 11765.4
+  },
+  {
+    "country1": "LV",
+    "country2": "PL",
+    "val_exp_ijp": 56096.5
+  },
+  {
+    "country1": "LV",
+    "country2": "SE",
+    "val_exp_ijp": 29173.1
+  },
+  {
+    "country1": "MT",
+    "country2": "ES",
+    "val_exp_ijp": 13914.7
+  },
+  {
+    "country1": "MT",
+    "country2": "LT",
+    "val_exp_ijp": 1355.8
+  },
+  {
+    "country1": "MT",
+    "country2": "LV",
+    "val_exp_ijp": 61.3
+  },
+  {
+    "country1": "NL",
+    "country2": "ES",
+    "val_exp_ijp": 182307.8
+  },
+  {
+    "country1": "NL",
+    "country2": "PT",
+    "val_exp_ijp": 38227.7
+  },
+  {
+    "country1": "PL",
+    "country2": "ES",
+    "val_exp_ijp": 201270.3
+  },
+  {
+    "country1": "PL",
+    "country2": "LT",
+    "val_exp_ijp": 184247.3
+  },
+  {
+    "country1": "PL",
+    "country2": "LV",
+    "val_exp_ijp": 29368.7
+  },
+  {
+    "country1": "PL",
+    "country2": "SK",
+    "val_exp_ijp": 50123.6
+  },
+  {
+    "country1": "PT",
+    "country2": "AT",
+    "val_exp_ijp": 3293.8
+  },
+  {
+    "country1": "PT",
+    "country2": "CZ",
+    "val_exp_ijp": 651.9
+  },
+  {
+    "country1": "PT",
+    "country2": "HU",
+    "val_exp_ijp": 18302
+  },
+  {
+    "country1": "PT",
+    "country2": "NL",
+    "val_exp_ijp": 540306.9
+  },
+  {
+    "country1": "PT",
+    "country2": "RO",
+    "val_exp_ijp": 2578.1
+  },
+  {
+    "country1": "RO",
+    "country2": "IE",
+    "val_exp_ijp": 12980.2
+  },
+  {
+    "country1": "RO",
+    "country2": "PT",
+    "val_exp_ijp": 1713.5
+  },
+  {
+    "country1": "SE",
+    "country2": "ES",
+    "val_exp_ijp": 21606.1
+  },
+  {
+    "country1": "SE",
+    "country2": "LT",
+    "val_exp_ijp": 22551.4
+  },
+  {
+    "country1": "SE",
+    "country2": "LV",
+    "val_exp_ijp": 7252.7
+  },
+  {
+    "country1": "SE",
+    "country2": "SK",
+    "val_exp_ijp": 725.7
+  },
+  {
+    "country1": "SI",
+    "country2": "CY",
+    "val_exp_ijp": 5048.3
+  },
+  {
+    "country1": "SI",
+    "country2": "EE",
+    "val_exp_ijp": 69.4
+  },
+  {
+    "country1": "SI",
+    "country2": "HU",
+    "val_exp_ijp": 32612.1
+  },
+  {
+    "country1": "SK",
+    "country2": "PL",
+    "val_exp_ijp": 177288.3
+  },
+  {
+    "country1": "SK",
+    "country2": "SE",
+    "val_exp_ijp": 1215.3
+  },
+  {
+    "country1": "AT",
+    "country2": "FR",
+    "val_exp_ijp": 81551
+  },
+  {
+    "country1": "AT",
+    "country2": "IE",
+    "val_exp_ijp": 20666
+  },
+  {
+    "country1": "AT",
+    "country2": "SK",
+    "val_exp_ijp": 110571.7
+  },
+  {
+    "country1": "BE",
+    "country2": "DE",
+    "val_exp_ijp": 656946.4
+  },
+  {
+    "country1": "BE",
+    "country2": "SI",
+    "val_exp_ijp": 424.9
+  },
+  {
+    "country1": "BG",
+    "country2": "CY",
+    "val_exp_ijp": 37996.8
+  },
+  {
+    "country1": "BG",
+    "country2": "CZ",
+    "val_exp_ijp": 22865.6
+  },
+  {
+    "country1": "BG",
+    "country2": "HU",
+    "val_exp_ijp": 31460.6
+  },
+  {
+    "country1": "CY",
+    "country2": "BG",
+    "val_exp_ijp": 4657.7
+  },
+  {
+    "country1": "CY",
+    "country2": "FI",
+    "val_exp_ijp": 38
+  },
+  {
+    "country1": "CY",
+    "country2": "LT",
+    "val_exp_ijp": 1943.8
+  },
+  {
+    "country1": "CY",
+    "country2": "LV",
+    "val_exp_ijp": 282.6
+  },
+  {
+    "country1": "CY",
+    "country2": "PT",
+    "val_exp_ijp": 1012.1
+  },
+  {
+    "country1": "CZ",
+    "country2": "BG",
+    "val_exp_ijp": 338.9
+  },
+  {
+    "country1": "CZ",
+    "country2": "FR",
+    "val_exp_ijp": 67829.6
+  },
+  {
+    "country1": "CZ",
+    "country2": "IT",
+    "val_exp_ijp": 148879.5
+  },
+  {
+    "country1": "CZ",
+    "country2": "SK",
+    "val_exp_ijp": 471458.6
+  },
+  {
+    "country1": "DE",
+    "country2": "BE",
+    "val_exp_ijp": 1178016.2
+  },
+  {
+    "country1": "DE",
+    "country2": "HR",
+    "val_exp_ijp": 15664.1
+  },
+  {
+    "country1": "DK",
+    "country2": "LT",
+    "val_exp_ijp": 27489.9
+  },
+  {
+    "country1": "DK",
+    "country2": "LV",
+    "val_exp_ijp": 27813.6
+  },
+  {
+    "country1": "DK",
+    "country2": "PT",
+    "val_exp_ijp": 6661.9
+  },
+  {
+    "country1": "DK",
+    "country2": "SI",
+    "val_exp_ijp": 38.2
+  },
+  {
+    "country1": "EE",
+    "country2": "FI",
+    "val_exp_ijp": 41739.1
+  },
+  {
+    "country1": "EE",
+    "country2": "LT",
+    "val_exp_ijp": 50537.2
+  },
+  {
+    "country1": "EE",
+    "country2": "LV",
+    "val_exp_ijp": 44222.3
+  },
+  {
+    "country1": "EE",
+    "country2": "PT",
+    "val_exp_ijp": 1118.2
+  },
+  {
+    "country1": "ES",
+    "country2": "RO",
+    "val_exp_ijp": 14976
+  },
+  {
+    "country1": "FI",
+    "country2": "EE",
+    "val_exp_ijp": 333720.6
+  },
+  {
+    "country1": "FI",
+    "country2": "HU",
+    "val_exp_ijp": 3492.5
+  },
+  {
+    "country1": "FR",
+    "country2": "AT",
+    "val_exp_ijp": 238110.9
+  },
+  {
+    "country1": "FR",
+    "country2": "CZ",
+    "val_exp_ijp": 53636.3
+  },
+  {
+    "country1": "FR",
+    "country2": "HU",
+    "val_exp_ijp": 50375.8
+  },
+  {
+    "country1": "GR",
+    "country2": "LT",
+    "val_exp_ijp": 4117.9
+  },
+  {
+    "country1": "GR",
+    "country2": "LV",
+    "val_exp_ijp": 527
+  },
+  {
+    "country1": "GR",
+    "country2": "PT",
+    "val_exp_ijp": 2093.7
+  },
+  {
+    "country1": "GR",
+    "country2": "SI",
+    "val_exp_ijp": 8185.5
+  },
+  {
+    "country1": "HR",
+    "country2": "BE",
+    "val_exp_ijp": 4687.8
+  },
+  {
+    "country1": "HR",
+    "country2": "DE",
+    "val_exp_ijp": 112669.5
+  },
+  {
+    "country1": "HR",
+    "country2": "LU",
+    "val_exp_ijp": 388.8
+  },
+  {
+    "country1": "HR",
+    "country2": "SI",
+    "val_exp_ijp": 65532.4
+  },
+  {
+    "country1": "HU",
+    "country2": "BG",
+    "val_exp_ijp": 1909.3
+  },
+  {
+    "country1": "HU",
+    "country2": "FI",
+    "val_exp_ijp": 790.4
+  },
+  {
+    "country1": "HU",
+    "country2": "FR",
+    "val_exp_ijp": 28445.7
+  },
+  {
+    "country1": "HU",
+    "country2": "IT",
+    "val_exp_ijp": 32814.4
+  },
+  {
+    "country1": "HU",
+    "country2": "SK",
+    "val_exp_ijp": 132928.7
+  },
+  {
+    "country1": "IE",
+    "country2": "AT",
+    "val_exp_ijp": 8434.8
+  },
+  {
+    "country1": "IE",
+    "country2": "LU",
+    "val_exp_ijp": 69.8
+  },
+  {
+    "country1": "IT",
+    "country2": "CZ",
+    "val_exp_ijp": 235033
+  },
+  {
+    "country1": "IT",
+    "country2": "HU",
+    "val_exp_ijp": 139087.8
+  },
+  {
+    "country1": "LT",
+    "country2": "CY",
+    "val_exp_ijp": 2025.8
+  },
+  {
+    "country1": "LT",
+    "country2": "DK",
+    "val_exp_ijp": 92161.3
+  },
+  {
+    "country1": "LT",
+    "country2": "EE",
+    "val_exp_ijp": 108697.9
+  },
+  {
+    "country1": "LT",
+    "country2": "GR",
+    "val_exp_ijp": 83.1
+  },
+  {
+    "country1": "LT",
+    "country2": "RO",
+    "val_exp_ijp": 387.9
+  },
+  {
+    "country1": "LU",
+    "country2": "HR",
+    "val_exp_ijp": 360.8
+  },
+  {
+    "country1": "LU",
+    "country2": "IE",
+    "val_exp_ijp": 2480.9
+  },
+  {
+    "country1": "LV",
+    "country2": "DK",
+    "val_exp_ijp": 23141.7
+  },
+  {
+    "country1": "LV",
+    "country2": "EE",
+    "val_exp_ijp": 62486.3
+  },
+  {
+    "country1": "LV",
+    "country2": "GR",
+    "val_exp_ijp": 58.3
+  },
+  {
+    "country1": "LV",
+    "country2": "RO",
+    "val_exp_ijp": 8.1
+  },
+  {
+    "country1": "MT",
+    "country2": "IE",
+    "val_exp_ijp": 18018.8
+  },
+  {
+    "country1": "MT",
+    "country2": "PL",
+    "val_exp_ijp": 1966.8
+  },
+  {
+    "country1": "MT",
+    "country2": "SI",
+    "val_exp_ijp": 24.2
+  },
+  {
+    "country1": "NL",
+    "country2": "RO",
+    "val_exp_ijp": 14352.8
+  },
+  {
+    "country1": "PT",
+    "country2": "CY",
+    "val_exp_ijp": 19275.2
+  },
+  {
+    "country1": "PT",
+    "country2": "DK",
+    "val_exp_ijp": 166037.7
+  },
+  {
+    "country1": "PT",
+    "country2": "EE",
+    "val_exp_ijp": 312706.1
+  },
+  {
+    "country1": "PT",
+    "country2": "GR",
+    "val_exp_ijp": 43789.4
+  },
+  {
+    "country1": "RO",
+    "country2": "ES",
+    "val_exp_ijp": 96268.4
+  },
+  {
+    "country1": "RO",
+    "country2": "LT",
+    "val_exp_ijp": 13428.4
+  },
+  {
+    "country1": "RO",
+    "country2": "LV",
+    "val_exp_ijp": 10016.9
+  },
+  {
+    "country1": "RO",
+    "country2": "NL",
+    "val_exp_ijp": 102002.4
+  },
+  {
+    "country1": "SI",
+    "country2": "BE",
+    "val_exp_ijp": 1928.1
+  },
+  {
+    "country1": "SI",
+    "country2": "DK",
+    "val_exp_ijp": 3823.7
+  },
+  {
+    "country1": "SI",
+    "country2": "GR",
+    "val_exp_ijp": 811.1
+  },
+  {
+    "country1": "SI",
+    "country2": "HR",
+    "val_exp_ijp": 77912.5
+  },
+  {
+    "country1": "SK",
+    "country2": "AT",
+    "val_exp_ijp": 89481.8
+  },
+  {
+    "country1": "SK",
+    "country2": "CZ",
+    "val_exp_ijp": 352048.2
+  },
+  {
+    "country1": "SK",
+    "country2": "HU",
+    "val_exp_ijp": 77893.2
+  },
+  {
+    "country1": "AT",
+    "country2": "BG",
+    "val_exp_ijp": 11766.4
+  },
+  {
+    "country1": "AT",
+    "country2": "FI",
+    "val_exp_ijp": 50.1
+  },
+  {
+    "country1": "AT",
+    "country2": "IT",
+    "val_exp_ijp": 224913.3
+  },
+  {
+    "country1": "AT",
+    "country2": "LT",
+    "val_exp_ijp": 11737.5
+  },
+  {
+    "country1": "AT",
+    "country2": "LV",
+    "val_exp_ijp": 497.8
+  },
+  {
+    "country1": "AT",
+    "country2": "NL",
+    "val_exp_ijp": 309082.1
+  },
+  {
+    "country1": "AT",
+    "country2": "PL",
+    "val_exp_ijp": 73978.6
+  },
+  {
+    "country1": "AT",
+    "country2": "SE",
+    "val_exp_ijp": 9408.4
+  },
+  {
+    "country1": "BE",
+    "country2": "CY",
+    "val_exp_ijp": 3207
+  },
+  {
+    "country1": "BE",
+    "country2": "DK",
+    "val_exp_ijp": 102392.3
+  },
+  {
+    "country1": "BE",
+    "country2": "EE",
+    "val_exp_ijp": 4111.4
+  },
+  {
+    "country1": "BE",
+    "country2": "GR",
+    "val_exp_ijp": 8758.3
+  },
+  {
+    "country1": "BE",
+    "country2": "PT",
+    "val_exp_ijp": 12510.3
+  },
+  {
+    "country1": "BG",
+    "country2": "AT",
+    "val_exp_ijp": 3862.8
+  },
+  {
+    "country1": "BG",
+    "country2": "LU",
+    "val_exp_ijp": 531.1
+  },
+  {
+    "country1": "BG",
+    "country2": "MT",
+    "val_exp_ijp": 12159.2
+  },
+  {
+    "country1": "CY",
+    "country2": "BE",
+    "val_exp_ijp": 17052.6
+  },
+  {
+    "country1": "CY",
+    "country2": "DE",
+    "val_exp_ijp": 16558.7
+  },
+  {
+    "country1": "CY",
+    "country2": "HR",
+    "val_exp_ijp": 14.6
+  },
+  {
+    "country1": "CY",
+    "country2": "SK",
+    "val_exp_ijp": 216.2
+  },
+  {
+    "country1": "CZ",
+    "country2": "FI",
+    "val_exp_ijp": 352
+  },
+  {
+    "country1": "CZ",
+    "country2": "LT",
+    "val_exp_ijp": 14788.7
+  },
+  {
+    "country1": "CZ",
+    "country2": "LV",
+    "val_exp_ijp": 12902.8
+  },
+  {
+    "country1": "CZ",
+    "country2": "PL",
+    "val_exp_ijp": 277462.5
+  },
+  {
+    "country1": "CZ",
+    "country2": "SE",
+    "val_exp_ijp": 27400.4
+  },
+  {
+    "country1": "DE",
+    "country2": "CY",
+    "val_exp_ijp": 31950
+  },
+  {
+    "country1": "DE",
+    "country2": "DK",
+    "val_exp_ijp": 2196206.9
+  },
+  {
+    "country1": "DE",
+    "country2": "EE",
+    "val_exp_ijp": 108107.6
+  },
+  {
+    "country1": "DE",
+    "country2": "GR",
+    "val_exp_ijp": 519240.8
+  },
+  {
+    "country1": "DE",
+    "country2": "PT",
+    "val_exp_ijp": 263001
+  },
+  {
+    "country1": "DE",
+    "country2": "SI",
+    "val_exp_ijp": 15091.1
+  },
+  {
+    "country1": "DK",
+    "country2": "BE",
+    "val_exp_ijp": 36135.9
+  },
+  {
+    "country1": "DK",
+    "country2": "DE",
+    "val_exp_ijp": 562185.1
+  },
+  {
+    "country1": "DK",
+    "country2": "HR",
+    "val_exp_ijp": 293.4
+  },
+  {
+    "country1": "DK",
+    "country2": "SK",
+    "val_exp_ijp": 218.7
+  },
+  {
+    "country1": "EE",
+    "country2": "BE",
+    "val_exp_ijp": 4078.2
+  },
+  {
+    "country1": "EE",
+    "country2": "DE",
+    "val_exp_ijp": 6431.3
+  },
+  {
+    "country1": "EE",
+    "country2": "SK",
+    "val_exp_ijp": 1456.9
+  },
+  {
+    "country1": "FI",
+    "country2": "AT",
+    "val_exp_ijp": 17251.7
+  },
+  {
+    "country1": "FI",
+    "country2": "CZ",
+    "val_exp_ijp": 126.1
+  },
+  {
+    "country1": "FI",
+    "country2": "LU",
+    "val_exp_ijp": 563.8
+  },
+  {
+    "country1": "FI",
+    "country2": "MT",
+    "val_exp_ijp": 10558
+  },
+  {
+    "country1": "FR",
+    "country2": "LU",
+    "val_exp_ijp": 415716.6
+  },
+  {
+    "country1": "FR",
+    "country2": "MT",
+    "val_exp_ijp": 14581.8
+  },
+  {
+    "country1": "GR",
+    "country2": "BE",
+    "val_exp_ijp": 31274.4
+  },
+  {
+    "country1": "GR",
+    "country2": "DE",
+    "val_exp_ijp": 310261.9
+  },
+  {
+    "country1": "GR",
+    "country2": "HR",
+    "val_exp_ijp": 724.8
+  },
+  {
+    "country1": "GR",
+    "country2": "SK",
+    "val_exp_ijp": 4482.5
+  },
+  {
+    "country1": "HR",
+    "country2": "CY",
+    "val_exp_ijp": 206.7
+  },
+  {
+    "country1": "HR",
+    "country2": "DK",
+    "val_exp_ijp": 5271
+  },
+  {
+    "country1": "HR",
+    "country2": "EE",
+    "val_exp_ijp": 42.2
+  },
+  {
+    "country1": "HR",
+    "country2": "GR",
+    "val_exp_ijp": 1091.6
+  },
+  {
+    "country1": "HR",
+    "country2": "PT",
+    "val_exp_ijp": 2564.1
+  },
+  {
+    "country1": "HU",
+    "country2": "LU",
+    "val_exp_ijp": 827.6
+  },
+  {
+    "country1": "HU",
+    "country2": "PL",
+    "val_exp_ijp": 154584.4
+  },
+  {
+    "country1": "HU",
+    "country2": "SE",
+    "val_exp_ijp": 1771.9
+  },
+  {
+    "country1": "IT",
+    "country2": "AT",
+    "val_exp_ijp": 409704.8
+  },
+  {
+    "country1": "IT",
+    "country2": "LU",
+    "val_exp_ijp": 228559.9
+  },
+  {
+    "country1": "IT",
+    "country2": "MT",
+    "val_exp_ijp": 44150.1
+  },
+  {
+    "country1": "LT",
+    "country2": "AT",
+    "val_exp_ijp": 2575.9
+  },
+  {
+    "country1": "LT",
+    "country2": "CZ",
+    "val_exp_ijp": 11581.3
+  },
+  {
+    "country1": "LU",
+    "country2": "BG",
+    "val_exp_ijp": 180
+  },
+  {
+    "country1": "LU",
+    "country2": "FI",
+    "val_exp_ijp": 53.7
+  },
+  {
+    "country1": "LU",
+    "country2": "FR",
+    "val_exp_ijp": 242701.1
+  },
+  {
+    "country1": "LU",
+    "country2": "HU",
+    "val_exp_ijp": 280
+  },
+  {
+    "country1": "LU",
+    "country2": "IT",
+    "val_exp_ijp": 32264.9
+  },
+  {
+    "country1": "LU",
+    "country2": "NL",
+    "val_exp_ijp": 13385.7
+  },
+  {
+    "country1": "LU",
+    "country2": "SI",
+    "val_exp_ijp": 25.6
+  },
+  {
+    "country1": "LV",
+    "country2": "AT",
+    "val_exp_ijp": 208.4
+  },
+  {
+    "country1": "LV",
+    "country2": "CZ",
+    "val_exp_ijp": 743.6
+  },
+  {
+    "country1": "MT",
+    "country2": "BG",
+    "val_exp_ijp": 342.2
+  },
+  {
+    "country1": "MT",
+    "country2": "FI",
+    "val_exp_ijp": 64.8
+  },
+  {
+    "country1": "MT",
+    "country2": "FR",
+    "val_exp_ijp": 18082.1
+  },
+  {
+    "country1": "MT",
+    "country2": "IT",
+    "val_exp_ijp": 61817.3
+  },
+  {
+    "country1": "MT",
+    "country2": "NL",
+    "val_exp_ijp": 40143.6
+  },
+  {
+    "country1": "NL",
+    "country2": "AT",
+    "val_exp_ijp": 88743.5
+  },
+  {
+    "country1": "NL",
+    "country2": "LU",
+    "val_exp_ijp": 13375.9
+  },
+  {
+    "country1": "NL",
+    "country2": "MT",
+    "val_exp_ijp": 245.8
+  },
+  {
+    "country1": "NL",
+    "country2": "PL",
+    "val_exp_ijp": 547554.7
+  },
+  {
+    "country1": "NL",
+    "country2": "SE",
+    "val_exp_ijp": 412465.6
+  },
+  {
+    "country1": "PL",
+    "country2": "AT",
+    "val_exp_ijp": 22009.1
+  },
+  {
+    "country1": "PL",
+    "country2": "CZ",
+    "val_exp_ijp": 103283.5
+  },
+  {
+    "country1": "PL",
+    "country2": "HU",
+    "val_exp_ijp": 52779.5
+  },
+  {
+    "country1": "PL",
+    "country2": "NL",
+    "val_exp_ijp": 363404.9
+  },
+  {
+    "country1": "PL",
+    "country2": "RO",
+    "val_exp_ijp": 16395
+  },
+  {
+    "country1": "PT",
+    "country2": "BE",
+    "val_exp_ijp": 45225.5
+  },
+  {
+    "country1": "PT",
+    "country2": "DE",
+    "val_exp_ijp": 218261.8
+  },
+  {
+    "country1": "PT",
+    "country2": "HR",
+    "val_exp_ijp": 613
+  },
+  {
+    "country1": "RO",
+    "country2": "PL",
+    "val_exp_ijp": 125496.3
+  },
+  {
+    "country1": "RO",
+    "country2": "SE",
+    "val_exp_ijp": 69097.6
+  },
+  {
+    "country1": "SE",
+    "country2": "AT",
+    "val_exp_ijp": 5742.1
+  },
+  {
+    "country1": "SE",
+    "country2": "CZ",
+    "val_exp_ijp": 1490.2
+  },
+  {
+    "country1": "SE",
+    "country2": "HU",
+    "val_exp_ijp": 2149.2
+  },
+  {
+    "country1": "SE",
+    "country2": "NL",
+    "val_exp_ijp": 309045.9
+  },
+  {
+    "country1": "SE",
+    "country2": "RO",
+    "val_exp_ijp": 8830
+  },
+  {
+    "country1": "SI",
+    "country2": "DE",
+    "val_exp_ijp": 43351.2
+  },
+  {
+    "country1": "SI",
+    "country2": "LU",
+    "val_exp_ijp": 422.2
+  },
+  {
+    "country1": "SK",
+    "country2": "CY",
+    "val_exp_ijp": 20377.6
+  },
+  {
+    "country1": "SK",
+    "country2": "DK",
+    "val_exp_ijp": 10344.4
+  },
+  {
+    "country1": "SK",
+    "country2": "EE",
+    "val_exp_ijp": 12.1
+  },
+  {
+    "country1": "SK",
+    "country2": "GR",
+    "val_exp_ijp": 8415.1
+  },
+  {
+    "country1": "AT",
+    "country2": "LU",
+    "val_exp_ijp": 5628.6
+  },
+  {
+    "country1": "BE",
+    "country2": "ES",
+    "val_exp_ijp": 120752
+  },
+  {
+    "country1": "BG",
+    "country2": "FI",
+    "val_exp_ijp": 1237.7
+  },
+  {
+    "country1": "BG",
+    "country2": "FR",
+    "val_exp_ijp": 68507.8
+  },
+  {
+    "country1": "BG",
+    "country2": "IT",
+    "val_exp_ijp": 33866.7
+  },
+  {
+    "country1": "BG",
+    "country2": "NL",
+    "val_exp_ijp": 33863.5
+  },
+  {
+    "country1": "BG",
+    "country2": "PL",
+    "val_exp_ijp": 56903.2
+  },
+  {
+    "country1": "BG",
+    "country2": "RO",
+    "val_exp_ijp": 69305.7
+  },
+  {
+    "country1": "BG",
+    "country2": "SE",
+    "val_exp_ijp": 13715.1
+  },
+  {
+    "country1": "CY",
+    "country2": "ES",
+    "val_exp_ijp": 3264.6
+  },
+  {
+    "country1": "CZ",
+    "country2": "LU",
+    "val_exp_ijp": 14362.3
+  },
+  {
+    "country1": "CZ",
+    "country2": "MT",
+    "val_exp_ijp": 1291.2
+  },
+  {
+    "country1": "DE",
+    "country2": "IE",
+    "val_exp_ijp": 567843.8
+  },
+  {
+    "country1": "DK",
+    "country2": "ES",
+    "val_exp_ijp": 63930.3
+  },
+  {
+    "country1": "EE",
+    "country2": "ES",
+    "val_exp_ijp": 891.8
+  },
+  {
+    "country1": "ES",
+    "country2": "BE",
+    "val_exp_ijp": 133143.6
+  },
+  {
+    "country1": "ES",
+    "country2": "CY",
+    "val_exp_ijp": 656.9
+  },
+  {
+    "country1": "ES",
+    "country2": "DK",
+    "val_exp_ijp": 240972.5
+  },
+  {
+    "country1": "ES",
+    "country2": "EE",
+    "val_exp_ijp": 2908
+  },
+  {
+    "country1": "ES",
+    "country2": "GR",
+    "val_exp_ijp": 101966.4
+  },
+  {
+    "country1": "ES",
+    "country2": "PT",
+    "val_exp_ijp": 713600.2
+  },
+  {
+    "country1": "FI",
+    "country2": "BG",
+    "val_exp_ijp": 160.7
+  },
+  {
+    "country1": "FI",
+    "country2": "FR",
+    "val_exp_ijp": 5513.7
+  },
+  {
+    "country1": "FI",
+    "country2": "IT",
+    "val_exp_ijp": 10540.6
+  },
+  {
+    "country1": "FI",
+    "country2": "NL",
+    "val_exp_ijp": 102400.7
+  },
+  {
+    "country1": "FI",
+    "country2": "PL",
+    "val_exp_ijp": 11693.2
+  },
+  {
+    "country1": "FI",
+    "country2": "RO",
+    "val_exp_ijp": 206.3
+  },
+  {
+    "country1": "FI",
+    "country2": "SE",
+    "val_exp_ijp": 142562.6
+  },
+  {
+    "country1": "FR",
+    "country2": "BG",
+    "val_exp_ijp": 17857.1
+  },
+  {
+    "country1": "FR",
+    "country2": "FI",
+    "val_exp_ijp": 211315.3
+  },
+  {
+    "country1": "FR",
+    "country2": "IT",
+    "val_exp_ijp": 699748.1
+  },
+  {
+    "country1": "FR",
+    "country2": "LT",
+    "val_exp_ijp": 237836.4
+  },
+  {
+    "country1": "FR",
+    "country2": "LV",
+    "val_exp_ijp": 10801.2
+  },
+  {
+    "country1": "FR",
+    "country2": "NL",
+    "val_exp_ijp": 1733578
+  },
+  {
+    "country1": "FR",
+    "country2": "PL",
+    "val_exp_ijp": 712252.3
+  },
+  {
+    "country1": "FR",
+    "country2": "SE",
+    "val_exp_ijp": 388729.5
+  },
+  {
+    "country1": "GR",
+    "country2": "ES",
+    "val_exp_ijp": 127852.2
+  },
+  {
+    "country1": "HR",
+    "country2": "IE",
+    "val_exp_ijp": 108.4
+  },
+  {
+    "country1": "IE",
+    "country2": "DE",
+    "val_exp_ijp": 72276.4
+  },
+  {
+    "country1": "IE",
+    "country2": "HR",
+    "val_exp_ijp": 7.2
+  },
+  {
+    "country1": "IE",
+    "country2": "SK",
+    "val_exp_ijp": 76.2
+  },
+  {
+    "country1": "IT",
+    "country2": "BG",
+    "val_exp_ijp": 827081.4
+  },
+  {
+    "country1": "IT",
+    "country2": "FI",
+    "val_exp_ijp": 122061.5
+  },
+  {
+    "country1": "IT",
+    "country2": "FR",
+    "val_exp_ijp": 1610375.5
+  },
+  {
+    "country1": "IT",
+    "country2": "LT",
+    "val_exp_ijp": 24708.3
+  },
+  {
+    "country1": "IT",
+    "country2": "LV",
+    "val_exp_ijp": 2479.4
+  },
+  {
+    "country1": "IT",
+    "country2": "NL",
+    "val_exp_ijp": 1966109.5
+  },
+  {
+    "country1": "IT",
+    "country2": "PL",
+    "val_exp_ijp": 284025.2
+  },
+  {
+    "country1": "IT",
+    "country2": "SE",
+    "val_exp_ijp": 347964.6
+  },
+  {
+    "country1": "LT",
+    "country2": "FR",
+    "val_exp_ijp": 5036.8
+  },
+  {
+    "country1": "LT",
+    "country2": "IT",
+    "val_exp_ijp": 7978.8
+  },
+  {
+    "country1": "LT",
+    "country2": "PT",
+    "val_exp_ijp": 1525.4
+  },
+  {
+    "country1": "LU",
+    "country2": "AT",
+    "val_exp_ijp": 1084.9
+  },
+  {
+    "country1": "LU",
+    "country2": "CZ",
+    "val_exp_ijp": 1309.4
+  },
+  {
+    "country1": "LV",
+    "country2": "FR",
+    "val_exp_ijp": 1791
+  },
+  {
+    "country1": "LV",
+    "country2": "IT",
+    "val_exp_ijp": 1917.7
+  },
+  {
+    "country1": "LV",
+    "country2": "NL",
+    "val_exp_ijp": 5801
+  },
+  {
+    "country1": "LV",
+    "country2": "PT",
+    "val_exp_ijp": 27.3
+  },
+  {
+    "country1": "MT",
+    "country2": "AT",
+    "val_exp_ijp": 280.6
+  },
+  {
+    "country1": "MT",
+    "country2": "CZ",
+    "val_exp_ijp": 37.1
+  },
+  {
+    "country1": "MT",
+    "country2": "HU",
+    "val_exp_ijp": 292.4
+  },
+  {
+    "country1": "NL",
+    "country2": "BG",
+    "val_exp_ijp": 11320.3
+  },
+  {
+    "country1": "NL",
+    "country2": "FI",
+    "val_exp_ijp": 30853.9
+  },
+  {
+    "country1": "NL",
+    "country2": "FR",
+    "val_exp_ijp": 547462.7
+  },
+  {
+    "country1": "NL",
+    "country2": "IT",
+    "val_exp_ijp": 347799.4
+  },
+  {
+    "country1": "NL",
+    "country2": "LV",
+    "val_exp_ijp": 37087.3
+  },
+  {
+    "country1": "PL",
+    "country2": "BG",
+    "val_exp_ijp": 8513.6
+  },
+  {
+    "country1": "PL",
+    "country2": "FI",
+    "val_exp_ijp": 14421.8
+  },
+  {
+    "country1": "PL",
+    "country2": "FR",
+    "val_exp_ijp": 92152.5
+  },
+  {
+    "country1": "PL",
+    "country2": "IT",
+    "val_exp_ijp": 90133.7
+  },
+  {
+    "country1": "PT",
+    "country2": "ES",
+    "val_exp_ijp": 924674.1
+  },
+  {
+    "country1": "PT",
+    "country2": "LT",
+    "val_exp_ijp": 16057.8
+  },
+  {
+    "country1": "PT",
+    "country2": "LV",
+    "val_exp_ijp": 1010.3
+  },
+  {
+    "country1": "PT",
+    "country2": "SK",
+    "val_exp_ijp": 113.8
+  },
+  {
+    "country1": "RO",
+    "country2": "BG",
+    "val_exp_ijp": 72094
+  },
+  {
+    "country1": "RO",
+    "country2": "FI",
+    "val_exp_ijp": 519.3
+  },
+  {
+    "country1": "SE",
+    "country2": "BG",
+    "val_exp_ijp": 1703.3
+  },
+  {
+    "country1": "SE",
+    "country2": "FI",
+    "val_exp_ijp": 131706.9
+  },
+  {
+    "country1": "SE",
+    "country2": "FR",
+    "val_exp_ijp": 56485.5
+  },
+  {
+    "country1": "SE",
+    "country2": "IT",
+    "val_exp_ijp": 78519.6
+  },
+  {
+    "country1": "SI",
+    "country2": "SK",
+    "val_exp_ijp": 8424.8
+  },
+  {
+    "country1": "SK",
+    "country2": "IE",
+    "val_exp_ijp": 8998.6
+  },
+  {
+    "country1": "SK",
+    "country2": "PT",
+    "val_exp_ijp": 29856.3
+  },
+  {
+    "country1": "SK",
+    "country2": "SI",
+    "val_exp_ijp": 908.1
+  },
+  {
+    "country1": "AT",
+    "country2": "DE",
+    "val_exp_ijp": 550305.9
+  },
+  {
+    "country1": "AT",
+    "country2": "HR",
+    "val_exp_ijp": 13811
+  },
+  {
+    "country1": "AT",
+    "country2": "RO",
+    "val_exp_ijp": 5197.1
+  },
+  {
+    "country1": "BE",
+    "country2": "CZ",
+    "val_exp_ijp": 7777.8
+  },
+  {
+    "country1": "BE",
+    "country2": "HU",
+    "val_exp_ijp": 35347.5
+  },
+  {
+    "country1": "BE",
+    "country2": "SK",
+    "val_exp_ijp": 12405.1
+  },
+  {
+    "country1": "BG",
+    "country2": "SI",
+    "val_exp_ijp": 1386.5
+  },
+  {
+    "country1": "CY",
+    "country2": "DK",
+    "val_exp_ijp": 10639.8
+  },
+  {
+    "country1": "CY",
+    "country2": "EE",
+    "val_exp_ijp": 348.8
+  },
+  {
+    "country1": "CY",
+    "country2": "GR",
+    "val_exp_ijp": 50789.9
+  },
+  {
+    "country1": "CY",
+    "country2": "NL",
+    "val_exp_ijp": 16367.2
+  },
+  {
+    "country1": "CY",
+    "country2": "PL",
+    "val_exp_ijp": 7424.5
+  },
+  {
+    "country1": "CY",
+    "country2": "SE",
+    "val_exp_ijp": 2322.7
+  },
+  {
+    "country1": "CZ",
+    "country2": "BE",
+    "val_exp_ijp": 50455.9
+  },
+  {
+    "country1": "CZ",
+    "country2": "DE",
+    "val_exp_ijp": 181197.1
+  },
+  {
+    "country1": "CZ",
+    "country2": "HR",
+    "val_exp_ijp": 1046.6
+  },
+  {
+    "country1": "CZ",
+    "country2": "NL",
+    "val_exp_ijp": 157217.8
+  },
+  {
+    "country1": "CZ",
+    "country2": "RO",
+    "val_exp_ijp": 5774.3
+  },
+  {
+    "country1": "DE",
+    "country2": "AT",
+    "val_exp_ijp": 1914156
+  },
+  {
+    "country1": "DE",
+    "country2": "CZ",
+    "val_exp_ijp": 480489.1
+  },
+  {
+    "country1": "DE",
+    "country2": "HU",
+    "val_exp_ijp": 326784.8
+  },
+  {
+    "country1": "DE",
+    "country2": "LU",
+    "val_exp_ijp": 509871.5
+  },
+  {
+    "country1": "DE",
+    "country2": "SK",
+    "val_exp_ijp": 79700.7
+  },
+  {
+    "country1": "DK",
+    "country2": "CY",
+    "val_exp_ijp": 4488.9
+  },
+  {
+    "country1": "DK",
+    "country2": "EE",
+    "val_exp_ijp": 10109.6
+  },
+  {
+    "country1": "DK",
+    "country2": "GR",
+    "val_exp_ijp": 7960.6
+  },
+  {
+    "country1": "DK",
+    "country2": "PL",
+    "val_exp_ijp": 172823.2
+  },
+  {
+    "country1": "DK",
+    "country2": "SE",
+    "val_exp_ijp": 219001.5
+  },
+  {
+    "country1": "EE",
+    "country2": "DK",
+    "val_exp_ijp": 37246.8
+  },
+  {
+    "country1": "EE",
+    "country2": "GR",
+    "val_exp_ijp": 6.7
+  },
+  {
+    "country1": "EE",
+    "country2": "PL",
+    "val_exp_ijp": 18617.6
+  },
+  {
+    "country1": "EE",
+    "country2": "SE",
+    "val_exp_ijp": 13352.6
+  },
+  {
+    "country1": "ES",
+    "country2": "IE",
+    "val_exp_ijp": 157101
+  },
+  {
+    "country1": "FR",
+    "country2": "SI",
+    "val_exp_ijp": 1443.2
+  },
+  {
+    "country1": "GR",
+    "country2": "CY",
+    "val_exp_ijp": 14809.7
+  },
+  {
+    "country1": "GR",
+    "country2": "DK",
+    "val_exp_ijp": 62460.4
+  },
+  {
+    "country1": "GR",
+    "country2": "EE",
+    "val_exp_ijp": 2057
+  },
+  {
+    "country1": "GR",
+    "country2": "PL",
+    "val_exp_ijp": 67972.7
+  },
+  {
+    "country1": "GR",
+    "country2": "SE",
+    "val_exp_ijp": 16476.6
+  },
+  {
+    "country1": "HR",
+    "country2": "AT",
+    "val_exp_ijp": 26242.4
+  },
+  {
+    "country1": "HR",
+    "country2": "CZ",
+    "val_exp_ijp": 16205.4
+  },
+  {
+    "country1": "HR",
+    "country2": "HU",
+    "val_exp_ijp": 74173.1
+  },
+  {
+    "country1": "HR",
+    "country2": "SK",
+    "val_exp_ijp": 10673.7
+  },
+  {
+    "country1": "HU",
+    "country2": "BE",
+    "val_exp_ijp": 11493.5
+  },
+  {
+    "country1": "HU",
+    "country2": "DE",
+    "val_exp_ijp": 269984.3
+  },
+  {
+    "country1": "HU",
+    "country2": "HR",
+    "val_exp_ijp": 24611.8
+  },
+  {
+    "country1": "HU",
+    "country2": "NL",
+    "val_exp_ijp": 56403.6
+  },
+  {
+    "country1": "HU",
+    "country2": "RO",
+    "val_exp_ijp": 83171.1
+  },
+  {
+    "country1": "IE",
+    "country2": "ES",
+    "val_exp_ijp": 29745.1
+  },
+  {
+    "country1": "IT",
+    "country2": "SI",
+    "val_exp_ijp": 780014.5
+  },
+  {
+    "country1": "LU",
+    "country2": "DE",
+    "val_exp_ijp": 23395.5
+  },
+  {
+    "country1": "LU",
+    "country2": "PT",
+    "val_exp_ijp": 5857.2
+  },
+  {
+    "country1": "MT",
+    "country2": "SK",
+    "val_exp_ijp": 42.6
+  },
+  {
+    "country1": "NL",
+    "country2": "CY",
+    "val_exp_ijp": 341.9
+  },
+  {
+    "country1": "NL",
+    "country2": "CZ",
+    "val_exp_ijp": 22250.6
+  },
+  {
+    "country1": "NL",
+    "country2": "HU",
+    "val_exp_ijp": 35527.1
+  },
+  {
+    "country1": "PL",
+    "country2": "CY",
+    "val_exp_ijp": 993.2
+  },
+  {
+    "country1": "PL",
+    "country2": "DK",
+    "val_exp_ijp": 509548.8
+  },
+  {
+    "country1": "PL",
+    "country2": "EE",
+    "val_exp_ijp": 14288.4
+  },
+  {
+    "country1": "PL",
+    "country2": "GR",
+    "val_exp_ijp": 6612.8
+  },
+  {
+    "country1": "PT",
+    "country2": "LU",
+    "val_exp_ijp": 460.1
+  },
+  {
+    "country1": "PT",
+    "country2": "SI",
+    "val_exp_ijp": 17.6
+  },
+  {
+    "country1": "RO",
+    "country2": "AT",
+    "val_exp_ijp": 65880
+  },
+  {
+    "country1": "RO",
+    "country2": "CZ",
+    "val_exp_ijp": 42538.1
+  },
+  {
+    "country1": "RO",
+    "country2": "HU",
+    "val_exp_ijp": 338133.8
+  },
+  {
+    "country1": "SE",
+    "country2": "CY",
+    "val_exp_ijp": 24913.5
+  },
+  {
+    "country1": "SE",
+    "country2": "DK",
+    "val_exp_ijp": 592215.5
+  },
+  {
+    "country1": "SE",
+    "country2": "EE",
+    "val_exp_ijp": 7039.5
+  },
+  {
+    "country1": "SE",
+    "country2": "GR",
+    "val_exp_ijp": 21706.9
+  },
+  {
+    "country1": "SI",
+    "country2": "BG",
+    "val_exp_ijp": 328.2
+  },
+  {
+    "country1": "SI",
+    "country2": "FR",
+    "val_exp_ijp": 19006.8
+  },
+  {
+    "country1": "SI",
+    "country2": "IT",
+    "val_exp_ijp": 74251.5
+  },
+  {
+    "country1": "SI",
+    "country2": "PT",
+    "val_exp_ijp": 2464.3
+  },
+  {
+    "country1": "SK",
+    "country2": "BE",
+    "val_exp_ijp": 9031.5
+  },
+  {
+    "country1": "SK",
+    "country2": "DE",
+    "val_exp_ijp": 75355.7
+  },
+  {
+    "country1": "SK",
+    "country2": "HR",
+    "val_exp_ijp": 794.6
+  }
+]
