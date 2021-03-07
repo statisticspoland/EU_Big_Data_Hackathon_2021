@@ -1,0 +1,3442 @@
+
+{
+  "2-1-1": [
+    {
+      "metadane": [
+
+			{
+                      	"Name of the indicator": "2.1.1 Flow of trade relations for export - 2019",
+                        "Measure unit": "thous.",
+                        "Description of the indicator": "The data shows Chord diagram with animated bullets",
+                        "Data sources": "ITGS_Reference"}
+      ],
+      "dane": [
+        {
+          "10": [
+            {
+              "from": "IE",
+              "to": "CY",
+              "value": 306
+            },
+            {
+              "from": "LU",
+              "to": "FR",
+              "value": 184293.1
+            },
+            {
+              "from": "IT",
+              "to": "DE",
+              "value": 977465.6
+            },
+            {
+              "from": "SK",
+              "to": "FR",
+              "value": 20372.3
+            },
+            {
+              "from": "NL",
+              "to": "LU",
+              "value": 21128.3
+            },
+            {
+              "from": "IE",
+              "to": "GR",
+              "value": 43.7
+            },
+            {
+              "from": "FR",
+              "to": "RO",
+              "value": 70751.2
+            },
+            {
+              "from": "IE",
+              "to": "AT",
+              "value": 6053.1
+            },
+            {
+              "from": "HU",
+              "to": "IT",
+              "value": 134782.5
+            },
+            {
+              "from": "AT",
+              "to": "SI",
+              "value": 263810.3
+            },
+            {
+              "from": "SI",
+              "to": "PT",
+              "value": 2523.4
+            },
+            {
+              "from": "RO",
+              "to": "DK",
+              "value": 935.2
+            },
+            {
+              "from": "EE",
+              "to": "DK",
+              "value": 2665.5
+            },
+            {
+              "from": "AT",
+              "to": "SK",
+              "value": 91557
+            },
+            {
+              "from": "PT",
+              "to": "EE",
+              "value": 38.3
+            },
+            {
+              "from": "PT",
+              "to": "DK",
+              "value": 4202.4
+            },
+            {
+              "from": "CZ",
+              "to": "BE",
+              "value": 43846.7
+            },
+            {
+              "from": "IE",
+              "to": "SK",
+              "value": 3406.4
+            },
+            {
+              "from": "DK",
+              "to": "FR",
+              "value": 84094.6
+            },
+            {
+              "from": "IT",
+              "to": "DK",
+              "value": 31795.2
+            },
+            {
+              "from": "SE",
+              "to": "FI",
+              "value": 174526.6
+            },
+            {
+              "from": "GR",
+              "to": "FR",
+              "value": 13592.1
+            },
+            {
+              "from": "LT",
+              "to": "LU",
+              "value": 17.5
+            },
+            {
+              "from": "BG",
+              "to": "NL",
+              "value": 2336.4
+            },
+            {
+              "from": "BG",
+              "to": "PL",
+              "value": 8540.4
+            },
+            {
+              "from": "HR",
+              "to": "BG",
+              "value": 1793
+            },
+            {
+              "from": "PT",
+              "to": "LT",
+              "value": 679
+            },
+            {
+              "from": "FR",
+              "to": "BE",
+              "value": 719356.8
+            },
+            {
+              "from": "NL",
+              "to": "BG",
+              "value": 14113.2
+            },
+            {
+              "from": "NL",
+              "to": "IT",
+              "value": 1057856.2
+            },
+            {
+              "from": "FR",
+              "to": "BG",
+              "value": 6065.5
+            },
+            {
+              "from": "IT",
+              "to": "BG",
+              "value": 36692.2
+            },
+            {
+              "from": "RO",
+              "to": "GR",
+              "value": 26346.9
+            },
+            {
+              "from": "HU",
+              "to": "SK",
+              "value": 105773.7
+            },
+            {
+              "from": "ES",
+              "to": "DK",
+              "value": 5530.6
+            },
+            {
+              "from": "EE",
+              "to": "LV",
+              "value": 7576.7
+            },
+            {
+              "from": "BG",
+              "to": "IT",
+              "value": 22887.8
+            },
+            {
+              "from": "BG",
+              "to": "FR",
+              "value": 43845.8
+            },
+            {
+              "from": "BG",
+              "to": "PT",
+              "value": 6354.9
+            },
+            {
+              "from": "DK",
+              "to": "ES",
+              "value": 3354.5
+            },
+            {
+              "from": "MT",
+              "to": "AT",
+              "value": 17
+            },
+            {
+              "from": "LT",
+              "to": "ES",
+              "value": 2124.3
+            },
+            {
+              "from": "FI",
+              "to": "AT",
+              "value": 273365.1
+            },
+            {
+              "from": "BG",
+              "to": "CZ",
+              "value": 10050.6
+            },
+            {
+              "from": "LT",
+              "to": "NL",
+              "value": 15859.8
+            },
+            {
+              "from": "PL",
+              "to": "SI",
+              "value": 25750.8
+            },
+            {
+              "from": "GR",
+              "to": "HR",
+              "value": 3141.9
+            },
+            {
+              "from": "NL",
+              "to": "LV",
+              "value": 2675.2
+            },
+            {
+              "from": "NL",
+              "to": "LT",
+              "value": 11669.8
+            },
+            {
+              "from": "PL",
+              "to": "ES",
+              "value": 107827.8
+            },
+            {
+              "from": "BE",
+              "to": "EE",
+              "value": 2118.9
+            },
+            {
+              "from": "LV",
+              "to": "NL",
+              "value": 3810.8
+            },
+            {
+              "from": "BE",
+              "to": "GR",
+              "value": 10689.2
+            },
+            {
+              "from": "AT",
+              "to": "BG",
+              "value": 37437.8
+            },
+            {
+              "from": "DK",
+              "to": "AT",
+              "value": 4757.6
+            },
+            {
+              "from": "BE",
+              "to": "AT",
+              "value": 78599.8
+            },
+            {
+              "from": "SK",
+              "to": "EE",
+              "value": 885.5
+            },
+            {
+              "from": "HU",
+              "to": "GR",
+              "value": 7898
+            },
+            {
+              "from": "HU",
+              "to": "EE",
+              "value": 1094.2
+            },
+            {
+              "from": "AT",
+              "to": "GR",
+              "value": 29664
+            },
+            {
+              "from": "LU",
+              "to": "BG",
+              "value": 590
+            },
+            {
+              "from": "HU",
+              "to": "SE",
+              "value": 10862
+            },
+            {
+              "from": "FI",
+              "to": "SK",
+              "value": 25205
+            },
+            {
+              "from": "SE",
+              "to": "RO",
+              "value": 27481.9
+            },
+            {
+              "from": "PT",
+              "to": "IE",
+              "value": 4067.5
+            },
+            {
+              "from": "LU",
+              "to": "FI",
+              "value": 17343.1
+            },
+            {
+              "from": "LU",
+              "to": "RO",
+              "value": 156.4
+            },
+            {
+              "from": "DE",
+              "to": "BE",
+              "value": 978837.4
+            },
+            {
+              "from": "HU",
+              "to": "FR",
+              "value": 91545.7
+            },
+            {
+              "from": "HR",
+              "to": "BE",
+              "value": 807.8
+            },
+            {
+              "from": "FI",
+              "to": "EE",
+              "value": 34853.3
+            },
+            {
+              "from": "IE",
+              "to": "SI",
+              "value": 711.3
+            },
+            {
+              "from": "BG",
+              "to": "CY",
+              "value": 4166.5
+            },
+            {
+              "from": "IT",
+              "to": "HU",
+              "value": 82308.7
+            },
+            {
+              "from": "MT",
+              "to": "FI",
+              "value": 583.1
+            },
+            {
+              "from": "DE",
+              "to": "HU",
+              "value": 209640
+            },
+            {
+              "from": "CY",
+              "to": "DK",
+              "value": 12.4
+            },
+            {
+              "from": "FI",
+              "to": "MT",
+              "value": 2514.8
+            },
+            {
+              "from": "LV",
+              "to": "IT",
+              "value": 181.3
+            },
+            {
+              "from": "SI",
+              "to": "MT",
+              "value": 562
+            },
+            {
+              "from": "PT",
+              "to": "SK",
+              "value": 6714.2
+            },
+            {
+              "from": "DK",
+              "to": "GR",
+              "value": 954.6
+            },
+            {
+              "from": "DK",
+              "to": "EE",
+              "value": 2176.4
+            },
+            {
+              "from": "MT",
+              "to": "HU",
+              "value": 577.5
+            },
+            {
+              "from": "SK",
+              "to": "IE",
+              "value": 474.3
+            },
+            {
+              "from": "SE",
+              "to": "BG",
+              "value": 11266.2
+            },
+            {
+              "from": "FI",
+              "to": "SE",
+              "value": 357598.4
+            },
+            {
+              "from": "AT",
+              "to": "ES",
+              "value": 96138.1
+            },
+            {
+              "from": "NL",
+              "to": "PT",
+              "value": 88113.6
+            },
+            {
+              "from": "BG",
+              "to": "HR",
+              "value": 677
+            },
+            {
+              "from": "ES",
+              "to": "MT",
+              "value": 3866.2
+            },
+            {
+              "from": "FI",
+              "to": "GR",
+              "value": 54688.7
+            },
+            {
+              "from": "PL",
+              "to": "BG",
+              "value": 25420.8
+            },
+            {
+              "from": "LV",
+              "to": "LU",
+              "value": 5.4
+            },
+            {
+              "from": "IT",
+              "to": "PL",
+              "value": 211098.9
+            },
+            {
+              "from": "FI",
+              "to": "IT",
+              "value": 418611.2
+            },
+            {
+              "from": "LV",
+              "to": "GR",
+              "value": 317.4
+            },
+            {
+              "from": "LU",
+              "to": "AT",
+              "value": 3384.7
+            },
+            {
+              "from": "DE",
+              "to": "IE",
+              "value": 135683.4
+            },
+            {
+              "from": "LT",
+              "to": "GR",
+              "value": 255.9
+            },
+            {
+              "from": "SE",
+              "to": "BE",
+              "value": 177152.6
+            },
+            {
+              "from": "NL",
+              "to": "RO",
+              "value": 37801.5
+            },
+            {
+              "from": "MT",
+              "to": "FR",
+              "value": 847.6
+            },
+            {
+              "from": "RO",
+              "to": "DE",
+              "value": 92331
+            },
+            {
+              "from": "DK",
+              "to": "MT",
+              "value": 915.6
+            },
+            {
+              "from": "SE",
+              "to": "PT",
+              "value": 43305.4
+            },
+            {
+              "from": "AT",
+              "to": "FI",
+              "value": 98706.7
+            },
+            {
+              "from": "RO",
+              "to": "HR",
+              "value": 994
+            },
+            {
+              "from": "AT",
+              "to": "PT",
+              "value": 33271.6
+            },
+            {
+              "from": "DE",
+              "to": "RO",
+              "value": 100903.9
+            },
+            {
+              "from": "DK",
+              "to": "SI",
+              "value": 881.1
+            },
+            {
+              "from": "CY",
+              "to": "NL",
+              "value": 655.7
+            },
+            {
+              "from": "GR",
+              "to": "PL",
+              "value": 5812.7
+            },
+            {
+              "from": "IE",
+              "to": "FR",
+              "value": 40780.2
+            },
+            {
+              "from": "SK",
+              "to": "SE",
+              "value": 3043.5
+            },
+            {
+              "from": "CY",
+              "to": "MT",
+              "value": 5.1
+            },
+            {
+              "from": "LU",
+              "to": "PT",
+              "value": 6011.4
+            },
+            {
+              "from": "SI",
+              "to": "BG",
+              "value": 10183.3
+            },
+            {
+              "from": "AT",
+              "to": "HU",
+              "value": 171815
+            },
+            {
+              "from": "RO",
+              "to": "IE",
+              "value": 34.9
+            },
+            {
+              "from": "HR",
+              "to": "LV",
+              "value": 95
+            },
+            {
+              "from": "NL",
+              "to": "HU",
+              "value": 20010
+            },
+            {
+              "from": "LV",
+              "to": "HR",
+              "value": 6.1
+            },
+            {
+              "from": "GR",
+              "to": "MT",
+              "value": 387.2
+            },
+            {
+              "from": "DE",
+              "to": "BG",
+              "value": 39533
+            },
+            {
+              "from": "HR",
+              "to": "IT",
+              "value": 69908.6
+            },
+            {
+              "from": "RO",
+              "to": "PL",
+              "value": 32270.8
+            },
+            {
+              "from": "IE",
+              "to": "PT",
+              "value": 3713.7
+            },
+            {
+              "from": "FR",
+              "to": "LU",
+              "value": 98657.9
+            },
+            {
+              "from": "PL",
+              "to": "RO",
+              "value": 86761.2
+            },
+            {
+              "from": "RO",
+              "to": "LU",
+              "value": 359.3
+            },
+            {
+              "from": "HU",
+              "to": "LV",
+              "value": 1846.9
+            },
+            {
+              "from": "EE",
+              "to": "IE",
+              "value": 350
+            },
+            {
+              "from": "CZ",
+              "to": "LV",
+              "value": 1416.4
+            },
+            {
+              "from": "CZ",
+              "to": "IT",
+              "value": 128857.4
+            },
+            {
+              "from": "SI",
+              "to": "CZ",
+              "value": 47922.4
+            },
+            {
+              "from": "AT",
+              "to": "IE",
+              "value": 32204.1
+            },
+            {
+              "from": "HR",
+              "to": "SE",
+              "value": 290.5
+            },
+            {
+              "from": "SE",
+              "to": "HR",
+              "value": 7343.7
+            },
+            {
+              "from": "FI",
+              "to": "CY",
+              "value": 2493
+            },
+            {
+              "from": "SI",
+              "to": "NL",
+              "value": 36397.3
+            },
+            {
+              "from": "LV",
+              "to": "SK",
+              "value": 124.9
+            },
+            {
+              "from": "EE",
+              "to": "BG",
+              "value": 170.8
+            },
+            {
+              "from": "SK",
+              "to": "ES",
+              "value": 4141
+            },
+            {
+              "from": "FR",
+              "to": "AT",
+              "value": 135378.6
+            },
+            {
+              "from": "CZ",
+              "to": "SI",
+              "value": 14272.2
+            },
+            {
+              "from": "DK",
+              "to": "SK",
+              "value": 4082.1
+            },
+            {
+              "from": "SK",
+              "to": "DK",
+              "value": 1992.9
+            },
+            {
+              "from": "PL",
+              "to": "SE",
+              "value": 176084.4
+            },
+            {
+              "from": "IE",
+              "to": "SE",
+              "value": 1858.6
+            },
+            {
+              "from": "LV",
+              "to": "LT",
+              "value": 130249.4
+            },
+            {
+              "from": "PT",
+              "to": "DE",
+              "value": 168241.6
+            },
+            {
+              "from": "LT",
+              "to": "LV",
+              "value": 37359.4
+            },
+            {
+              "from": "MT",
+              "to": "BE",
+              "value": 167.7
+            },
+            {
+              "from": "BG",
+              "to": "ES",
+              "value": 1479.5
+            },
+            {
+              "from": "AT",
+              "to": "BE",
+              "value": 111061.6
+            },
+            {
+              "from": "HU",
+              "to": "SI",
+              "value": 80443.4
+            },
+            {
+              "from": "EE",
+              "to": "RO",
+              "value": 3977.2
+            },
+            {
+              "from": "BE",
+              "to": "ES",
+              "value": 83267.2
+            },
+            {
+              "from": "AT",
+              "to": "LU",
+              "value": 5975.1
+            },
+            {
+              "from": "BE",
+              "to": "NL",
+              "value": 864027.3
+            },
+            {
+              "from": "SE",
+              "to": "DE",
+              "value": 925403.7
+            },
+            {
+              "from": "LV",
+              "to": "EE",
+              "value": 72105.6
+            },
+            {
+              "from": "BG",
+              "to": "FI",
+              "value": 95.1
+            },
+            {
+              "from": "DK",
+              "to": "NL",
+              "value": 34323
+            },
+            {
+              "from": "DE",
+              "to": "SE",
+              "value": 281376.4
+            },
+            {
+              "from": "NL",
+              "to": "BE",
+              "value": 819969.8
+            },
+            {
+              "from": "MT",
+              "to": "PL",
+              "value": 2062.6
+            },
+            {
+              "from": "FI",
+              "to": "PT",
+              "value": 55681.3
+            },
+            {
+              "from": "LT",
+              "to": "EE",
+              "value": 43385.1
+            },
+            {
+              "from": "PT",
+              "to": "BG",
+              "value": 5842
+            },
+            {
+              "from": "FR",
+              "to": "IT",
+              "value": 645354.8
+            },
+            {
+              "from": "PL",
+              "to": "MT",
+              "value": 200.6
+            },
+            {
+              "from": "HR",
+              "to": "SI",
+              "value": 116666.5
+            },
+            {
+              "from": "RO",
+              "to": "EE",
+              "value": 107.1
+            },
+            {
+              "from": "IE",
+              "to": "MT",
+              "value": 70.7
+            },
+            {
+              "from": "GR",
+              "to": "RO",
+              "value": 11099.5
+            },
+            {
+              "from": "IT",
+              "to": "LU",
+              "value": 36880.4
+            },
+            {
+              "from": "SI",
+              "to": "LV",
+              "value": 149.9
+            },
+            {
+              "from": "LV",
+              "to": "SI",
+              "value": 2548.4
+            },
+            {
+              "from": "GR",
+              "to": "IE",
+              "value": 2255.8
+            },
+            {
+              "from": "MT",
+              "to": "RO",
+              "value": 729.7
+            },
+            {
+              "from": "RO",
+              "to": "SE",
+              "value": 1202.3
+            },
+            {
+              "from": "LT",
+              "to": "CZ",
+              "value": 6361.3
+            },
+            {
+              "from": "FR",
+              "to": "SK",
+              "value": 17405.8
+            },
+            {
+              "from": "SI",
+              "to": "LT",
+              "value": 200
+            },
+            {
+              "from": "HU",
+              "to": "LT",
+              "value": 5282.3
+            },
+            {
+              "from": "SE",
+              "to": "HU",
+              "value": 91926.9
+            },
+            {
+              "from": "FI",
+              "to": "FR",
+              "value": 405071.3
+            },
+            {
+              "from": "SI",
+              "to": "HR",
+              "value": 56496.6
+            },
+            {
+              "from": "BE",
+              "to": "SE",
+              "value": 52360.1
+            },
+            {
+              "from": "CY",
+              "to": "RO",
+              "value": 763.4
+            },
+            {
+              "from": "MT",
+              "to": "IE",
+              "value": 174.9
+            },
+            {
+              "from": "IE",
+              "to": "HR",
+              "value": 275.1
+            },
+            {
+              "from": "EE",
+              "to": "LT",
+              "value": 29105.6
+            },
+            {
+              "from": "NL",
+              "to": "DK",
+              "value": 79300.5
+            },
+            {
+              "from": "PL",
+              "to": "SK",
+              "value": 75879.2
+            },
+            {
+              "from": "DK",
+              "to": "SE",
+              "value": 158739.8
+            },
+            {
+              "from": "SI",
+              "to": "FI",
+              "value": 360.4
+            },
+            {
+              "from": "BE",
+              "to": "SK",
+              "value": 8885.8
+            },
+            {
+              "from": "EE",
+              "to": "MT",
+              "value": 32.4
+            },
+            {
+              "from": "IE",
+              "to": "IT",
+              "value": 19134.4
+            },
+            {
+              "from": "SK",
+              "to": "DE",
+              "value": 362738.3
+            },
+            {
+              "from": "IT",
+              "to": "IE",
+              "value": 82082.3
+            },
+            {
+              "from": "HR",
+              "to": "LT",
+              "value": 304.8
+            },
+            {
+              "from": "FI",
+              "to": "SI",
+              "value": 13802.4
+            },
+            {
+              "from": "PT",
+              "to": "RO",
+              "value": 9870.4
+            },
+            {
+              "from": "HR",
+              "to": "SK",
+              "value": 13251.1
+            },
+            {
+              "from": "PL",
+              "to": "FR",
+              "value": 427252
+            },
+            {
+              "from": "BG",
+              "to": "DK",
+              "value": 168.8
+            },
+            {
+              "from": "IT",
+              "to": "EE",
+              "value": 1973
+            },
+            {
+              "from": "PL",
+              "to": "IT",
+              "value": 265568
+            },
+            {
+              "from": "LV",
+              "to": "PT",
+              "value": 10.3
+            },
+            {
+              "from": "FI",
+              "to": "NL",
+              "value": 321532
+            },
+            {
+              "from": "IE",
+              "to": "CZ",
+              "value": 6778.9
+            },
+            {
+              "from": "SI",
+              "to": "LU",
+              "value": 58.9
+            },
+            {
+              "from": "CZ",
+              "to": "SE",
+              "value": 12801.9
+            },
+            {
+              "from": "ES",
+              "to": "BG",
+              "value": 7823.3
+            },
+            {
+              "from": "LT",
+              "to": "IT",
+              "value": 69838.6
+            },
+            {
+              "from": "IT",
+              "to": "ES",
+              "value": 464329.8
+            },
+            {
+              "from": "AT",
+              "to": "EE",
+              "value": 3154.9
+            },
+            {
+              "from": "BG",
+              "to": "LV",
+              "value": 48
+            },
+            {
+              "from": "BE",
+              "to": "PT",
+              "value": 24053.1
+            },
+            {
+              "from": "LU",
+              "to": "MT",
+              "value": 43.7
+            },
+            {
+              "from": "IT",
+              "to": "RO",
+              "value": 27009.4
+            },
+            {
+              "from": "CZ",
+              "to": "CY",
+              "value": 462.6
+            },
+            {
+              "from": "GR",
+              "to": "HU",
+              "value": 4208.6
+            },
+            {
+              "from": "AT",
+              "to": "CY",
+              "value": 434.6
+            },
+            {
+              "from": "SK",
+              "to": "RO",
+              "value": 44015
+            },
+            {
+              "from": "SE",
+              "to": "CZ",
+              "value": 103960
+            },
+            {
+              "from": "ES",
+              "to": "IE",
+              "value": 18636.5
+            },
+            {
+              "from": "CZ",
+              "to": "SK",
+              "value": 216908.4
+            },
+            {
+              "from": "HU",
+              "to": "LU",
+              "value": 25337.4
+            },
+            {
+              "from": "FR",
+              "to": "LV",
+              "value": 2522.6
+            },
+            {
+              "from": "ES",
+              "to": "RO",
+              "value": 23511
+            },
+            {
+              "from": "BE",
+              "to": "CZ",
+              "value": 66656.5
+            },
+            {
+              "from": "HU",
+              "to": "MT",
+              "value": 3896.8
+            },
+            {
+              "from": "DK",
+              "to": "CY",
+              "value": 34.7
+            },
+            {
+              "from": "SI",
+              "to": "BE",
+              "value": 9083.9
+            },
+            {
+              "from": "SK",
+              "to": "AT",
+              "value": 476347.8
+            },
+            {
+              "from": "RO",
+              "to": "LT",
+              "value": 92.1
+            },
+            {
+              "from": "GR",
+              "to": "DK",
+              "value": 230.3
+            },
+            {
+              "from": "DE",
+              "to": "AT",
+              "value": 553333.7
+            },
+            {
+              "from": "ES",
+              "to": "BE",
+              "value": 63068.3
+            },
+            {
+              "from": "LU",
+              "to": "IE",
+              "value": 6461.1
+            },
+            {
+              "from": "PT",
+              "to": "FR",
+              "value": 178565
+            },
+            {
+              "from": "PT",
+              "to": "IT",
+              "value": 114921.4
+            },
+            {
+              "from": "LV",
+              "to": "CY",
+              "value": 7.6
+            },
+            {
+              "from": "MT",
+              "to": "CZ",
+              "value": 240.3
+            },
+            {
+              "from": "DK",
+              "to": "LT",
+              "value": 2152.7
+            },
+            {
+              "from": "CZ",
+              "to": "MT",
+              "value": 369.9
+            },
+            {
+              "from": "AT",
+              "to": "MT",
+              "value": 405.3
+            },
+            {
+              "from": "DK",
+              "to": "LV",
+              "value": 1771.8
+            },
+            {
+              "from": "LT",
+              "to": "CY",
+              "value": 246.4
+            },
+            {
+              "from": "PL",
+              "to": "HR",
+              "value": 19302.6
+            },
+            {
+              "from": "IE",
+              "to": "LU",
+              "value": 190.4
+            },
+            {
+              "from": "IE",
+              "to": "DE",
+              "value": 137877.6
+            },
+            {
+              "from": "MT",
+              "to": "SE",
+              "value": 211
+            },
+            {
+              "from": "ES",
+              "to": "GR",
+              "value": 39120.7
+            },
+            {
+              "from": "ES",
+              "to": "EE",
+              "value": 891.3
+            },
+            {
+              "from": "GR",
+              "to": "FI",
+              "value": 1882.9
+            },
+            {
+              "from": "GR",
+              "to": "BG",
+              "value": 41145.1
+            },
+            {
+              "from": "DK",
+              "to": "IT",
+              "value": 15984.2
+            },
+            {
+              "from": "IT",
+              "to": "BE",
+              "value": 145102.8
+            },
+            {
+              "from": "SE",
+              "to": "FR",
+              "value": 266977.8
+            },
+            {
+              "from": "BE",
+              "to": "IT",
+              "value": 465282.3
+            },
+            {
+              "from": "LT",
+              "to": "PT",
+              "value": 3367.1
+            },
+            {
+              "from": "DK",
+              "to": "FI",
+              "value": 46814.1
+            },
+            {
+              "from": "FI",
+              "to": "HR",
+              "value": 4488
+            },
+            {
+              "from": "NL",
+              "to": "FR",
+              "value": 772364.2
+            },
+            {
+              "from": "FR",
+              "to": "SE",
+              "value": 36484.5
+            },
+            {
+              "from": "LU",
+              "to": "DE",
+              "value": 47354.3
+            },
+            {
+              "from": "RO",
+              "to": "SK",
+              "value": 18174.1
+            },
+            {
+              "from": "CZ",
+              "to": "PL",
+              "value": 170730.2
+            },
+            {
+              "from": "AT",
+              "to": "PL",
+              "value": 299779.9
+            },
+            {
+              "from": "SI",
+              "to": "DE",
+              "value": 107326
+            },
+            {
+              "from": "PL",
+              "to": "AT",
+              "value": 127136
+            },
+            {
+              "from": "LV",
+              "to": "FI",
+              "value": 26292.5
+            },
+            {
+              "from": "LT",
+              "to": "FI",
+              "value": 20483.1
+            },
+            {
+              "from": "DK",
+              "to": "CZ",
+              "value": 22603.8
+            },
+            {
+              "from": "CZ",
+              "to": "EE",
+              "value": 1501.2
+            },
+            {
+              "from": "EE",
+              "to": "HU",
+              "value": 6171.1
+            },
+            {
+              "from": "SI",
+              "to": "HU",
+              "value": 30738.4
+            },
+            {
+              "from": "SE",
+              "to": "IE",
+              "value": 55240
+            },
+            {
+              "from": "HU",
+              "to": "CY",
+              "value": 45.1
+            },
+            {
+              "from": "DK",
+              "to": "PT",
+              "value": 1607.4
+            },
+            {
+              "from": "AT",
+              "to": "DE",
+              "value": 2036274.2
+            },
+            {
+              "from": "LT",
+              "to": "FR",
+              "value": 62862.3
+            },
+            {
+              "from": "LU",
+              "to": "HU",
+              "value": 61.7
+            },
+            {
+              "from": "MT",
+              "to": "BG",
+              "value": 29.9
+            },
+            {
+              "from": "BG",
+              "to": "MT",
+              "value": 88.9
+            },
+            {
+              "from": "CZ",
+              "to": "LU",
+              "value": 1411
+            },
+            {
+              "from": "HR",
+              "to": "AT",
+              "value": 39623.2
+            },
+            {
+              "from": "LT",
+              "to": "RO",
+              "value": 1149.5
+            },
+            {
+              "from": "SK",
+              "to": "SI",
+              "value": 35956
+            },
+            {
+              "from": "LV",
+              "to": "RO",
+              "value": 8156.5
+            },
+            {
+              "from": "RO",
+              "to": "ES",
+              "value": 4179
+            },
+            {
+              "from": "BE",
+              "to": "SI",
+              "value": 6189.3
+            },
+            {
+              "from": "LV",
+              "to": "FR",
+              "value": 34124.9
+            },
+            {
+              "from": "FR",
+              "to": "EE",
+              "value": 1563
+            },
+            {
+              "from": "PT",
+              "to": "ES",
+              "value": 571495.6
+            },
+            {
+              "from": "FR",
+              "to": "GR",
+              "value": 26995.7
+            },
+            {
+              "from": "BG",
+              "to": "RO",
+              "value": 86773.7
+            },
+            {
+              "from": "RO",
+              "to": "HU",
+              "value": 50613.1
+            },
+            {
+              "from": "IE",
+              "to": "HU",
+              "value": 1627.7
+            },
+            {
+              "from": "IT",
+              "to": "GR",
+              "value": 156232.7
+            },
+            {
+              "from": "HU",
+              "to": "RO",
+              "value": 217701.8
+            },
+            {
+              "from": "IT",
+              "to": "SI",
+              "value": 77279.6
+            },
+            {
+              "from": "ES",
+              "to": "AT",
+              "value": 48237.8
+            },
+            {
+              "from": "HR",
+              "to": "FI",
+              "value": 27.9
+            },
+            {
+              "from": "FR",
+              "to": "NL",
+              "value": 357971.4
+            },
+            {
+              "from": "RO",
+              "to": "LV",
+              "value": 76
+            },
+            {
+              "from": "HU",
+              "to": "HR",
+              "value": 28589.7
+            },
+            {
+              "from": "IT",
+              "to": "LV",
+              "value": 8086.2
+            },
+            {
+              "from": "MT",
+              "to": "SI",
+              "value": 1401.4
+            },
+            {
+              "from": "IE",
+              "to": "LT",
+              "value": 2088.8
+            },
+            {
+              "from": "EE",
+              "to": "GR",
+              "value": 30.2
+            },
+            {
+              "from": "PT",
+              "to": "GR",
+              "value": 21944
+            },
+            {
+              "from": "IT",
+              "to": "SE",
+              "value": 32188.5
+            },
+            {
+              "from": "HR",
+              "to": "CZ",
+              "value": 19725.4
+            },
+            {
+              "from": "GR",
+              "to": "EE",
+              "value": 245
+            },
+            {
+              "from": "CY",
+              "to": "GR",
+              "value": 3820.6
+            },
+            {
+              "from": "BE",
+              "to": "PL",
+              "value": 99551
+            },
+            {
+              "from": "LU",
+              "to": "SK",
+              "value": 2100
+            },
+            {
+              "from": "SE",
+              "to": "MT",
+              "value": 16175.4
+            },
+            {
+              "from": "NL",
+              "to": "GR",
+              "value": 18412.9
+            },
+            {
+              "from": "FR",
+              "to": "PT",
+              "value": 194371.3
+            },
+            {
+              "from": "CY",
+              "to": "LV",
+              "value": 30.2
+            },
+            {
+              "from": "LV",
+              "to": "DK",
+              "value": 13735.2
+            },
+            {
+              "from": "LT",
+              "to": "DK",
+              "value": 16491.3
+            },
+            {
+              "from": "IT",
+              "to": "FR",
+              "value": 1139408.6
+            },
+            {
+              "from": "LT",
+              "to": "BE",
+              "value": 5012.7
+            },
+            {
+              "from": "SE",
+              "to": "SK",
+              "value": 66389.6
+            },
+            {
+              "from": "HR",
+              "to": "ES",
+              "value": 3125
+            },
+            {
+              "from": "LT",
+              "to": "HR",
+              "value": 705.2
+            },
+            {
+              "from": "SE",
+              "to": "DK",
+              "value": 435877.6
+            },
+            {
+              "from": "FR",
+              "to": "SI",
+              "value": 8288.9
+            },
+            {
+              "from": "DE",
+              "to": "ES",
+              "value": 650467.9
+            },
+            {
+              "from": "SK",
+              "to": "PL",
+              "value": 98604.3
+            },
+            {
+              "from": "BG",
+              "to": "IE",
+              "value": 187.3
+            },
+            {
+              "from": "IE",
+              "to": "FI",
+              "value": 315.7
+            },
+            {
+              "from": "ES",
+              "to": "DE",
+              "value": 460717.7
+            },
+            {
+              "from": "SK",
+              "to": "HU",
+              "value": 111684.5
+            },
+            {
+              "from": "GR",
+              "to": "LV",
+              "value": 473.9
+            },
+            {
+              "from": "HR",
+              "to": "PL",
+              "value": 2056.2
+            },
+            {
+              "from": "FR",
+              "to": "FI",
+              "value": 12562.1
+            },
+            {
+              "from": "GR",
+              "to": "LT",
+              "value": 9033.5
+            },
+            {
+              "from": "CY",
+              "to": "LT",
+              "value": 377.7
+            },
+            {
+              "from": "PT",
+              "to": "FI",
+              "value": 2178.9
+            },
+            {
+              "from": "FR",
+              "to": "CY",
+              "value": 1187.8
+            },
+            {
+              "from": "BE",
+              "to": "FR",
+              "value": 1628683.9
+            },
+            {
+              "from": "HU",
+              "to": "IE",
+              "value": 829.7
+            },
+            {
+              "from": "SK",
+              "to": "HR",
+              "value": 12210.3
+            },
+            {
+              "from": "IT",
+              "to": "CY",
+              "value": 5603.3
+            },
+            {
+              "from": "PL",
+              "to": "FI",
+              "value": 14331.2
+            },
+            {
+              "from": "FR",
+              "to": "PL",
+              "value": 233005.4
+            },
+            {
+              "from": "BG",
+              "to": "BE",
+              "value": 2043.6
+            },
+            {
+              "from": "FI",
+              "to": "DK",
+              "value": 57406.6
+            },
+            {
+              "from": "CZ",
+              "to": "HR",
+              "value": 8345.3
+            },
+            {
+              "from": "HU",
+              "to": "DE",
+              "value": 294516.8
+            },
+            {
+              "from": "NL",
+              "to": "SK",
+              "value": 43796.4
+            },
+            {
+              "from": "SK",
+              "to": "NL",
+              "value": 14035.4
+            },
+            {
+              "from": "DE",
+              "to": "CZ",
+              "value": 322217.7
+            },
+            {
+              "from": "FR",
+              "to": "LT",
+              "value": 12463
+            },
+            {
+              "from": "CZ",
+              "to": "LT",
+              "value": 2467.4
+            },
+            {
+              "from": "ES",
+              "to": "HU",
+              "value": 10416.8
+            },
+            {
+              "from": "LT",
+              "to": "SI",
+              "value": 1571.1
+            },
+            {
+              "from": "LU",
+              "to": "PL",
+              "value": 21062.3
+            },
+            {
+              "from": "LU",
+              "to": "NL",
+              "value": 12438.3
+            },
+            {
+              "from": "RO",
+              "to": "BE",
+              "value": 7405.9
+            },
+            {
+              "from": "BG",
+              "to": "DE",
+              "value": 61188.9
+            },
+            {
+              "from": "LU",
+              "to": "SE",
+              "value": 3860.7
+            },
+            {
+              "from": "MT",
+              "to": "NL",
+              "value": 1544.5
+            },
+            {
+              "from": "LT",
+              "to": "HU",
+              "value": 3691.9
+            },
+            {
+              "from": "NL",
+              "to": "DE",
+              "value": 2461166.2
+            },
+            {
+              "from": "FI",
+              "to": "DE",
+              "value": 930051.4
+            },
+            {
+              "from": "SE",
+              "to": "EE",
+              "value": 21851.1
+            },
+            {
+              "from": "DE",
+              "to": "LT",
+              "value": 35391.9
+            },
+            {
+              "from": "SK",
+              "to": "MT",
+              "value": 521.4
+            },
+            {
+              "from": "HU",
+              "to": "NL",
+              "value": 12063.1
+            },
+            {
+              "from": "HU",
+              "to": "CZ",
+              "value": 105850.5
+            },
+            {
+              "from": "AT",
+              "to": "CZ",
+              "value": 421118.6
+            },
+            {
+              "from": "EE",
+              "to": "PL",
+              "value": 14686.7
+            },
+            {
+              "from": "HU",
+              "to": "AT",
+              "value": 136856.2
+            },
+            {
+              "from": "GR",
+              "to": "NL",
+              "value": 2645.9
+            },
+            {
+              "from": "IT",
+              "to": "PT",
+              "value": 29865.2
+            },
+            {
+              "from": "RO",
+              "to": "CY",
+              "value": 1233.5
+            },
+            {
+              "from": "GR",
+              "to": "ES",
+              "value": 4122.7
+            },
+            {
+              "from": "HR",
+              "to": "IE",
+              "value": 34.1
+            },
+            {
+              "from": "PL",
+              "to": "DE",
+              "value": 1282771.9
+            },
+            {
+              "from": "FI",
+              "to": "BG",
+              "value": 13135.5
+            },
+            {
+              "from": "PL",
+              "to": "BE",
+              "value": 101038.8
+            },
+            {
+              "from": "EE",
+              "to": "ES",
+              "value": 222.2
+            },
+            {
+              "from": "SK",
+              "to": "LU",
+              "value": 77.3
+            },
+            {
+              "from": "DE",
+              "to": "PL",
+              "value": 2163941.8
+            },
+            {
+              "from": "PL",
+              "to": "LU",
+              "value": 4166.8
+            },
+            {
+              "from": "DE",
+              "to": "IT",
+              "value": 1223672.1
+            },
+            {
+              "from": "SI",
+              "to": "ES",
+              "value": 12940.6
+            },
+            {
+              "from": "IE",
+              "to": "DK",
+              "value": 2500.3
+            },
+            {
+              "from": "DE",
+              "to": "NL",
+              "value": 1532430.4
+            },
+            {
+              "from": "FR",
+              "to": "HR",
+              "value": 1886.7
+            },
+            {
+              "from": "CZ",
+              "to": "ES",
+              "value": 59136.3
+            },
+            {
+              "from": "LV",
+              "to": "HU",
+              "value": 127.9
+            },
+            {
+              "from": "SE",
+              "to": "LU",
+              "value": 17073.9
+            },
+            {
+              "from": "DE",
+              "to": "FR",
+              "value": 1669578.7
+            },
+            {
+              "from": "HR",
+              "to": "NL",
+              "value": 6377.4
+            },
+            {
+              "from": "LV",
+              "to": "CZ",
+              "value": 9716.9
+            },
+            {
+              "from": "HR",
+              "to": "HU",
+              "value": 29270.4
+            },
+            {
+              "from": "SK",
+              "to": "PT",
+              "value": 51083.3
+            },
+            {
+              "from": "BE",
+              "to": "HU",
+              "value": 19915.7
+            },
+            {
+              "from": "SI",
+              "to": "SK",
+              "value": 5579.8
+            },
+            {
+              "from": "SE",
+              "to": "IT",
+              "value": 268484.7
+            },
+            {
+              "from": "CY",
+              "to": "PT",
+              "value": 51546.7
+            },
+            {
+              "from": "SK",
+              "to": "CZ",
+              "value": 372523.8
+            },
+            {
+              "from": "IT",
+              "to": "FI",
+              "value": 2890.7
+            },
+            {
+              "from": "BE",
+              "to": "LT",
+              "value": 2147.8
+            },
+            {
+              "from": "LU",
+              "to": "LV",
+              "value": 180.6
+            },
+            {
+              "from": "MT",
+              "to": "ES",
+              "value": 54.9
+            },
+            {
+              "from": "EE",
+              "to": "FR",
+              "value": 20048.5
+            },
+            {
+              "from": "FR",
+              "to": "DK",
+              "value": 31647.3
+            },
+            {
+              "from": "CY",
+              "to": "FR",
+              "value": 90.4
+            },
+            {
+              "from": "BG",
+              "to": "GR",
+              "value": 44143.3
+            },
+            {
+              "from": "CY",
+              "to": "IT",
+              "value": 891.7
+            },
+            {
+              "from": "FI",
+              "to": "BE",
+              "value": 292161.3
+            },
+            {
+              "from": "BE",
+              "to": "FI",
+              "value": 126674.7
+            },
+            {
+              "from": "RO",
+              "to": "FI",
+              "value": 707.3
+            },
+            {
+              "from": "BE",
+              "to": "BG",
+              "value": 3098.7
+            },
+            {
+              "from": "ES",
+              "to": "PT",
+              "value": 272433.4
+            },
+            {
+              "from": "SI",
+              "to": "IT",
+              "value": 87548.8
+            },
+            {
+              "from": "EE",
+              "to": "PT",
+              "value": 96025.6
+            },
+            {
+              "from": "LT",
+              "to": "IE",
+              "value": 631.5
+            },
+            {
+              "from": "IE",
+              "to": "ES",
+              "value": 5096.7
+            },
+            {
+              "from": "PT",
+              "to": "CY",
+              "value": 2633.9
+            },
+            {
+              "from": "SI",
+              "to": "GR",
+              "value": 3624.1
+            },
+            {
+              "from": "GR",
+              "to": "SI",
+              "value": 2651.5
+            },
+            {
+              "from": "GR",
+              "to": "PT",
+              "value": 11210.2
+            },
+            {
+              "from": "LU",
+              "to": "CZ",
+              "value": 4912.8
+            },
+            {
+              "from": "GR",
+              "to": "CY",
+              "value": 33074.7
+            },
+            {
+              "from": "HU",
+              "to": "BE",
+              "value": 9418.3
+            },
+            {
+              "from": "DE",
+              "to": "SK",
+              "value": 101531.7
+            },
+            {
+              "from": "PL",
+              "to": "GR",
+              "value": 18260.8
+            },
+            {
+              "from": "NL",
+              "to": "CY",
+              "value": 2961
+            },
+            {
+              "from": "ES",
+              "to": "LU",
+              "value": 4051.4
+            },
+            {
+              "from": "FI",
+              "to": "IE",
+              "value": 23614.9
+            },
+            {
+              "from": "CZ",
+              "to": "AT",
+              "value": 550886.1
+            },
+            {
+              "from": "EE",
+              "to": "SE",
+              "value": 17494.6
+            },
+            {
+              "from": "LV",
+              "to": "DE",
+              "value": 100048
+            },
+            {
+              "from": "FI",
+              "to": "LU",
+              "value": 4169.5
+            },
+            {
+              "from": "ES",
+              "to": "SI",
+              "value": 9850.8
+            },
+            {
+              "from": "IE",
+              "to": "BE",
+              "value": 4340.4
+            },
+            {
+              "from": "HU",
+              "to": "ES",
+              "value": 9513.5
+            },
+            {
+              "from": "FR",
+              "to": "DE",
+              "value": 1648936.6
+            },
+            {
+              "from": "BE",
+              "to": "IE",
+              "value": 122972.3
+            },
+            {
+              "from": "SK",
+              "to": "BG",
+              "value": 9078.7
+            },
+            {
+              "from": "ES",
+              "to": "CZ",
+              "value": 26417
+            },
+            {
+              "from": "DK",
+              "to": "IE",
+              "value": 20677.8
+            },
+            {
+              "from": "BE",
+              "to": "RO",
+              "value": 24838.4
+            },
+            {
+              "from": "NL",
+              "to": "HR",
+              "value": 2258.4
+            },
+            {
+              "from": "AT",
+              "to": "HR",
+              "value": 57730.6
+            },
+            {
+              "from": "CZ",
+              "to": "DE",
+              "value": 1040425.4
+            },
+            {
+              "from": "EE",
+              "to": "IT",
+              "value": 14629.8
+            },
+            {
+              "from": "BG",
+              "to": "SE",
+              "value": 1031.7
+            },
+            {
+              "from": "IT",
+              "to": "NL",
+              "value": 128423.7
+            },
+            {
+              "from": "PT",
+              "to": "LV",
+              "value": 3602.7
+            },
+            {
+              "from": "LU",
+              "to": "LT",
+              "value": 463.1
+            },
+            {
+              "from": "NL",
+              "to": "FI",
+              "value": 62964.2
+            },
+            {
+              "from": "FI",
+              "to": "PL",
+              "value": 443864.7
+            },
+            {
+              "from": "CZ",
+              "to": "IE",
+              "value": 16822.3
+            },
+            {
+              "from": "LV",
+              "to": "MT",
+              "value": 538.9
+            },
+            {
+              "from": "MT",
+              "to": "LT",
+              "value": 95.9
+            },
+            {
+              "from": "LT",
+              "to": "MT",
+              "value": 406.8
+            },
+            {
+              "from": "PT",
+              "to": "NL",
+              "value": 161876.8
+            },
+            {
+              "from": "DK",
+              "to": "BG",
+              "value": 3939.2
+            },
+            {
+              "from": "DE",
+              "to": "GR",
+              "value": 108885
+            },
+            {
+              "from": "EE",
+              "to": "DE",
+              "value": 63853.8
+            },
+            {
+              "from": "SI",
+              "to": "EE",
+              "value": 34.8
+            },
+            {
+              "from": "NL",
+              "to": "PL",
+              "value": 159585.1
+            },
+            {
+              "from": "HR",
+              "to": "EE",
+              "value": 29.2
+            },
+            {
+              "from": "AT",
+              "to": "IT",
+              "value": 686481.5
+            },
+            {
+              "from": "RO",
+              "to": "SI",
+              "value": 4511.7
+            },
+            {
+              "from": "HR",
+              "to": "GR",
+              "value": 1773.9
+            },
+            {
+              "from": "HU",
+              "to": "PT",
+              "value": 198.2
+            },
+            {
+              "from": "SI",
+              "to": "CY",
+              "value": 627.3
+            },
+            {
+              "from": "SE",
+              "to": "LT",
+              "value": 36661.7
+            },
+            {
+              "from": "CY",
+              "to": "DE",
+              "value": 6941.3
+            },
+            {
+              "from": "SI",
+              "to": "FR",
+              "value": 25256.1
+            },
+            {
+              "from": "IE",
+              "to": "BG",
+              "value": 497.4
+            },
+            {
+              "from": "PL",
+              "to": "CY",
+              "value": 149.1
+            },
+            {
+              "from": "DK",
+              "to": "PL",
+              "value": 28800.2
+            },
+            {
+              "from": "LV",
+              "to": "BE",
+              "value": 704.5
+            },
+            {
+              "from": "MT",
+              "to": "GR",
+              "value": 104.9
+            },
+            {
+              "from": "NL",
+              "to": "EE",
+              "value": 2719
+            },
+            {
+              "from": "LU",
+              "to": "ES",
+              "value": 29688.4
+            },
+            {
+              "from": "SE",
+              "to": "CY",
+              "value": 1568.1
+            },
+            {
+              "from": "RO",
+              "to": "MT",
+              "value": 23.1
+            },
+            {
+              "from": "NL",
+              "to": "MT",
+              "value": 1087.3
+            },
+            {
+              "from": "HR",
+              "to": "FR",
+              "value": 18852.9
+            },
+            {
+              "from": "LU",
+              "to": "IT",
+              "value": 32737.4
+            },
+            {
+              "from": "CY",
+              "to": "ES",
+              "value": 152.5
+            },
+            {
+              "from": "BG",
+              "to": "SK",
+              "value": 918.1
+            },
+            {
+              "from": "IT",
+              "to": "HR",
+              "value": 74227.6
+            },
+            {
+              "from": "BG",
+              "to": "SI",
+              "value": 2610.5
+            },
+            {
+              "from": "CZ",
+              "to": "NL",
+              "value": 134728.3
+            },
+            {
+              "from": "RO",
+              "to": "PT",
+              "value": 6684.8
+            },
+            {
+              "from": "MT",
+              "to": "EE",
+              "value": 89
+            },
+            {
+              "from": "GR",
+              "to": "SE",
+              "value": 229.6
+            },
+            {
+              "from": "EE",
+              "to": "NL",
+              "value": 17122.8
+            },
+            {
+              "from": "NL",
+              "to": "CZ",
+              "value": 76732.6
+            },
+            {
+              "from": "FI",
+              "to": "ES",
+              "value": 404350
+            },
+            {
+              "from": "CZ",
+              "to": "GR",
+              "value": 6065.3
+            },
+            {
+              "from": "AT",
+              "to": "NL",
+              "value": 116657.5
+            },
+            {
+              "from": "HU",
+              "to": "PL",
+              "value": 99160.3
+            },
+            {
+              "from": "CY",
+              "to": "SK",
+              "value": 3356.9
+            },
+            {
+              "from": "FI",
+              "to": "LV",
+              "value": 28660
+            },
+            {
+              "from": "FR",
+              "to": "ES",
+              "value": 717998.5
+            },
+            {
+              "from": "LV",
+              "to": "BG",
+              "value": 163.9
+            },
+            {
+              "from": "PL",
+              "to": "HU",
+              "value": 125368.5
+            },
+            {
+              "from": "DE",
+              "to": "SI",
+              "value": 67475.4
+            },
+            {
+              "from": "SE",
+              "to": "PL",
+              "value": 398576.6
+            },
+            {
+              "from": "EE",
+              "to": "AT",
+              "value": 3082.6
+            },
+            {
+              "from": "LT",
+              "to": "BG",
+              "value": 1626.4
+            },
+            {
+              "from": "GR",
+              "to": "SK",
+              "value": 912.8
+            },
+            {
+              "from": "BE",
+              "to": "LV",
+              "value": 5506.1
+            },
+            {
+              "from": "PT",
+              "to": "LU",
+              "value": 900.7
+            },
+            {
+              "from": "PL",
+              "to": "EE",
+              "value": 12416.4
+            },
+            {
+              "from": "DE",
+              "to": "LV",
+              "value": 28416
+            },
+            {
+              "from": "RO",
+              "to": "AT",
+              "value": 36327.6
+            },
+            {
+              "from": "SK",
+              "to": "BE",
+              "value": 11306.2
+            },
+            {
+              "from": "CZ",
+              "to": "RO",
+              "value": 35880.5
+            },
+            {
+              "from": "CZ",
+              "to": "HU",
+              "value": 59847.9
+            },
+            {
+              "from": "AT",
+              "to": "RO",
+              "value": 96755.3
+            },
+            {
+              "from": "MT",
+              "to": "SK",
+              "value": 23.8
+            },
+            {
+              "from": "IE",
+              "to": "RO",
+              "value": 4945.6
+            },
+            {
+              "from": "PL",
+              "to": "DK",
+              "value": 119773.6
+            },
+            {
+              "from": "FR",
+              "to": "IE",
+              "value": 68189.4
+            },
+            {
+              "from": "DE",
+              "to": "LU",
+              "value": 93422.6
+            },
+            {
+              "from": "GR",
+              "to": "IT",
+              "value": 12447.3
+            },
+            {
+              "from": "RO",
+              "to": "BG",
+              "value": 49671.4
+            },
+            {
+              "from": "FI",
+              "to": "RO",
+              "value": 38634.2
+            },
+            {
+              "from": "DE",
+              "to": "FI",
+              "value": 77295.2
+            },
+            {
+              "from": "MT",
+              "to": "IT",
+              "value": 3660.3
+            },
+            {
+              "from": "ES",
+              "to": "CY",
+              "value": 2178.2
+            },
+            {
+              "from": "SK",
+              "to": "FI",
+              "value": 304.8
+            },
+            {
+              "from": "IT",
+              "to": "MT",
+              "value": 5265.1
+            },
+            {
+              "from": "LT",
+              "to": "SE",
+              "value": 25935.7
+            },
+            {
+              "from": "MT",
+              "to": "DK",
+              "value": 24.8
+            },
+            {
+              "from": "PT",
+              "to": "SE",
+              "value": 43840.7
+            },
+            {
+              "from": "ES",
+              "to": "PL",
+              "value": 93661
+            },
+            {
+              "from": "GR",
+              "to": "DE",
+              "value": 88246.5
+            },
+            {
+              "from": "GR",
+              "to": "BE",
+              "value": 1086.4
+            },
+            {
+              "from": "SI",
+              "to": "DK",
+              "value": 7769.8
+            },
+            {
+              "from": "EE",
+              "to": "BE",
+              "value": 794.9
+            },
+            {
+              "from": "HR",
+              "to": "RO",
+              "value": 10408.2
+            },
+            {
+              "from": "FI",
+              "to": "CZ",
+              "value": 58355.7
+            },
+            {
+              "from": "DK",
+              "to": "HR",
+              "value": 770.1
+            },
+            {
+              "from": "AT",
+              "to": "LV",
+              "value": 1358.4
+            },
+            {
+              "from": "NL",
+              "to": "ES",
+              "value": 113729.9
+            },
+            {
+              "from": "AT",
+              "to": "LT",
+              "value": 5239
+            },
+            {
+              "from": "LV",
+              "to": "SE",
+              "value": 20563.8
+            },
+            {
+              "from": "DE",
+              "to": "EE",
+              "value": 13272.8
+            },
+            {
+              "from": "SE",
+              "to": "GR",
+              "value": 39529.7
+            },
+            {
+              "from": "ES",
+              "to": "HR",
+              "value": 3016.8
+            },
+            {
+              "from": "RO",
+              "to": "CZ",
+              "value": 24151.8
+            },
+            {
+              "from": "LT",
+              "to": "DE",
+              "value": 120092.7
+            },
+            {
+              "from": "BE",
+              "to": "CY",
+              "value": 1212.9
+            },
+            {
+              "from": "SE",
+              "to": "LV",
+              "value": 28059.4
+            },
+            {
+              "from": "PT",
+              "to": "HU",
+              "value": 819.2
+            },
+            {
+              "from": "CY",
+              "to": "BE",
+              "value": 10.2
+            },
+            {
+              "from": "SE",
+              "to": "NL",
+              "value": 757221.6
+            },
+            {
+              "from": "EE",
+              "to": "SI",
+              "value": 1281.5
+            },
+            {
+              "from": "LT",
+              "to": "PL",
+              "value": 43197.4
+            },
+            {
+              "from": "LT",
+              "to": "AT",
+              "value": 13961.3
+            },
+            {
+              "from": "LV",
+              "to": "IE",
+              "value": 17.3
+            },
+            {
+              "from": "ES",
+              "to": "SE",
+              "value": 7725.1
+            },
+            {
+              "from": "RO",
+              "to": "NL",
+              "value": 9558.2
+            },
+            {
+              "from": "SK",
+              "to": "IT",
+              "value": 36478.7
+            },
+            {
+              "from": "PL",
+              "to": "NL",
+              "value": 207310
+            },
+            {
+              "from": "PL",
+              "to": "LV",
+              "value": 36497.1
+            },
+            {
+              "from": "DE",
+              "to": "CY",
+              "value": 6953.2
+            },
+            {
+              "from": "LV",
+              "to": "AT",
+              "value": 761.9
+            },
+            {
+              "from": "NL",
+              "to": "SE",
+              "value": 100298.5
+            },
+            {
+              "from": "LV",
+              "to": "PL",
+              "value": 7248
+            },
+            {
+              "from": "SE",
+              "to": "ES",
+              "value": 301655.6
+            },
+            {
+              "from": "CZ",
+              "to": "PT",
+              "value": 6555.5
+            },
+            {
+              "from": "IT",
+              "to": "SK",
+              "value": 16322.2
+            },
+            {
+              "from": "CY",
+              "to": "SI",
+              "value": 1317.7
+            },
+            {
+              "from": "SI",
+              "to": "SE",
+              "value": 1633.5
+            },
+            {
+              "from": "SI",
+              "to": "RO",
+              "value": 8078.7
+            },
+            {
+              "from": "IT",
+              "to": "AT",
+              "value": 257297.8
+            },
+            {
+              "from": "MT",
+              "to": "HR",
+              "value": 8.2
+            },
+            {
+              "from": "MT",
+              "to": "DE",
+              "value": 6157
+            },
+            {
+              "from": "LT",
+              "to": "SK",
+              "value": 476.2
+            },
+            {
+              "from": "SI",
+              "to": "IE",
+              "value": 1649.7
+            },
+            {
+              "from": "CY",
+              "to": "BG",
+              "value": 393.5
+            },
+            {
+              "from": "HU",
+              "to": "FI",
+              "value": 5265.3
+            },
+            {
+              "from": "PT",
+              "to": "PL",
+              "value": 79801.3
+            },
+            {
+              "from": "BG",
+              "to": "HU",
+              "value": 5037.9
+            },
+            {
+              "from": "NL",
+              "to": "SI",
+              "value": 6363.2
+            },
+            {
+              "from": "LU",
+              "to": "HR",
+              "value": 709.6
+            },
+            {
+              "from": "NL",
+              "to": "IE",
+              "value": 259991.4
+            },
+            {
+              "from": "PT",
+              "to": "SI",
+              "value": 12299.8
+            },
+            {
+              "from": "IE",
+              "to": "NL",
+              "value": 84110.2
+            },
+            {
+              "from": "LU",
+              "to": "DK",
+              "value": 5137.3
+            },
+            {
+              "from": "CZ",
+              "to": "FR",
+              "value": 123262.6
+            },
+            {
+              "from": "FR",
+              "to": "CZ",
+              "value": 171350.6
+            },
+            {
+              "from": "ES",
+              "to": "LV",
+              "value": 2583.8
+            },
+            {
+              "from": "HR",
+              "to": "MT",
+              "value": 58.8
+            },
+            {
+              "from": "DE",
+              "to": "HR",
+              "value": 73155.7
+            },
+            {
+              "from": "IE",
+              "to": "PL",
+              "value": 22295.7
+            },
+            {
+              "from": "CY",
+              "to": "FI",
+              "value": 75.6
+            },
+            {
+              "from": "ES",
+              "to": "SK",
+              "value": 4712
+            },
+            {
+              "from": "SK",
+              "to": "LT",
+              "value": 2343
+            },
+            {
+              "from": "PL",
+              "to": "PT",
+              "value": 16770
+            },
+            {
+              "from": "DK",
+              "to": "LU",
+              "value": 14.8
+            },
+            {
+              "from": "ES",
+              "to": "NL",
+              "value": 110014.7
+            },
+            {
+              "from": "LU",
+              "to": "CY",
+              "value": 9
+            },
+            {
+              "from": "DK",
+              "to": "BE",
+              "value": 12151.5
+            },
+            {
+              "from": "SE",
+              "to": "SI",
+              "value": 10678.6
+            },
+            {
+              "from": "BG",
+              "to": "AT",
+              "value": 9769
+            },
+            {
+              "from": "HR",
+              "to": "DK",
+              "value": 1427.8
+            },
+            {
+              "from": "DK",
+              "to": "DE",
+              "value": 331021
+            },
+            {
+              "from": "BE",
+              "to": "DK",
+              "value": 18638
+            },
+            {
+              "from": "PT",
+              "to": "CZ",
+              "value": 10698.2
+            },
+            {
+              "from": "PL",
+              "to": "LT",
+              "value": 47379.6
+            },
+            {
+              "from": "LU",
+              "to": "EE",
+              "value": 63.1
+            },
+            {
+              "from": "FI",
+              "to": "HU",
+              "value": 63520.3
+            },
+            {
+              "from": "BE",
+              "to": "HR",
+              "value": 1431.6
+            },
+            {
+              "from": "EE",
+              "to": "FI",
+              "value": 22840.9
+            },
+            {
+              "from": "RO",
+              "to": "FR",
+              "value": 82002.5
+            },
+            {
+              "from": "BG",
+              "to": "EE",
+              "value": 17.5
+            },
+            {
+              "from": "SK",
+              "to": "LV",
+              "value": 2723.2
+            },
+            {
+              "from": "SI",
+              "to": "AT",
+              "value": 140890.1
+            },
+            {
+              "from": "HU",
+              "to": "BG",
+              "value": 13752.9
+            },
+            {
+              "from": "LV",
+              "to": "ES",
+              "value": 108.3
+            },
+            {
+              "from": "SK",
+              "to": "GR",
+              "value": 4792.4
+            },
+            {
+              "from": "AT",
+              "to": "SE",
+              "value": 12692.2
+            },
+            {
+              "from": "DE",
+              "to": "PT",
+              "value": 81374.4
+            },
+            {
+              "from": "HU",
+              "to": "DK",
+              "value": 10595.3
+            },
+            {
+              "from": "EE",
+              "to": "SK",
+              "value": 228.8
+            },
+            {
+              "from": "BE",
+              "to": "MT",
+              "value": 950.8
+            },
+            {
+              "from": "PT",
+              "to": "MT",
+              "value": 823.5
+            },
+            {
+              "from": "LU",
+              "to": "SI",
+              "value": 1842.4
+            },
+            {
+              "from": "PL",
+              "to": "CZ",
+              "value": 304461.9
+            },
+            {
+              "from": "BG",
+              "to": "LT",
+              "value": 8859.5
+            },
+            {
+              "from": "ES",
+              "to": "FR",
+              "value": 709962.7
+            },
+            {
+              "from": "RO",
+              "to": "IT",
+              "value": 37249.5
+            },
+            {
+              "from": "HR",
+              "to": "PT",
+              "value": 1664.6
+            },
+            {
+              "from": "GR",
+              "to": "AT",
+              "value": 12900.1
+            },
+            {
+              "from": "IT",
+              "to": "LT",
+              "value": 3244.6
+            },
+            {
+              "from": "EE",
+              "to": "CZ",
+              "value": 9028.4
+            },
+            {
+              "from": "PT",
+              "to": "BE",
+              "value": 29164.8
+            },
+            {
+              "from": "ES",
+              "to": "FI",
+              "value": 6536
+            },
+            {
+              "from": "SE",
+              "to": "AT",
+              "value": 86184.5
+            },
+            {
+              "from": "PT",
+              "to": "HR",
+              "value": 4247
+            },
+            {
+              "from": "MT",
+              "to": "LU",
+              "value": 15.8
+            },
+            {
+              "from": "NL",
+              "to": "AT",
+              "value": 148612.2
+            },
+            {
+              "from": "GR",
+              "to": "CZ",
+              "value": 26389.8
+            },
+            {
+              "from": "SK",
+              "to": "CY",
+              "value": 29
+            },
+            {
+              "from": "CY",
+              "to": "CZ",
+              "value": 1278.2
+            },
+            {
+              "from": "ES",
+              "to": "IT",
+              "value": 381878
+            },
+            {
+              "from": "FI",
+              "to": "LT",
+              "value": 44983
+            },
+            {
+              "from": "CZ",
+              "to": "DK",
+              "value": 12575
+            },
+            {
+              "from": "AT",
+              "to": "DK",
+              "value": 16022.5
+            },
+            {
+              "from": "DK",
+              "to": "HU",
+              "value": 7873.9
+            },
+            {
+              "from": "MT",
+              "to": "PT",
+              "value": 248.7
+            },
+            {
+              "from": "PT",
+              "to": "AT",
+              "value": 15163.4
+            },
+            {
+              "from": "FR",
+              "to": "MT",
+              "value": 1779.4
+            },
+            {
+              "from": "EE",
+              "to": "HR",
+              "value": 222.3
+            },
+            {
+              "from": "CZ",
+              "to": "FI",
+              "value": 4065.3
+            },
+            {
+              "from": "ES",
+              "to": "LT",
+              "value": 3560.8
+            },
+            {
+              "from": "SI",
+              "to": "PL",
+              "value": 19745.4
+            },
+            {
+              "from": "CZ",
+              "to": "BG",
+              "value": 6268.9
+            },
+            {
+              "from": "BE",
+              "to": "DE",
+              "value": 1387004.3
+            },
+            {
+              "from": "AT",
+              "to": "FR",
+              "value": 394075.7
+            },
+            {
+              "from": "LU",
+              "to": "BE",
+              "value": 27590.9
+            },
+            {
+              "from": "BE",
+              "to": "LU",
+              "value": 54231.9
+            },
+            {
+              "from": "FR",
+              "to": "HU",
+              "value": 28070.7
+            },
+            {
+              "from": "HR",
+              "to": "DE",
+              "value": 87039.6
+            },
+            {
+              "from": "DE",
+              "to": "DK",
+              "value": 373263.7
+            },
+            {
+              "from": "DE",
+              "to": "MT",
+              "value": 3962.8
+            },
+            {
+              "from": "LU",
+              "to": "GR",
+              "value": 152
+            },
+            {
+              "from": "IT",
+              "to": "CZ",
+              "value": 67411.8
+            },
+            {
+              "from": "PL",
+              "to": "IE",
+              "value": 21683.1
+            },
+            {
+              "from": "DK",
+              "to": "RO",
+              "value": 2609.1
+            }
+          ]
+        }
+      ]
+    }
+
+  ]
+}
